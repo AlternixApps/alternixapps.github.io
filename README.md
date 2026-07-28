@@ -13,7 +13,8 @@ Public URL: <https://alternixapps.github.io/>
 
 The site uses only local HTML, CSS, JavaScript, and image assets. It has no
 analytics, advertising scripts, external fonts, third-party JavaScript, forms,
-cookies, or browser storage.
+or cookies. Browser local storage contains only the user's light/dark theme
+preference.
 
 ## Publishing
 
