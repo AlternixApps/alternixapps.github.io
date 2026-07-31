@@ -37,7 +37,7 @@
       <p class="eyebrow">QR Dot Lab · Android</p>
       <h1>Privacy Policy</h1>
       <p class="lead">This policy explains how QR Dot Lab handles information when you create, customize, save, or share QR codes.</p>
-      <p class="meta"><strong>Effective date and last updated:</strong> 29 July 2026</p>
+      <p class="meta"><strong>Effective date and last updated:</strong> 31 July 2026</p>
     </header>
 
     <div class="legal-layout">
@@ -45,7 +45,7 @@
         <section class="legal-section" id="scope">
           <h2>1. Who we are and scope</h2>
           <p>QR Dot Lab (package ID <code>com.alternix.dotlab</code>) is an Android application published by Alternix (“Alternix”, “we”, “us”, or “our”). This Privacy Policy applies to the QR Dot Lab application and the QR Dot Lab pages on this website.</p>
-          <p>QR Dot Lab creates static QR codes. The current version works locally on your device and does not require registration, an account, or a connection to an Alternix server.</p>
+          <p>QR Dot Lab creates static QR codes. QR creation, customization, history, and file generation take place on your device. The app does not require registration, an account, or a connection to an Alternix server. Version 1.0.1 uses Google Mobile Ads (AdMob) to display advertising as described below.</p>
         </section>
 
         <section class="legal-section" id="summary">
@@ -54,8 +54,8 @@
             <li>QR content and designs are processed on your device.</li>
             <li>The app does not send QR content, location, Wi-Fi details, or history to Alternix.</li>
             <li>The app has no account system, cloud synchronization, or server-side component.</li>
-            <li>The current version contains no Firebase, Analytics, Crashlytics, AdMob, or other advertising or tracking SDK.</li>
-            <li>The application does not declare the Android <code>INTERNET</code> permission and does not make network requests.</li>
+            <li>Version 1.0.1 includes Google Mobile Ads (AdMob) and Google’s User Messaging Platform (UMP). These services require network access and may process advertising, device, interaction, and diagnostic data under Google’s policies.</li>
+            <li>The app does not include Firebase Analytics or Crashlytics, and Alternix does not operate an app server that receives your QR content.</li>
           </ul>
         </section>
 
@@ -95,9 +95,11 @@
             <li><code>ACCESS_FINE_LOCATION</code> and <code>ACCESS_COARSE_LOCATION</code> — requested only after you tap the location auto-fill action, and also used where Android requires location permission to read the connected Wi-Fi network name.</li>
             <li><code>NEARBY_WIFI_DEVICES</code> — requested on supported Android versions when you ask the app to auto-fill details of the connected Wi-Fi network.</li>
             <li><code>ACCESS_WIFI_STATE</code> — used to check Wi-Fi state and read locally available information about the current connection.</li>
-            <li><code>ACCESS_NETWORK_STATE</code> — used to inspect the current Wi-Fi connection through Android system APIs. It does not give the app Internet access.</li>
+            <li><code>ACCESS_NETWORK_STATE</code> — used to inspect the current Wi-Fi connection and to determine network availability for advertising.</li>
+            <li><code>INTERNET</code> — used by Google Mobile Ads and UMP to request ads, consent information, and related network resources.</li>
+            <li><code>AD_ID</code> — allows the advertising SDK to access the Android advertising identifier when it is available and permitted by Android and your privacy choices.</li>
           </ul>
-          <p>The app does not request background location. It does not request camera, contacts, microphone, advertising ID, broad photo access, or broad file-storage permissions.</p>
+          <p>The app does not request background location. It does not request camera, contacts, microphone, broad photo access, or broad file-storage permissions.</p>
         </section>
 
         <section class="legal-section" id="location-wifi">
@@ -115,21 +117,24 @@
           <p>When you choose a logo, Android’s system picker gives QR Dot Lab access only to the selected file. The app reads and processes the image locally, limits input files to 25 MB, and scales the working copy to a maximum of 512 × 512 pixels. If the design is saved to local history, an encoded copy of the prepared logo is stored with that design.</p>
           <h3>Saving files</h3>
           <p>QR Dot Lab uses Android’s system document interface for PNG, SVG, JPEG, PDF, EPS, and TIFF exports. You select the destination and the system or destination provider writes the file there. The app does not require broad storage permission. Exported files remain at the location you selected until you delete them.</p>
+          <p>PNG, JPEG, and TIFF exports do not require a rewarded ad. Before an SVG, PDF, or EPS export, the app presents a clear choice to watch a rewarded ad. The protected export is unlocked only after Google reports that the reward was earned. You may cancel or close the ad, but the protected export will then remain locked.</p>
           <h3>Sharing</h3>
           <p>When you choose Share, the app creates a temporary PNG in its private cache and exposes that single file through Android’s secure <code>FileProvider</code> with temporary read access. Android’s share sheet lets you choose the recipient application. Once you share a file, the chosen application or service handles it under its own privacy terms. Alternix does not receive the file.</p>
         </section>
 
         <section class="legal-section" id="third-parties">
           <h2>8. Third-party services and network activity</h2>
-          <p>The current QR Dot Lab build uses Android and AndroidX components and the ZXing Core library for on-device QR encoding. It contains no Firebase, Google Analytics, Crashlytics, AdMob, or other analytics, advertising, attribution, or tracking SDK, and it makes no network requests.</p>
-          <p>Google Play and the Android operating system may independently process app-store, installation, security, diagnostic, or device information under Google’s own terms. Applications or storage providers you choose through Android’s save and share interfaces may also process the files you send them. These services are not operated by Alternix.</p>
-          <div class="notice"><strong>Future advertising:</strong> AdMob is not included in the current version. Before any version containing an advertising SDK is released, this policy and the Google Play Data safety declaration must be updated to describe the SDK and its data practices.</div>
+          <p>Beginning with version 1.0.1, QR Dot Lab uses Android and AndroidX components and ZXing Core for on-device QR encoding. It also includes the Google Mobile Ads SDK (AdMob) for banner and rewarded advertisements and Google’s User Messaging Platform (UMP) for privacy choices. It does not include Firebase Analytics or Crashlytics. Earlier versions without AdMob do not perform these advertising-related network operations.</p>
+          <p>Google and its advertising partners may automatically collect or process information such as IP address and approximate location derived from it, advertising and app/device identifiers, information about the app and device, ad requests, impressions, clicks and other ad interactions, and diagnostic or performance information. Depending on your region and choices, this information may be used to deliver and measure ads, limit ad frequency, prevent fraud and abuse, and personalize advertising where permitted. QR content, QR history, Wi-Fi passwords, selected logos, and exported QR files are not intentionally supplied to the advertising SDK.</p>
+          <p>Where required, QR Dot Lab asks for advertising consent through UMP before requesting ads. If Google indicates that privacy options are required, they are available from the app’s Settings screen. You can also reset or delete the Android advertising ID in Android settings. Availability and wording of these controls depend on your region, Android version, and Google’s consent configuration.</p>
+          <p>For more information, see <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>, <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a>, and <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google Mobile Ads SDK data disclosure</a>.</p>
+          <p>Google Play and Android may independently process store, installation, security, diagnostic, or device information under Google’s terms. Applications or storage providers selected through Android’s save and share interfaces may process files you send them. These services are not operated by Alternix.</p>
         </section>
 
         <section class="legal-section" id="open-source">
           <h2>9. Open Source Libraries</h2>
           <p>QR Dot Lab uses several open-source libraries, including ZXing Core for QR code generation and AndroidX components for the application interface and local Android functionality.</p>
-          <p>These libraries process data locally and do not collect or transmit user information.</p>
+          <p>ZXing Core and the QR-generation components process QR data locally. Advertising and consent SDK practices are described separately in Section 8.</p>
         </section>
 
         <section class="legal-section" id="website">
@@ -153,7 +158,7 @@
 
         <section class="legal-section" id="rights">
           <h2>13. Your choices and privacy rights</h2>
-          <p>You control whether to grant optional runtime permissions, use auto-fill, save or share a QR code, add a logo, keep a history entry, or contact support. Permission choices can be changed in Android settings.</p>
+          <p>You control whether to grant optional runtime permissions, use auto-fill, save or share a QR code, add a logo, keep a history entry, watch an optional rewarded ad, or contact support. Permission choices can be changed in Android settings. Where required, advertising privacy choices can be reviewed from the app’s Settings screen.</p>
           <p>Because Alternix does not receive app-created QR content or local history, we cannot view, correct, export, or delete that device-only information for you. For personal information you send directly by email, applicable law may give you rights to access, correct, delete, restrict, or object to processing. Contact us to make a request.</p>
         </section>
 
