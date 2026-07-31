@@ -98,8 +98,11 @@
             <li><code>ACCESS_NETWORK_STATE</code> — використовується для перегляду поточного Wi‑Fi-підключення та визначення доступності мережі для реклами.</li>
             <li><code>INTERNET</code> — використовується Google Mobile Ads і UMP для завантаження реклами, відомостей про згоду та пов’язаних мережевих ресурсів.</li>
             <li><code>AD_ID</code> — дає рекламному SDK змогу звертатися до рекламного ідентифікатора Android, якщо він доступний і це дозволено Android та вашим вибором конфіденційності.</li>
+            <li><code>ACCESS_ADSERVICES_AD_ID</code>, <code>ACCESS_ADSERVICES_ATTRIBUTION</code> і <code>ACCESS_ADSERVICES_TOPICS</code> — додаються Google Mobile Ads для підтримуваних рекламних сервісів Android Privacy Sandbox.</li>
+            <li><code>WAKE_LOCK</code> і <code>FOREGROUND_SERVICE</code> — додаються Google Play services та Android WorkManager, щоб операції SDK могли надійно завершуватися. Це не дозволи, які запитуються в користувача у спливному вікні.</li>
           </ul>
           <p>Застосунок не запитує фонову геолокацію. Він не запитує доступ до камери, контактів, мікрофона, усіх фотографій або всього файлового сховища.</p>
+          <p>Android також створює окремий дозвіл рівня підпису для захисту внутрішніх broadcast receiver застосунку. Він не надає QR Dot Lab доступу до додаткових даних користувача.</p>
         </section>
 
         <section class="legal-section" id="location-wifi">
