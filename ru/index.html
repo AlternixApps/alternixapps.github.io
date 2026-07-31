@@ -1,77 +1,44 @@
 <!doctype html>
-<html lang="ru">
+<html lang="ru" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Alternix создаёт продуманные приложения с уважением к конфиденциальности, включая QR Dot Lab.">
-  <title>Alternix — Приложения, созданные с заботой</title>
-  <link rel="icon" href="../assets/qr-dot-lab.png">
-  <link rel="stylesheet" href="../assets/site.css">
-  <script src="../assets/site.js"></script>
+  <meta name="description" content="Alternix — независимая студия программного обеспечения, создающая продуманные цифровые продукты с уважением к конфиденциальности.">
+  <meta name="theme-color" content="#050505">
+  <link rel="canonical" href="https://alternixapps.github.io/ru/">
+  <link rel="alternate" hreflang="en" href="https://alternixapps.github.io/">
+  <link rel="alternate" hreflang="uk" href="https://alternixapps.github.io/uk/">
+  <link rel="alternate" hreflang="ru" href="https://alternixapps.github.io/ru/">
+  <link rel="alternate" hreflang="x-default" href="https://alternixapps.github.io/">
+  <title>Alternix — независимая студия программного обеспечения</title>
+  <script>try{if(localStorage.getItem("alternix-company-theme")==="light")document.documentElement.dataset.theme="light"}catch(e){}</script>
+  <link rel="icon" href="/assets/alternix-mark.svg">
+  <link rel="stylesheet" href="/assets/company.css">
+  <script src="/assets/company.js" defer></script>
+  <noscript><style>.preloader{display:none}.reveal{opacity:1;transform:none}</style></noscript>
 </head>
 <body>
-  <a class="skip-link" href="#content">Перейти к содержанию</a>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <div class="preloader" data-preloader aria-hidden="true"><div class="loader-lockup"><img class="loader-wordmark" src="/assets/alternix-wordmark.svg" alt=""><span class="loader-line"></span></div></div>
   <header class="site-header">
     <div class="header-inner">
-      <a class="brand" href="./" aria-label="Главная страница Alternix">
-        <span class="brand-mark"><img src="../assets/qr-dot-lab.png" alt=""></span>
-        <span class="brand-label">Alternix</span>
-      </a>
-      <nav class="site-nav" aria-label="QR Dot Lab">
-        <a href="./qr-dot-lab/privacy/">Политика конфиденциальности</a>
-        <a href="./qr-dot-lab/support/">Поддержка</a>
-      </nav>
-      <div class="header-actions">
-        <nav class="language-nav" aria-label="Язык">
-          <a href="../" lang="en">EN</a>
-          <a href="../uk/" lang="uk">UA</a>
-          <a href="./" lang="ru" aria-current="page">RU</a>
-        </nav>
-        <button class="icon-button" type="button" data-theme-toggle data-light-label="Включить светлую тему" data-dark-label="Включить тёмную тему" aria-label="Включить тёмную тему"><svg class="theme-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 15.2A8.7 8.7 0 0 1 8.8 3.6 8.7 8.7 0 1 0 20.4 15.2Z"/></svg></button>
-      </div>
+      <a class="brand" href="/ru/" aria-label="Главная страница Alternix"><img src="/assets/alternix-wordmark.svg" alt="Alternix"></a>
+      <nav class="site-nav" aria-label="Основная навигация"><a href="#studio">Студия</a><a href="#products">Продукты</a><a href="#principles">Принципы</a><a href="#contact">Контакты</a></nav>
+      <div class="header-actions"><nav class="language-nav" aria-label="Язык"><a href="/" lang="en">EN</a><a href="/uk/" lang="uk">UA</a><a href="/ru/" lang="ru" aria-current="page">RU</a></nav><button class="theme-toggle" type="button" data-theme-toggle data-light-label="Включить светлую тему" data-dark-label="Включить тёмную тему" aria-label="Включить светлую тему"></button></div>
     </div>
   </header>
-
-  <main class="page" id="content">
-    <section class="hero">
-      <p class="eyebrow">Независимая студия программного обеспечения</p>
-      <h1>Полезные приложения, созданные с заботой.</h1>
-      <p class="lead">Alternix создаёт понятные и практичные цифровые инструменты с продуманным дизайном и прозрачным отношением к конфиденциальности.</p>
+  <main id="main">
+    <section class="hero page-shell" id="studio">
+      <div class="hero-copy reveal"><p class="eyebrow">Независимая студия программного обеспечения</p><h1>Технологии, в которых оставлено главное.</h1><p class="hero-lead">Alternix создаёт точные цифровые продукты с уважением к конфиденциальности, превращая сложные задачи в понятный опыт.</p><div class="hero-actions"><a class="button button-primary" href="#products">Смотреть продукты</a><a class="button" href="mailto:alternix.apps@gmail.com">Связаться со студией</a></div></div>
+      <div class="hero-object reveal" aria-hidden="true"><span class="hero-orbit"></span><img class="hero-mark" src="/assets/alternix-mark.svg" alt=""></div>
     </section>
-
-    <section class="grid" aria-label="Приложения Alternix">
-      <article class="card card-wide">
-        <p class="eyebrow">QR Dot Lab</p>
-        <h2>Создавайте и настраивайте QR-коды на своём устройстве</h2>
-        <p>QR Dot Lab локально создаёт статические QR-коды без учётных записей, облачной синхронизации, аналитики или отслеживания. Настраивайте цвета, модули, рамки и логотипы, а затем экспортируйте или отправляйте результат.</p>
-        <div class="card-actions">
-          <a class="button button-primary" href="./qr-dot-lab/privacy/">Политика конфиденциальности</a>
-          <a class="button" href="./qr-dot-lab/support/">Поддержка</a>
-        </div>
-      </article>
-      <article class="card">
-        <h2>Конфиденциальность в основе</h2>
-        <ul class="feature-list">
-          <li>Без регистрации и учётных записей</li>
-          <li>Без аналитики и рекламного SDK в текущей версии</li>
-          <li>Создание QR-кодов и история остаются на устройстве</li>
-        </ul>
-      </article>
-      <article class="card">
-        <h2>Связь</h2>
-        <p>Вопросы о QR Dot Lab, конфиденциальности или поддержке можно отправить по электронной почте.</p>
-        <div class="card-actions">
-          <a class="button" href="mailto:alternix.apps@gmail.com">alternix.apps@gmail.com</a>
-        </div>
-      </article>
-    </section>
+    <section class="section" id="products"><div class="page-shell"><header class="section-heading reveal"><div><p class="eyebrow">Продукты · 01</p><h2>Точные инструменты.<br>Ничего лишнего.</h2></div><p>Каждый продукт Alternix строится вокруг одной ясной задачи и дорабатывается до тех пор, пока каждое действие не станет осмысленным.</p></header>
+      <article class="product-card reveal"><div class="product-copy"><div class="product-meta"><span class="chip">Android</span><span class="chip">QR-редактор</span><span class="chip">Бета</span></div><h3>QR Dot Lab</h3><p>Создавайте, оформляйте и экспортируйте QR-коды в одном сфокусированном рабочем пространстве. Данные и дизайн QR обрабатываются локально — без аккаунта и облака Alternix.</p><div class="product-actions"><a class="button button-primary" href="https://alternixapps.github.io/qr-dot-lab/privacy/">Открыть QR Dot Lab</a><a class="button" href="/ru/qr-dot-lab/support/">Поддержка</a></div></div><a class="product-visual" href="https://alternixapps.github.io/qr-dot-lab/privacy/" aria-label="Открыть информацию и политику QR Dot Lab"><img class="app-icon" src="/assets/qr-dot-lab.png" alt="Иконка приложения QR Dot Lab"></a></article>
+    </div></section>
+    <section class="section" id="principles"><div class="page-shell"><header class="section-heading reveal"><div><p class="eyebrow">Как мы работаем</p><h2>Создано осмысленно.</h2></div><p>Мы выбираем сдержанный дизайн, понятные технологии и продукты, которые уважают человека.</p></header><div class="principles-grid"><article class="principle reveal"><span class="principle-number">01 / Ясность</span><h3>Ясность прежде сложности</h3><p>Каждый экран и функция должны быть понятны без лишних усилий со стороны пользователя.</p></article><article class="principle reveal"><span class="principle-number">02 / Приватность</span><h3>Приватность — это архитектура</h3><p>Работа с данными продумывается в основе продукта, а не добавляется в последний момент.</p></article><article class="principle reveal"><span class="principle-number">03 / Мастерство</span><h3>Детали и есть продукт</h3><p>Производительность, движение, язык и визуальный ритм получают одинаково внимательную проработку.</p></article></div></div></section>
+    <section class="section"><div class="page-shell studio-grid reveal"><p class="studio-statement">Небольшая студия.<br>Осознанная работа.</p><div class="studio-copy"><p>Alternix разрабатывает независимое программное обеспечение с чётким фокусом и долгосрочным подходом. Мы создаём полезные продукты, проверяем их в реальном использовании и сохраняем целостность опыта — от первого запуска до самой небольшой настройки.</p><p>QR Dot Lab — наш первый публичный Android-продукт. Другие сфокусированные инструменты появятся, когда будут готовы.</p></div></div></section>
+    <section class="section" id="contact"><div class="page-shell"><div class="contact-panel reveal"><p class="eyebrow">Контакты</p><h2>Создадим следующую<br>полезную вещь.</h2><p>По вопросам поддержки продуктов, сотрудничества или Alternix напишите нам напрямую.</p><div class="contact-actions"><a class="button button-primary" href="mailto:alternix.apps@gmail.com">alternix.apps@gmail.com</a></div></div></div></section>
   </main>
-
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <p>© 2026 Alternix</p>
-      <p>Без cookies, аналитики, форм и рекламных скриптов.</p>
-    </div>
-  </footer>
+  <footer class="site-footer"><div class="footer-inner"><img src="/assets/alternix-wordmark.svg" alt="Alternix"><p>© 2026 Alternix. Независимая студия программного обеспечения.</p><nav class="footer-links" aria-label="Нижняя навигация"><a href="/ru/qr-dot-lab/privacy/">Конфиденциальность</a><a href="/ru/qr-dot-lab/support/">Поддержка</a><a href="mailto:alternix.apps@gmail.com">Email</a></nav></div></footer>
 </body>
 </html>

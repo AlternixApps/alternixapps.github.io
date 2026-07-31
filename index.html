@@ -1,76 +1,163 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Alternix creates thoughtful, privacy-conscious applications, including QR Dot Lab.">
-  <title>Alternix — Applications built with care</title>
-  <link rel="icon" href="./assets/qr-dot-lab.png">
-  <link rel="stylesheet" href="./assets/site.css">
-  <script src="./assets/site.js"></script>
+  <meta name="description" content="Alternix is an independent software studio creating focused, privacy-conscious digital products.">
+  <meta name="theme-color" content="#050505">
+  <link rel="canonical" href="https://alternixapps.github.io/">
+  <link rel="alternate" hreflang="en" href="https://alternixapps.github.io/">
+  <link rel="alternate" hreflang="uk" href="https://alternixapps.github.io/uk/">
+  <link rel="alternate" hreflang="ru" href="https://alternixapps.github.io/ru/">
+  <link rel="alternate" hreflang="x-default" href="https://alternixapps.github.io/">
+  <title>Alternix — Independent software studio</title>
+  <script>try{if(localStorage.getItem("alternix-company-theme")==="light")document.documentElement.dataset.theme="light"}catch(e){}</script>
+  <link rel="icon" href="/assets/alternix-mark.svg">
+  <link rel="stylesheet" href="/assets/company.css">
+  <script src="/assets/company.js" defer></script>
+  <noscript><style>.preloader{display:none}.reveal{opacity:1;transform:none}</style></noscript>
 </head>
 <body>
-  <a class="skip-link" href="#content">Skip to content</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="preloader" data-preloader aria-hidden="true">
+    <div class="loader-lockup">
+      <img class="loader-wordmark" src="/assets/alternix-wordmark.svg" alt="">
+      <span class="loader-line"></span>
+    </div>
+  </div>
+
   <header class="site-header">
     <div class="header-inner">
-      <a class="brand" href="./" aria-label="Alternix home">
-        <span class="brand-mark"><img src="./assets/qr-dot-lab.png" alt=""></span>
-        <span class="brand-label">Alternix</span>
+      <a class="brand" href="/" aria-label="Alternix home">
+        <img src="/assets/alternix-wordmark.svg" alt="Alternix">
       </a>
-      <nav class="site-nav" aria-label="QR Dot Lab">
-        <a href="./qr-dot-lab/privacy/">Privacy Policy</a>
-        <a href="./qr-dot-lab/support/">Support</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#studio">Studio</a>
+        <a href="#products">Products</a>
+        <a href="#principles">Principles</a>
+        <a href="#contact">Contact</a>
       </nav>
       <div class="header-actions">
         <nav class="language-nav" aria-label="Language">
-          <a href="./" lang="en" aria-current="page">EN</a>
-          <a href="./uk/" lang="uk">UA</a>
-          <a href="./ru/" lang="ru">RU</a>
+          <a href="/" lang="en" aria-current="page">EN</a>
+          <a href="/uk/" lang="uk">UA</a>
+          <a href="/ru/" lang="ru">RU</a>
         </nav>
-        <button class="icon-button" type="button" data-theme-toggle data-light-label="Use light theme" data-dark-label="Use dark theme" aria-label="Use dark theme"><svg class="theme-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 15.2A8.7 8.7 0 0 1 8.8 3.6 8.7 8.7 0 1 0 20.4 15.2Z"/></svg></button>
+        <button class="theme-toggle" type="button" data-theme-toggle data-light-label="Use light theme" data-dark-label="Use dark theme" aria-label="Use light theme"></button>
       </div>
     </div>
   </header>
 
-  <main class="page" id="content">
-    <section class="hero">
-      <p class="eyebrow">Independent software studio</p>
-      <h1>Useful applications, built with care.</h1>
-      <p class="lead">Alternix creates clear, practical digital tools with thoughtful design and transparent privacy practices.</p>
+  <main id="main">
+    <section class="hero page-shell" id="studio">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Independent software studio</p>
+        <h1>Technology, reduced to what matters.</h1>
+        <p class="hero-lead">Alternix creates precise, privacy-conscious digital products that turn complex tasks into clear experiences.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#products">Explore products</a>
+          <a class="button" href="mailto:alternix.apps@gmail.com">Contact the studio</a>
+        </div>
+      </div>
+      <div class="hero-object reveal" aria-hidden="true">
+        <span class="hero-orbit"></span>
+        <img class="hero-mark" src="/assets/alternix-mark.svg" alt="">
+      </div>
     </section>
 
-    <section class="grid" aria-label="Alternix applications">
-      <article class="card card-wide">
-        <p class="eyebrow">QR Dot Lab</p>
-        <h2>Create and customize QR codes on your device</h2>
-        <p>QR Dot Lab generates static QR codes locally, without accounts, cloud synchronization, analytics, or tracking. Customize colors, modules, frames, and logos, then export or share the result.</p>
-        <div class="card-actions">
-          <a class="button button-primary" href="./qr-dot-lab/privacy/">Privacy policy</a>
-          <a class="button" href="./qr-dot-lab/support/">Support</a>
+    <section class="section" id="products">
+      <div class="page-shell">
+        <header class="section-heading reveal">
+          <div>
+            <p class="eyebrow">Products · 01</p>
+            <h2>Focused tools.<br>Nothing extra.</h2>
+          </div>
+          <p>Each Alternix product is designed around one clear purpose and refined until every interaction feels deliberate.</p>
+        </header>
+
+        <article class="product-card reveal">
+          <div class="product-copy">
+            <div class="product-meta">
+              <span class="chip">Android</span>
+              <span class="chip">QR creator</span>
+              <span class="chip">Beta</span>
+            </div>
+            <h3>QR Dot Lab</h3>
+            <p>Create, style, and export QR codes in one focused workspace. QR content and designs are processed locally, with no account or Alternix cloud required.</p>
+            <div class="product-actions">
+              <a class="button button-primary" href="https://alternixapps.github.io/qr-dot-lab/privacy/">View QR Dot Lab</a>
+              <a class="button" href="/qr-dot-lab/support/">Support</a>
+            </div>
+          </div>
+          <a class="product-visual" href="https://alternixapps.github.io/qr-dot-lab/privacy/" aria-label="Open QR Dot Lab privacy and product information">
+            <img class="app-icon" src="/assets/qr-dot-lab.png" alt="QR Dot Lab app icon">
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="principles">
+      <div class="page-shell">
+        <header class="section-heading reveal">
+          <div>
+            <p class="eyebrow">How we work</p>
+            <h2>Built with intent.</h2>
+          </div>
+          <p>We prefer restrained design, understandable technology, and products that respect the person using them.</p>
+        </header>
+        <div class="principles-grid">
+          <article class="principle reveal">
+            <span class="principle-number">01 / Clarity</span>
+            <h3>Clarity before complexity</h3>
+            <p>Every screen and feature should explain itself without making the user work for it.</p>
+          </article>
+          <article class="principle reveal">
+            <span class="principle-number">02 / Privacy</span>
+            <h3>Privacy is architecture</h3>
+            <p>Data handling is considered at the foundation of a product, not added after the fact.</p>
+          </article>
+          <article class="principle reveal">
+            <span class="principle-number">03 / Craft</span>
+            <h3>Detail is the product</h3>
+            <p>Performance, motion, language, and visual rhythm receive the same careful attention.</p>
+          </article>
         </div>
-      </article>
-      <article class="card">
-        <h2>Privacy by design</h2>
-        <ul class="feature-list">
-          <li>No registration or user accounts</li>
-          <li>No analytics or advertising SDK in the current release</li>
-          <li>QR creation and history remain on the device</li>
-        </ul>
-      </article>
-      <article class="card">
-        <h2>Contact</h2>
-        <p>Questions about QR Dot Lab, privacy, or support can be sent directly by email.</p>
-        <div class="card-actions">
-          <a class="button" href="mailto:alternix.apps@gmail.com">alternix.apps@gmail.com</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="page-shell studio-grid reveal">
+        <p class="studio-statement">Small studio.<br>Deliberate work.</p>
+        <div class="studio-copy">
+          <p>Alternix develops independent software with a narrow focus and a long-term mindset. We build useful products, refine them through real testing, and keep the experience coherent from the first launch to the smallest setting.</p>
+          <p>QR Dot Lab is our first public Android product. More focused tools will join it as they are ready.</p>
         </div>
-      </article>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="page-shell">
+        <div class="contact-panel reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s make the next<br>useful thing.</h2>
+          <p>For product support, business questions, or conversations about Alternix, write to us directly.</p>
+          <div class="contact-actions">
+            <a class="button button-primary" href="mailto:alternix.apps@gmail.com">alternix.apps@gmail.com</a>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <p>© 2026 Alternix</p>
-      <p>No cookies, analytics, forms, or advertising scripts.</p>
+      <img src="/assets/alternix-wordmark.svg" alt="Alternix">
+      <p>© 2026 Alternix. Independent software studio.</p>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="/qr-dot-lab/privacy/">Privacy</a>
+        <a href="/qr-dot-lab/support/">Support</a>
+        <a href="mailto:alternix.apps@gmail.com">Email</a>
+      </nav>
     </div>
   </footer>
 </body>
