@@ -16,7 +16,6 @@
   --shadow: 0 28px 90px rgba(0, 0, 0, 0.48);
   --logo-filter: invert(1);
   --grid: rgba(255, 255, 255, 0.035);
-  --grid-wave: rgba(255, 255, 255, 0.105);
   --orb-a: rgba(255, 255, 255, 0.09);
   --orb-b: rgba(148, 148, 158, 0.08);
   --max: 1240px;
@@ -40,7 +39,6 @@
   --shadow: 0 28px 90px rgba(30, 30, 34, 0.14);
   --logo-filter: none;
   --grid: rgba(0, 0, 0, 0.04);
-  --grid-wave: rgba(0, 0, 0, 0.105);
   --orb-a: rgba(255, 255, 255, 0.82);
   --orb-b: rgba(150, 150, 160, 0.15);
 }
@@ -97,6 +95,8 @@ body::after {
   -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 16%, #000 82%, transparent 100%);
   mask-image: linear-gradient(to bottom, transparent 0, #000 16%, #000 82%, transparent 100%);
 }
+
+body.is-wave-active::after { opacity: 0; }
 
 @keyframes atmosphere {
   0% { transform: translate3d(-2%, -1%, 0) rotate(-2deg) scale(1); }

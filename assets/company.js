@@ -225,20 +225,12 @@
         Math.hypot(canvasWidth - centerX, canvasHeight - centerY),
       ) + 170;
       const leadingRadius = progress * maxRadius;
-      const affectedRadius = Math.max(48, leadingRadius + 190);
       const styles = getComputedStyle(root);
-      const background = styles.getPropertyValue("--bg").trim() || "#050505";
-      const grid = styles.getPropertyValue("--grid-wave").trim() || styles.getPropertyValue("--grid").trim();
+      const grid = styles.getPropertyValue("--grid").trim();
       const gridSize = 64;
 
       context.save();
-      context.beginPath();
-      context.arc(centerX, centerY, affectedRadius, 0, Math.PI * 2);
-      context.clip();
-      context.globalAlpha = .91;
-      context.fillStyle = background;
-      context.fillRect(0, 0, canvasWidth, canvasHeight);
-      context.globalAlpha = 1;
+      context.globalAlpha = .72;
       context.strokeStyle = grid;
       context.lineWidth = 1;
 
@@ -275,11 +267,12 @@
 
       context.save();
       context.globalCompositeOperation = "destination-in";
-      const edgeFade = context.createRadialGradient(centerX, centerY, 0, centerX, centerY, affectedRadius);
-      edgeFade.addColorStop(0, "rgba(255,255,255,1)");
-      edgeFade.addColorStop(.78, "rgba(255,255,255,1)");
-      edgeFade.addColorStop(1, "rgba(255,255,255,0)");
-      context.fillStyle = edgeFade;
+      const verticalFade = context.createLinearGradient(0, 0, 0, canvasHeight);
+      verticalFade.addColorStop(0, "rgba(255,255,255,0)");
+      verticalFade.addColorStop(.16, "rgba(255,255,255,1)");
+      verticalFade.addColorStop(.82, "rgba(255,255,255,1)");
+      verticalFade.addColorStop(1, "rgba(255,255,255,0)");
+      context.fillStyle = verticalFade;
       context.fillRect(0, 0, canvasWidth, canvasHeight);
       context.restore();
     };
@@ -290,8 +283,9 @@
         return;
       }
       wave = { direction, started: performance.now(), duration: direction > 0 ? 3400 : 2900 };
-      if (direction > 0) waveCanRewind = false;
-      else waveCanRewind = false;
+      waveCanRewind = false;
+      drawWave(direction > 0 ? 0 : 1);
+      document.body.classList.add("is-wave-active");
       mark.dataset.waveState = direction > 0 ? "forward" : "reverse";
     };
 
@@ -357,6 +351,7 @@
         if (linear >= 1) {
           const completedDirection = wave.direction;
           wave = null;
+          document.body.classList.remove("is-wave-active");
           context.clearRect(0, 0, canvasWidth, canvasHeight);
           waveCanRewind = completedDirection > 0;
           mark.dataset.waveState = completedDirection > 0 ? "ready" : "idle";
