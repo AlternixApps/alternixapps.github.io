@@ -56,6 +56,28 @@
     });
 
     updateButton();
+
+    const languageMenu = document.querySelector(".language-menu");
+    if (languageMenu) {
+      document.addEventListener("click", (event) => {
+        if (!languageMenu.contains(event.target)) languageMenu.removeAttribute("open");
+      });
+    }
+
+    document.querySelectorAll("[data-copy-email]").forEach((copyButton) => {
+      copyButton.addEventListener("click", async () => {
+        const email = copyButton.dataset.copyEmail;
+        try {
+          await navigator.clipboard.writeText(email);
+          copyButton.textContent = copyButton.dataset.copiedLabel;
+          window.setTimeout(() => {
+            copyButton.textContent = copyButton.dataset.copyLabel;
+          }, 1800);
+        } catch {
+          window.prompt(copyButton.dataset.copyLabel, email);
+        }
+      });
+    });
   };
 
   if (document.readyState === "loading") {

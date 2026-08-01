@@ -5,11 +5,8 @@
   const sun = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>';
 
   const readTheme = () => {
-    try {
-      return localStorage.getItem(storageKey) === "light" ? "light" : "dark";
-    } catch {
-      return "dark";
-    }
+    try { return localStorage.getItem(storageKey) === "light" ? "light" : "dark"; }
+    catch { return "dark"; }
   };
 
   const setTheme = (theme) => {
@@ -28,6 +25,64 @@
 
   setTheme(readTheme());
 
+  const initSlider = () => {
+    document.querySelectorAll("[data-product-slider]").forEach((slider) => {
+      const track = slider.querySelector("[data-slider-track]");
+      const slides = [...slider.querySelectorAll("[data-product-slide]")];
+      const dots = [...slider.querySelectorAll("[data-slider-dot]")];
+      const previous = slider.querySelector("[data-slider-prev]");
+      const next = slider.querySelector("[data-slider-next]");
+      if (!track || slides.length < 2) return;
+
+      let current = 0;
+      const setCurrent = (index, scroll = true) => {
+        current = (index + slides.length) % slides.length;
+        dots.forEach((dot, dotIndex) => {
+          dot.classList.toggle("is-active", dotIndex === current);
+          dot.setAttribute("aria-current", dotIndex === current ? "true" : "false");
+        });
+        if (scroll) slides[current].scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
+      };
+
+      previous?.addEventListener("click", () => setCurrent(current - 1));
+      next?.addEventListener("click", () => setCurrent(current + 1));
+      dots.forEach((dot, index) => dot.addEventListener("click", () => setCurrent(index)));
+      track.addEventListener("scroll", () => {
+        const width = track.clientWidth || 1;
+        const index = Math.max(0, Math.min(slides.length - 1, Math.round(track.scrollLeft / width)));
+        if (index !== current) setCurrent(index, false);
+      }, { passive: true });
+      setCurrent(0, false);
+    });
+  };
+
+  const initSectionNavigation = () => {
+    const links = [...document.querySelectorAll("[data-section-link]")];
+    if (!links.length || !("IntersectionObserver" in window)) return;
+    const sections = links.map((link) => document.querySelector(link.getAttribute("href"))).filter(Boolean);
+    const activate = (id) => links.forEach((link) => link.classList.toggle("is-active", link.getAttribute("href") === `#${id}`));
+    const observer = new IntersectionObserver((entries) => {
+      const visible = entries.filter((entry) => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (visible) activate(visible.target.id);
+    }, { rootMargin: "-30% 0px -55%", threshold: [0, .15, .35, .6] });
+    sections.forEach((section) => observer.observe(section));
+    activate(sections[0]?.id);
+  };
+
+  const initCopyButtons = () => {
+    document.querySelectorAll("[data-copy-email]").forEach((button) => {
+      button.addEventListener("click", async () => {
+        const status = document.querySelector(button.dataset.statusTarget || "[data-copy-status]");
+        try {
+          await navigator.clipboard.writeText("alternix.apps@gmail.com");
+          if (status) status.textContent = button.dataset.copiedLabel || "Copied";
+        } catch {
+          if (status) status.textContent = "alternix.apps@gmail.com";
+        }
+      });
+    });
+  };
+
   const init = () => {
     const toggle = document.querySelector("[data-theme-toggle]");
     if (toggle) {
@@ -39,10 +94,16 @@
       });
     }
 
+    document.addEventListener("click", (event) => {
+      document.querySelectorAll("details.language-menu[open]").forEach((menu) => {
+        if (!menu.contains(event.target)) menu.removeAttribute("open");
+      });
+    });
+
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const preloader = document.querySelector("[data-preloader]");
     if (preloader) {
-      const delay = reducedMotion ? 0 : 850;
+      const delay = reducedMotion ? 0 : 1650;
       window.setTimeout(() => {
         preloader.classList.add("is-hidden");
         window.setTimeout(() => preloader.remove(), reducedMotion ? 0 : 520);
@@ -63,11 +124,12 @@
       }, { threshold: 0.12, rootMargin: "0px 0px -7%" });
       revealItems.forEach((item) => observer.observe(item));
     }
+
+    initSlider();
+    initSectionNavigation();
+    initCopyButtons();
   };
 
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init, { once: true });
-  } else {
-    init();
-  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init, { once: true });
+  else init();
 })();

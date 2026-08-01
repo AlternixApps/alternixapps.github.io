@@ -9,7 +9,9 @@ Public URL: <https://alternixapps.github.io/>
 - Alternix corporate website (source: `AlternixApps/alternix-company-website`)
 - QR Dot Lab privacy policy
 - QR Dot Lab support
-- English, Ukrainian, and Russian versions
+- English, Ukrainian, Russian, Spanish, German, French, Portuguese, Italian,
+  and Polish versions
+- Separate support and privacy pages for Alternix and QR Dot Lab
 
 The deployment uses only local HTML, CSS, JavaScript, and image assets. It has no
 analytics, advertising scripts, external fonts, third-party JavaScript, forms,
