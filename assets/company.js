@@ -103,6 +103,53 @@
     });
   };
 
+  const initInteractiveMark = (reducedMotion) => {
+    const mark = document.querySelector("[data-interactive-mark]");
+    if (!mark) return;
+
+    let frame = 0;
+    let activationTimer = 0;
+    const resetPosition = () => {
+      window.cancelAnimationFrame(frame);
+      ["--mark-rotate-x", "--mark-rotate-y", "--mark-shift-x", "--mark-shift-y"].forEach((property) => mark.style.removeProperty(property));
+      mark.classList.remove("is-pressed");
+    };
+
+    if (!reducedMotion) {
+      mark.addEventListener("pointermove", (event) => {
+        const bounds = mark.getBoundingClientRect();
+        const x = Math.max(-1, Math.min(1, ((event.clientX - bounds.left) / bounds.width - .5) * 2));
+        const y = Math.max(-1, Math.min(1, ((event.clientY - bounds.top) / bounds.height - .5) * 2));
+        window.cancelAnimationFrame(frame);
+        frame = window.requestAnimationFrame(() => {
+          mark.style.setProperty("--mark-rotate-x", `${(-y * 7).toFixed(2)}deg`);
+          mark.style.setProperty("--mark-rotate-y", `${(x * 7).toFixed(2)}deg`);
+          mark.style.setProperty("--mark-shift-x", `${(x * 7).toFixed(2)}px`);
+          mark.style.setProperty("--mark-shift-y", `${(y * 7).toFixed(2)}px`);
+        });
+      }, { passive: true });
+      mark.addEventListener("pointerleave", resetPosition);
+      mark.addEventListener("pointerdown", () => mark.classList.add("is-pressed"));
+      mark.addEventListener("pointerup", () => mark.classList.remove("is-pressed"));
+      mark.addEventListener("pointercancel", resetPosition);
+    }
+
+    const activate = () => {
+      window.clearTimeout(activationTimer);
+      mark.classList.remove("is-activated");
+      void mark.offsetWidth;
+      mark.classList.add("is-activated");
+      activationTimer = window.setTimeout(() => mark.classList.remove("is-activated"), reducedMotion ? 20 : 780);
+    };
+
+    mark.addEventListener("click", activate);
+    mark.addEventListener("keydown", (event) => {
+      if (event.key !== "Enter" && event.key !== " ") return;
+      event.preventDefault();
+      activate();
+    });
+  };
+
   const init = () => {
     const toggle = document.querySelector("[data-theme-toggle]");
     if (toggle) {
@@ -148,6 +195,7 @@
     initSlider();
     initSectionNavigation();
     initCopyButtons();
+    initInteractiveMark(reducedMotion);
   };
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init, { once: true });
