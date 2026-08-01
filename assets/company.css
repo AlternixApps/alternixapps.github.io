@@ -402,7 +402,7 @@ button:focus-visible {
 }
 
 .hero-wave-canvas {
-  position: absolute;
+  position: fixed;
   z-index: 0;
   inset: 0;
   display: block;
@@ -565,7 +565,6 @@ button:focus-visible {
 .hero-object:hover .hero-orbit,
 .hero-object.is-dragging .hero-orbit {
   border-color: var(--line-strong);
-  box-shadow: 0 0 42px var(--orb-a);
 }
 
 .hero-mark-button:hover { transform: scale(1.025); }

@@ -203,10 +203,9 @@
     };
 
     const resizeCanvas = () => {
-      const bounds = hero.getBoundingClientRect();
       const ratio = Math.min(window.devicePixelRatio || 1, 2);
-      canvasWidth = Math.max(1, bounds.width);
-      canvasHeight = Math.max(1, bounds.height);
+      canvasWidth = Math.max(1, window.innerWidth);
+      canvasHeight = Math.max(1, window.innerHeight);
       canvas.width = Math.round(canvasWidth * ratio);
       canvas.height = Math.round(canvasHeight * ratio);
       canvas.style.width = `${canvasWidth}px`;
@@ -216,13 +215,17 @@
 
     const drawWave = (progress) => {
       context.clearRect(0, 0, canvasWidth, canvasHeight);
-      const heroBounds = hero.getBoundingClientRect();
       const triggerBounds = trigger.getBoundingClientRect();
-      const centerX = triggerBounds.left + triggerBounds.width / 2 - heroBounds.left;
-      const centerY = triggerBounds.top + triggerBounds.height / 2 - heroBounds.top;
-      const maxRadius = Math.hypot(canvasWidth, canvasHeight) * .82;
+      const centerX = triggerBounds.left + triggerBounds.width / 2;
+      const centerY = triggerBounds.top + triggerBounds.height / 2;
+      const maxRadius = Math.max(
+        Math.hypot(centerX, centerY),
+        Math.hypot(canvasWidth - centerX, centerY),
+        Math.hypot(centerX, canvasHeight - centerY),
+        Math.hypot(canvasWidth - centerX, canvasHeight - centerY),
+      ) + 170;
       const leadingRadius = progress * maxRadius;
-      const affectedRadius = Math.max(36, leadingRadius + 120);
+      const affectedRadius = Math.max(48, leadingRadius + 190);
       const styles = getComputedStyle(root);
       const background = styles.getPropertyValue("--bg").trim() || "#050505";
       const grid = styles.getPropertyValue("--grid-wave").trim() || styles.getPropertyValue("--grid").trim();
@@ -244,13 +247,13 @@
         const dy = y - centerY;
         const distance = Math.hypot(dx, dy) || 1;
         let displacement = 0;
-        [0, 42, 84].forEach((offset, index) => {
+        [0, 54, 108, 162].forEach((offset, index) => {
           const radius = leadingRadius - offset;
           if (radius <= 0) return;
-          const spread = 34 + index * 8;
+          const spread = 48 + index * 9;
           const delta = distance - radius;
           const envelope = Math.exp(-(delta * delta) / (2 * spread * spread));
-          displacement += Math.cos(delta / spread * Math.PI) * envelope * (15 - index * 3.5);
+          displacement += Math.cos(delta / spread * Math.PI) * envelope * (12.5 - index * 2.1);
         });
         return { x: x + dx / distance * displacement, y: y + dy / distance * displacement };
       };
@@ -266,10 +269,18 @@
         context.stroke();
       };
 
-      const startX = ((-heroBounds.left % gridSize) + gridSize) % gridSize;
-      const startY = ((-heroBounds.top % gridSize) + gridSize) % gridSize;
-      for (let x = startX; x <= canvasWidth; x += gridSize) sampleLine(true, x);
-      for (let y = startY; y <= canvasHeight; y += gridSize) sampleLine(false, y);
+      for (let x = 0; x <= canvasWidth; x += gridSize) sampleLine(true, x);
+      for (let y = 0; y <= canvasHeight; y += gridSize) sampleLine(false, y);
+      context.restore();
+
+      context.save();
+      context.globalCompositeOperation = "destination-in";
+      const edgeFade = context.createRadialGradient(centerX, centerY, 0, centerX, centerY, affectedRadius);
+      edgeFade.addColorStop(0, "rgba(255,255,255,1)");
+      edgeFade.addColorStop(.78, "rgba(255,255,255,1)");
+      edgeFade.addColorStop(1, "rgba(255,255,255,0)");
+      context.fillStyle = edgeFade;
+      context.fillRect(0, 0, canvasWidth, canvasHeight);
       context.restore();
     };
 
@@ -278,7 +289,7 @@
         mark.animate([{ opacity: 1 }, { opacity: .72 }, { opacity: 1 }], { duration: 240, easing: "ease-out" });
         return;
       }
-      wave = { direction, started: performance.now(), duration: direction > 0 ? 1550 : 1250 };
+      wave = { direction, started: performance.now(), duration: direction > 0 ? 3400 : 2900 };
       if (direction > 0) waveCanRewind = false;
       else waveCanRewind = false;
       mark.dataset.waveState = direction > 0 ? "forward" : "reverse";
@@ -340,7 +351,7 @@
 
       if (wave) {
         const linear = Math.min(1, (now - wave.started) / wave.duration);
-        const eased = linear < .5 ? 4 * linear * linear * linear : 1 - Math.pow(-2 * linear + 2, 3) / 2;
+        const eased = .5 - Math.cos(Math.PI * linear) / 2;
         const progress = wave.direction > 0 ? eased : 1 - eased;
         drawWave(progress);
         if (linear >= 1) {
