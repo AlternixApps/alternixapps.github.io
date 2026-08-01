@@ -224,18 +224,20 @@
         Math.hypot(centerX, canvasHeight - centerY),
         Math.hypot(canvasWidth - centerX, canvasHeight - centerY),
       ) + 170;
-      const leadingRadius = progress * maxRadius;
+      const startRadius = Math.min(triggerBounds.width, triggerBounds.height) * .78;
+      const leadingRadius = startRadius + progress * (maxRadius - startRadius);
       const styles = getComputedStyle(root);
       const rippleGrid = styles.getPropertyValue("--grid-ripple").trim();
       const gridSize = 64;
 
-      const rippleBands = [0, 68, 136, 204]
-        .map((offset, index) => ({ radius: leadingRadius - offset, spread: 42 + index * 5 }))
+      const rippleOffsets = [0, 88, 176, 264, 352];
+      const rippleBands = rippleOffsets
+        .map((offset, index) => ({ radius: leadingRadius - offset, spread: 52 + index * 7 }))
         .filter((band) => band.radius > 0);
       if (!rippleBands.length) return;
 
       context.save();
-      context.globalAlpha = .88;
+      context.globalAlpha = .92;
       context.strokeStyle = rippleGrid;
       context.lineWidth = 1;
 
@@ -244,14 +246,14 @@
         const dy = y - centerY;
         const distance = Math.hypot(dx, dy) || 1;
         let displacement = 0;
-        [0, 68, 136, 204].forEach((offset, index) => {
+        rippleOffsets.forEach((offset, index) => {
           const radius = leadingRadius - offset;
           if (radius <= 0) return;
-          const spread = 56 + index * 12;
+          const spread = 66 + index * 13;
           const delta = distance - radius;
           const envelope = Math.exp(-(delta * delta) / (2 * spread * spread));
-          const strength = 24 - index * 3.5;
-          displacement += Math.cos(delta / spread * Math.PI * 1.15) * envelope * strength;
+          const strength = 30 - index * 4.2;
+          displacement += Math.cos(delta / spread * Math.PI * 1.12) * envelope * strength;
         });
         return { x: x + dx / distance * displacement, y: y + dy / distance * displacement };
       };
@@ -306,7 +308,7 @@
         mark.animate([{ opacity: 1 }, { opacity: .72 }, { opacity: 1 }], { duration: 240, easing: "ease-out" });
         return;
       }
-      wave = { direction, started: performance.now(), duration: direction > 0 ? 3400 : 2900 };
+      wave = { direction, started: performance.now(), duration: direction > 0 ? 3800 : 3150 };
       waveCanRewind = false;
       drawWave(direction > 0 ? 0 : 1);
       document.body.classList.add("is-wave-active");
@@ -369,7 +371,7 @@
 
       if (wave) {
         const linear = Math.min(1, (now - wave.started) / wave.duration);
-        const eased = .5 - Math.cos(Math.PI * linear) / 2;
+        const eased = 1 - Math.pow(1 - linear, 1.25);
         const progress = wave.direction > 0 ? eased : 1 - eased;
         drawWave(progress);
         if (linear >= 1) {
