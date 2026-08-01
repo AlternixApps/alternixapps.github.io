@@ -58,15 +58,35 @@
 
   const initSectionNavigation = () => {
     const links = [...document.querySelectorAll("[data-section-link]")];
-    if (!links.length || !("IntersectionObserver" in window)) return;
+    if (!links.length) return;
     const sections = links.map((link) => document.querySelector(link.getAttribute("href"))).filter(Boolean);
     const activate = (id) => links.forEach((link) => link.classList.toggle("is-active", link.getAttribute("href") === `#${id}`));
-    const observer = new IntersectionObserver((entries) => {
-      const visible = entries.filter((entry) => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-      if (visible) activate(visible.target.id);
-    }, { rootMargin: "-30% 0px -55%", threshold: [0, .15, .35, .6] });
-    sections.forEach((section) => observer.observe(section));
-    activate(sections[0]?.id);
+    let frameRequested = false;
+    const update = () => {
+      frameRequested = false;
+      const marker = Math.min(window.innerHeight * .34, 320);
+      let current = sections[0];
+      sections.forEach((section) => {
+        if (section.getBoundingClientRect().top <= marker) current = section;
+      });
+      if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) {
+        current = sections[sections.length - 1];
+      }
+      if (current) activate(current.id);
+    };
+    const scheduleUpdate = () => {
+      if (frameRequested) return;
+      frameRequested = true;
+      window.requestAnimationFrame(update);
+    };
+    links.forEach((link) => link.addEventListener("click", () => {
+      const id = link.getAttribute("href").slice(1);
+      activate(id);
+    }));
+    window.addEventListener("scroll", scheduleUpdate, { passive: true });
+    window.addEventListener("resize", scheduleUpdate, { passive: true });
+    window.addEventListener("hashchange", scheduleUpdate);
+    update();
   };
 
   const initCopyButtons = () => {
