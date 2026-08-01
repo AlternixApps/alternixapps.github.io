@@ -226,12 +226,17 @@
       ) + 170;
       const leadingRadius = progress * maxRadius;
       const styles = getComputedStyle(root);
-      const grid = styles.getPropertyValue("--grid").trim();
+      const rippleGrid = styles.getPropertyValue("--grid-ripple").trim();
       const gridSize = 64;
 
+      const rippleBands = [0, 68, 136, 204]
+        .map((offset, index) => ({ radius: leadingRadius - offset, spread: 42 + index * 5 }))
+        .filter((band) => band.radius > 0);
+      if (!rippleBands.length) return;
+
       context.save();
-      context.globalAlpha = .72;
-      context.strokeStyle = grid;
+      context.globalAlpha = .88;
+      context.strokeStyle = rippleGrid;
       context.lineWidth = 1;
 
       const displacementAt = (x, y) => {
@@ -239,13 +244,14 @@
         const dy = y - centerY;
         const distance = Math.hypot(dx, dy) || 1;
         let displacement = 0;
-        [0, 54, 108, 162].forEach((offset, index) => {
+        [0, 68, 136, 204].forEach((offset, index) => {
           const radius = leadingRadius - offset;
           if (radius <= 0) return;
-          const spread = 48 + index * 9;
+          const spread = 56 + index * 12;
           const delta = distance - radius;
           const envelope = Math.exp(-(delta * delta) / (2 * spread * spread));
-          displacement += Math.cos(delta / spread * Math.PI) * envelope * (12.5 - index * 2.1);
+          const strength = 24 - index * 3.5;
+          displacement += Math.cos(delta / spread * Math.PI * 1.15) * envelope * strength;
         });
         return { x: x + dx / distance * displacement, y: y + dy / distance * displacement };
       };
@@ -253,7 +259,7 @@
       const sampleLine = (vertical, coordinate) => {
         context.beginPath();
         const length = vertical ? canvasHeight : canvasWidth;
-        for (let value = 0; value <= length + 8; value += 8) {
+        for (let value = 0; value <= length + 6; value += 6) {
           const point = displacementAt(vertical ? coordinate : value, vertical ? value : coordinate);
           if (value === 0) context.moveTo(point.x, point.y);
           else context.lineTo(point.x, point.y);
@@ -267,6 +273,24 @@
 
       context.save();
       context.globalCompositeOperation = "destination-in";
+      const radialMask = context.createRadialGradient(centerX, centerY, 0, centerX, centerY, maxRadius);
+      const maskStops = [{ offset: 0, alpha: 0 }, { offset: 1, alpha: 0 }];
+      rippleBands.forEach(({ radius, spread }) => {
+        maskStops.push(
+          { offset: Math.max(0, (radius - spread) / maxRadius), alpha: 0 },
+          { offset: Math.max(0, Math.min(1, radius / maxRadius)), alpha: .9 },
+          { offset: Math.min(1, (radius + spread) / maxRadius), alpha: 0 },
+        );
+      });
+      maskStops
+        .sort((left, right) => left.offset - right.offset)
+        .forEach(({ offset, alpha }, index, stops) => {
+          const previous = index ? stops[index - 1].offset : -1;
+          radialMask.addColorStop(Math.max(previous, offset), `rgba(255,255,255,${alpha})`);
+        });
+      context.fillStyle = radialMask;
+      context.fillRect(0, 0, canvasWidth, canvasHeight);
+
       const verticalFade = context.createLinearGradient(0, 0, 0, canvasHeight);
       verticalFade.addColorStop(0, "rgba(255,255,255,0)");
       verticalFade.addColorStop(.16, "rgba(255,255,255,1)");
