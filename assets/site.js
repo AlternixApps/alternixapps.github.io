@@ -35,7 +35,56 @@
 
   applyTheme(readTheme());
 
+  const initializeMobileNavigation = () => {
+    const header = document.querySelector(".site-header");
+    const nav = header?.querySelector(".site-nav");
+    const actions = header?.querySelector(".header-actions");
+    if (!header || !nav || !actions) return;
+
+    const labels = {
+      en: ["Open menu", "Close menu"], uk: ["Відкрити меню", "Закрити меню"],
+      ru: ["Открыть меню", "Закрыть меню"], es: ["Abrir menú", "Cerrar menú"],
+      de: ["Menü öffnen", "Menü schließen"], fr: ["Ouvrir le menu", "Fermer le menu"],
+      pt: ["Abrir menu", "Fechar menu"], it: ["Apri menu", "Chiudi menu"],
+      pl: ["Otwórz menu", "Zamknij menu"],
+    };
+    const language = root.lang in labels ? root.lang : "en";
+    const [openLabel, closeLabel] = labels[language];
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "mobile-menu-toggle";
+    button.setAttribute("aria-expanded", "false");
+    button.setAttribute("aria-label", openLabel);
+    button.innerHTML = '<span></span><span></span><span></span>';
+    actions.prepend(button);
+
+    const setOpen = (open) => {
+      header.classList.toggle("is-menu-open", open);
+      button.setAttribute("aria-expanded", String(open));
+      button.setAttribute("aria-label", open ? closeLabel : openLabel);
+    };
+    header._closeMobileMenu = () => setOpen(false);
+
+    button.addEventListener("click", () => setOpen(!header.classList.contains("is-menu-open")));
+    nav.addEventListener("click", (event) => {
+      if (event.target.closest("a")) setOpen(false);
+    });
+    document.addEventListener("click", (event) => {
+      if (!header.contains(event.target)) setOpen(false);
+    });
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && header.classList.contains("is-menu-open")) {
+        setOpen(false);
+        button.focus();
+      }
+    });
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 760) setOpen(false);
+    }, { passive: true });
+  };
+
   const initializeControls = () => {
+    initializeMobileNavigation();
     const button = document.querySelector("[data-theme-toggle]");
     if (!button) return;
 
@@ -59,8 +108,37 @@
 
     const languageMenu = document.querySelector(".language-menu");
     if (languageMenu) {
+      const panel = languageMenu.querySelector(".language-panel");
+      const summary = languageMenu.querySelector("summary");
+      const clamp = (value, minimum, maximum) => Math.min(maximum, Math.max(minimum, value));
+      const positionPanel = () => {
+        if (!panel || !summary || !languageMenu.open) return;
+        const anchor = summary.getBoundingClientRect();
+        const panelWidth = Math.min(window.innerWidth <= 760 ? 286 : 172, window.innerWidth - 20);
+        const left = clamp(anchor.right - panelWidth, 10, window.innerWidth - panelWidth - 10);
+        panel.style.width = `${panelWidth}px`;
+        panel.style.left = `${Math.round(left)}px`;
+        panel.style.right = "auto";
+        panel.style.top = `${Math.round(anchor.bottom + 12)}px`;
+      };
+      if (panel) {
+        panel.hidden = true;
+        document.body.append(panel);
+      }
+      languageMenu.addEventListener("toggle", () => {
+        if (panel) panel.hidden = !languageMenu.open;
+        if (languageMenu.open) {
+          document.querySelector(".site-header")?._closeMobileMenu?.();
+          window.requestAnimationFrame(positionPanel);
+        }
+      });
+      window.addEventListener("resize", positionPanel, { passive: true });
+      window.addEventListener("scroll", positionPanel, { passive: true });
       document.addEventListener("click", (event) => {
-        if (!languageMenu.contains(event.target)) languageMenu.removeAttribute("open");
+        if (!languageMenu.contains(event.target) && !panel?.contains(event.target)) {
+          languageMenu.removeAttribute("open");
+          if (panel) panel.hidden = true;
+        }
       });
     }
 

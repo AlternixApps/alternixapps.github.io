@@ -103,6 +103,54 @@
     });
   };
 
+  const initMobileNavigation = () => {
+    const header = document.querySelector(".site-header");
+    const nav = header?.querySelector(".site-nav");
+    const actions = header?.querySelector(".header-actions");
+    if (!header || !nav || !actions) return;
+
+    const labels = {
+      en: ["Open menu", "Close menu"], uk: ["Відкрити меню", "Закрити меню"],
+      ru: ["Открыть меню", "Закрыть меню"], es: ["Abrir menú", "Cerrar menú"],
+      de: ["Menü öffnen", "Menü schließen"], fr: ["Ouvrir le menu", "Fermer le menu"],
+      pt: ["Abrir menu", "Fechar menu"], it: ["Apri menu", "Chiudi menu"],
+      pl: ["Otwórz menu", "Zamknij menu"],
+    };
+    const language = root.lang in labels ? root.lang : "en";
+    const [openLabel, closeLabel] = labels[language];
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "mobile-menu-toggle";
+    button.setAttribute("aria-expanded", "false");
+    button.setAttribute("aria-label", openLabel);
+    button.innerHTML = '<span></span><span></span><span></span>';
+    actions.prepend(button);
+
+    const setOpen = (open) => {
+      header.classList.toggle("is-menu-open", open);
+      button.setAttribute("aria-expanded", String(open));
+      button.setAttribute("aria-label", open ? closeLabel : openLabel);
+    };
+    header._closeMobileMenu = () => setOpen(false);
+
+    button.addEventListener("click", () => setOpen(!header.classList.contains("is-menu-open")));
+    nav.addEventListener("click", (event) => {
+      if (event.target.closest("a")) setOpen(false);
+    });
+    document.addEventListener("click", (event) => {
+      if (!header.contains(event.target)) setOpen(false);
+    });
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && header.classList.contains("is-menu-open")) {
+        setOpen(false);
+        button.focus();
+      }
+    });
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 920) setOpen(false);
+    }, { passive: true });
+  };
+
   const initLanguageMenus = () => {
     const menus = [...document.querySelectorAll("details.language-menu")];
     if (!menus.length) return;
@@ -135,7 +183,10 @@
 
       menu.addEventListener("toggle", () => {
         panel.hidden = !menu.open;
-        if (menu.open) window.requestAnimationFrame(() => positionPanel(menu));
+        if (menu.open) {
+          document.querySelector(".site-header")?._closeMobileMenu?.();
+          window.requestAnimationFrame(() => positionPanel(menu));
+        }
       });
     });
 
@@ -176,7 +227,8 @@
     trigger.addEventListener("selectstart", (event) => event.preventDefault());
     trigger.addEventListener("contextmenu", (event) => event.preventDefault());
 
-    const context = canvas.getContext("2d", { alpha: true });
+    const compactMotion = window.matchMedia("(max-width: 720px), (pointer: coarse)").matches;
+    const context = canvas.getContext("2d", { alpha: true, desynchronized: true });
     if (!context) return;
 
     const baseVelocity = 360 / 22000;
@@ -193,6 +245,7 @@
     let waveCanRewind = false;
     let canvasWidth = 0;
     let canvasHeight = 0;
+    let lastWavePaint = 0;
 
     const normalizeAngle = (value) => {
       let normalized = value;
@@ -209,7 +262,7 @@
     };
 
     const resizeCanvas = () => {
-      const ratio = Math.min(window.devicePixelRatio || 1, 2);
+      const ratio = compactMotion ? 1 : Math.min(window.devicePixelRatio || 1, 1.75);
       canvasWidth = Math.max(1, window.innerWidth);
       canvasHeight = Math.max(1, window.innerHeight);
       canvas.width = Math.round(canvasWidth * ratio);
@@ -234,9 +287,9 @@
       const leadingRadius = startRadius + progress * (maxRadius - startRadius);
       const styles = getComputedStyle(root);
       const rippleGrid = styles.getPropertyValue("--grid-ripple").trim();
-      const gridSize = 64;
+      const gridSize = compactMotion ? 76 : 64;
 
-      const rippleOffsets = [0, 88, 176, 264, 352];
+      const rippleOffsets = compactMotion ? [0, 118, 236] : [0, 88, 176, 264, 352];
       const rippleBands = rippleOffsets
         .map((offset, index) => ({ radius: leadingRadius - offset, spread: 52 + index * 7 }))
         .filter((band) => band.radius > 0);
@@ -267,7 +320,8 @@
       const sampleLine = (vertical, coordinate) => {
         context.beginPath();
         const length = vertical ? canvasHeight : canvasWidth;
-        for (let value = 0; value <= length + 6; value += 6) {
+        const sampleStep = compactMotion ? 12 : 7;
+        for (let value = 0; value <= length + sampleStep; value += sampleStep) {
           const point = displacementAt(vertical ? coordinate : value, vertical ? value : coordinate);
           if (value === 0) context.moveTo(point.x, point.y);
           else context.lineTo(point.x, point.y);
@@ -314,7 +368,11 @@
         mark.animate([{ opacity: 1 }, { opacity: .72 }, { opacity: 1 }], { duration: 240, easing: "ease-out" });
         return;
       }
-      wave = { direction, started: performance.now(), duration: direction > 0 ? 3800 : 3150 };
+      wave = {
+        direction,
+        started: performance.now(),
+        duration: compactMotion ? (direction > 0 ? 2600 : 2200) : (direction > 0 ? 3800 : 3150),
+      };
       waveCanRewind = false;
       drawWave(direction > 0 ? 0 : 1);
       document.body.classList.add("is-wave-active");
@@ -379,7 +437,10 @@
         const linear = Math.min(1, (now - wave.started) / wave.duration);
         const eased = 1 - Math.pow(1 - linear, 1.25);
         const progress = wave.direction > 0 ? eased : 1 - eased;
-        drawWave(progress);
+        if (!compactMotion || now - lastWavePaint >= 30 || linear >= 1) {
+          drawWave(progress);
+          lastWavePaint = now;
+        }
         if (linear >= 1) {
           const completedDirection = wave.direction;
           wave = null;
@@ -437,6 +498,7 @@
       revealItems.forEach((item) => observer.observe(item));
     }
 
+    initMobileNavigation();
     initSlider();
     initSectionNavigation();
     initCopyButtons();
