@@ -170,6 +170,12 @@
     const handles = mark ? [...mark.querySelectorAll("[data-orbit-handle]")] : [];
     if (!mark || !hero || !orbit || !trigger || !canvas) return;
 
+    const markImage = trigger.querySelector("img");
+    if (markImage) markImage.draggable = false;
+    trigger.addEventListener("dragstart", (event) => event.preventDefault());
+    trigger.addEventListener("selectstart", (event) => event.preventDefault());
+    trigger.addEventListener("contextmenu", (event) => event.preventDefault());
+
     const context = canvas.getContext("2d", { alpha: true });
     if (!context) return;
 

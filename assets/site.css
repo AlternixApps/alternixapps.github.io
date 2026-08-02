@@ -42,7 +42,7 @@
 }
 
 html {
-  min-width: 320px;
+  min-width: 0;
   scroll-behavior: smooth;
 }
 
@@ -55,6 +55,16 @@ body {
   line-height: 1.65;
   color: var(--text);
   background: var(--bg);
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  font: inherit;
 }
 
 body::before,
@@ -493,52 +503,153 @@ h3 {
 }
 
 @media (max-width: 680px) {
-  .header-inner {
-    grid-template-columns: 1fr auto;
-    min-height: 64px;
-    padding-block: 0.55rem;
+  .header-inner,
+  .page,
+  .footer-inner {
+    width: min(calc(100% - 1.1rem), var(--max));
   }
+
+  .site-header {
+    background: color-mix(in srgb, var(--bg) 86%, transparent);
+  }
+
+  .header-inner {
+    grid-template-columns: minmax(0, 1fr) auto;
+    min-height: 64px;
+    gap: 0.65rem;
+    padding-block: 0.5rem;
+  }
+
+  .brand {
+    min-width: 0;
+    gap: 0.55rem;
+  }
+
+  .brand-mark {
+    width: 38px;
+    height: 38px;
+    flex: 0 0 auto;
+    border-radius: 12px;
+  }
+
+  .brand-label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .header-actions { gap: 0.4rem; }
+  .language-menu summary { min-width: 44px; min-height: 40px; padding-inline: 0.65rem; }
+  .icon-button { width: 40px; height: 40px; }
 
   .site-nav {
     grid-column: 1 / -1;
     grid-row: 2;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    width: 100%;
-    padding-bottom: 0.25rem;
+    display: flex;
+    justify-content: flex-start;
+    width: calc(100% + 1.1rem);
+    margin-inline: -0.55rem;
+    padding: 0.15rem 0.55rem 0.25rem;
+    overflow-x: auto;
+    scroll-padding-inline: 0.55rem;
+    scroll-snap-type: x proximity;
+    overscroll-behavior-inline: contain;
+    scrollbar-width: none;
   }
 
+  .site-nav::-webkit-scrollbar { display: none; }
+
   .site-nav a {
-    display: grid;
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     min-height: 44px;
-    place-items: center;
-    padding-inline: 0.45rem;
+    padding-inline: 0.8rem;
     text-align: center;
-    white-space: normal;
+    white-space: nowrap;
+    scroll-snap-align: start;
+  }
+
+  .page { padding-block: 1.8rem 3.5rem; }
+
+  .hero,
+  .legal-header {
+    margin-bottom: 1.6rem;
   }
 
   .card {
     grid-column: 1 / -1;
+    padding: 1.15rem;
+    border-radius: 1.2rem;
   }
+
+  .grid { gap: 0.8rem; }
 
   .footer-inner {
     flex-direction: column;
+    padding-block: 1.2rem;
   }
 
   .language-panel {
     position: fixed;
-    top: 70px;
-    right: 1rem;
+    top: 66px;
+    right: 0.55rem;
+    width: min(292px, calc(100% - 1.1rem));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.25rem;
+    padding: 0.55rem;
   }
 
   h1 {
-    font-size: clamp(1.7rem, 7.3vw, 2.35rem);
-    overflow-wrap: break-word;
+    font-size: clamp(2rem, 9vw, 2.8rem);
+    overflow-wrap: normal;
+    text-wrap: pretty;
+    word-break: normal;
+    hyphens: auto;
   }
 
   .legal-header h1 {
-    font-size: clamp(1.65rem, 7vw, 2.2rem);
+    font-size: clamp(1.9rem, 8.5vw, 2.6rem);
+    overflow-wrap: normal;
+    text-wrap: pretty;
+    word-break: normal;
+    hyphens: auto;
   }
+
+  .lead { font-size: 1rem; }
+  .legal-content { gap: 0.8rem; }
+  .legal-section,
+  .toc {
+    padding: 1.15rem;
+    border-radius: 1.15rem;
+  }
+  .toc ol {
+    columns: 2;
+    column-gap: 1.5rem;
+  }
+  .toc li {
+    break-inside: avoid;
+    margin-bottom: 0.35rem;
+  }
+  .button { min-height: 48px; }
+}
+
+@media (max-width: 390px) {
+  .header-inner,
+  .page,
+  .footer-inner {
+    width: min(calc(100% - 0.8rem), var(--max));
+  }
+
+  .brand-label { font-size: 0.9rem; }
+  .site-nav { width: calc(100% + 0.8rem); margin-inline: -0.4rem; padding-inline: 0.4rem; }
+  .site-nav a { padding-inline: 0.7rem; font-size: 0.8rem; }
+  .language-panel { right: 0.4rem; width: calc(100% - 0.8rem); }
+  .page { padding-top: 1.45rem; }
+  .legal-header h1 { font-size: clamp(1.75rem, 8.3vw, 2.2rem); }
+  .toc ol { columns: 1; }
+  .card-actions .button { flex: 1 1 100%; }
 }
 
 @media (prefers-reduced-motion: reduce) {

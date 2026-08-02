@@ -50,7 +50,7 @@
 }
 
 html {
-  min-width: 320px;
+  min-width: 0;
   scroll-behavior: smooth;
   background: var(--bg);
 }
@@ -66,6 +66,15 @@ body {
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.55;
   transition: color 320ms ease, background-color 320ms ease;
+  -webkit-text-size-adjust: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  font: inherit;
 }
 
 body::before,
@@ -512,16 +521,23 @@ button:focus-visible {
 .orbit-handle {
   position: absolute;
   top: 50%;
-  width: 14px;
-  height: 14px;
+  width: 20px;
+  height: 20px;
   padding: 0;
-  border: 1px solid var(--text);
+  border: 1.5px solid var(--text);
   border-radius: 50%;
   background: var(--bg);
-  box-shadow: 0 0 0 4px color-mix(in srgb, var(--bg) 64%, transparent);
+  box-shadow: 0 0 0 5px color-mix(in srgb, var(--bg) 64%, transparent);
   cursor: grab;
   touch-action: none;
   transition: transform 160ms ease, background-color 160ms ease;
+}
+
+.orbit-handle::before {
+  position: absolute;
+  inset: -11px;
+  border-radius: 50%;
+  content: "";
 }
 
 .orbit-handle:first-child { left: 0; transform: translate(-50%, -50%); }
@@ -541,6 +557,9 @@ button:focus-visible {
   width: 100%;
   filter: var(--logo-filter);
   animation: mark-float 6s ease-in-out infinite;
+  pointer-events: none;
+  -webkit-user-drag: none;
+  user-select: none;
 }
 
 .hero-mark-button {
@@ -556,6 +575,8 @@ button:focus-visible {
   background: transparent;
   cursor: pointer;
   transition: transform 220ms cubic-bezier(.2,.8,.2,1);
+  -webkit-touch-callout: none;
+  user-select: none;
 }
 
 .hero-mark-button:focus-visible {
@@ -921,9 +942,21 @@ button:focus-visible {
     grid-column: 1 / -1;
     grid-row: 2;
     justify-content: flex-start;
+    width: calc(100% + 28px);
+    margin-inline: -14px;
     overflow-x: auto;
-    padding-bottom: 8px;
+    padding: 0 14px 10px;
+    scroll-padding-inline: 14px;
+    scroll-snap-type: x proximity;
+    overscroll-behavior-inline: contain;
     scrollbar-width: none;
+  }
+  .site-nav a {
+    flex: 0 0 auto;
+    min-height: 40px;
+    display: inline-flex;
+    align-items: center;
+    scroll-snap-align: start;
   }
   .site-nav::-webkit-scrollbar { display: none; }
   .header-actions { justify-self: end; }
@@ -931,12 +964,21 @@ button:focus-visible {
   .hero {
     min-height: auto;
     grid-template-columns: 1fr;
-    padding-block: 150px 80px;
+    gap: 52px;
+    padding-block: 148px 72px;
   }
 
   .hero-object {
-    width: min(72vw, 470px);
+    width: min(70vw, 410px);
     margin-inline: auto;
+  }
+
+  .hero h1 {
+    max-width: 12ch;
+    font-size: clamp(3.2rem, 11vw, 5.6rem);
+    overflow-wrap: normal;
+    text-wrap: pretty;
+    word-break: normal;
   }
 
   .section-heading,
@@ -959,25 +1001,86 @@ button:focus-visible {
 
   .header-inner {
     min-height: 64px;
+    grid-template-columns: minmax(0, 1fr) auto;
+    column-gap: 10px;
   }
 
-  .brand { width: 116px; }
-  .theme-toggle { width: 36px; height: 36px; }
+  .brand { width: 112px; }
+  .header-actions { gap: 7px; }
+  .language-menu summary { min-width: 42px; min-height: 38px; padding-inline: 10px; }
+  .theme-toggle { width: 38px; height: 38px; }
+  .language-panel {
+    width: min(280px, calc(100vw - 20px));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 10px;
+  }
 
-  .hero h1 { font-size: clamp(3.15rem, 16vw, 5rem); }
+  .hero {
+    gap: 42px;
+    padding-block: 142px 60px;
+  }
+  .hero h1 {
+    max-width: 11ch;
+    font-size: clamp(2.65rem, 12.2vw, 4rem);
+    letter-spacing: -.06em;
+    line-height: .98;
+  }
   .hero-lead { margin-top: 26px; }
   .hero-actions .button { flex: 1 1 100%; }
-  .hero-object { width: 84vw; }
+  .hero-object { width: min(78vw, 310px); }
+  .hero-object { overflow: clip; }
+  .hero-orbit { inset: 6%; }
+  .orbit-handle { width: 22px; height: 22px; }
   .section { padding-block: 76px; }
   .section-heading { margin-bottom: 34px; }
-  .product-card { padding: 22px; border-radius: 28px; }
-  .product-visual { min-height: 270px; border-radius: 22px; }
+  .section-heading h2,
+  .contact-panel h2 {
+    font-size: clamp(2.35rem, 11vw, 3.4rem);
+    overflow-wrap: normal;
+    text-wrap: pretty;
+    word-break: normal;
+  }
+  .product-card { gap: 22px; padding: 22px; border-radius: 28px; }
+  .product-copy h3 { font-size: clamp(2.5rem, 13vw, 3.8rem); }
+  .product-visual { min-height: 220px; border-radius: 22px; }
+  .app-icon { width: min(50%, 155px); }
+  .upcoming-mark { width: min(44%, 145px); }
   .product-actions .button { flex: 1 1 100%; }
+  .slider-controls { margin-top: 18px; }
+  .slider-button { width: 48px; height: 48px; }
+  .principle { min-height: 190px; padding: 24px; }
+  .studio-statement { font-size: clamp(2.25rem, 11vw, 3.3rem); overflow-wrap: normal; text-wrap: pretty; }
   .contact-panel { border-radius: 28px; }
   .footer-inner { align-items: flex-start; flex-direction: column; }
+  .footer-links { gap: 14px 18px; }
   .info-grid { grid-template-columns: 1fr; }
   .info-card-wide { grid-column: auto; }
   .subpage-main { width: min(calc(100% - 28px), 920px); padding-block: 145px 76px; }
+  .subpage-hero h1 {
+    font-size: clamp(2.55rem, 13vw, 4rem);
+    overflow-wrap: normal;
+    text-wrap: pretty;
+    word-break: normal;
+  }
+  .info-card { padding: 22px; border-radius: 22px; }
+  .button { min-height: 48px; }
+}
+
+@media (max-width: 380px) {
+  .page-shell,
+  .footer-inner,
+  .subpage-main {
+    width: min(calc(100% - 20px), var(--max));
+  }
+
+  .site-header { width: calc(100% - 12px); }
+  .header-inner { padding-inline: 10px; }
+  .brand { width: 102px; }
+  .hero { padding-top: 138px; }
+  .hero h1 { font-size: 2.48rem; }
+  .hero-object { width: min(80vw, 280px); }
+  .product-card { padding: 18px; }
+  .contact-panel { padding: 26px 20px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
