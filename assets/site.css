@@ -495,9 +495,11 @@ h3 {
   margin-bottom: 0.75rem;
 }
 
-.toc ol {
+.toc ol,
+.toc ul {
   margin: 0;
-  padding-left: 1.15rem;
+  padding-left: 0;
+  list-style: none;
 }
 
 .toc li + li {
@@ -662,7 +664,8 @@ h3 {
     padding: 1.15rem;
     border-radius: 1.15rem;
   }
-  .toc ol {
+  .toc ol,
+  .toc ul {
     columns: 2;
     column-gap: 1.5rem;
   }
@@ -686,7 +689,8 @@ h3 {
   .language-panel { right: 0.4rem; width: calc(100% - 0.8rem); }
   .page { padding-top: 1.45rem; }
   .legal-header h1 { font-size: clamp(1.75rem, 8.3vw, 2.2rem); }
-  .toc ol { columns: 1; }
+  .toc ol,
+  .toc ul { columns: 1; }
   .card-actions .button { flex: 1 1 100%; }
 }
 
@@ -832,7 +836,8 @@ h3 {
   .legal-section h2 { font-size: 1.15rem; line-height: 1.3; }
   .legal-section p { line-height: 1.72; }
 
-  .toc ol {
+  .toc ol,
+  .toc ul {
     columns: 1;
     margin-top: .8rem;
   }

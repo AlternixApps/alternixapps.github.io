@@ -1,6 +1,42 @@
 (() => {
   const storageKey = "alternix-theme";
+  const languageStorageKey = "alternix-language";
   const root = document.documentElement;
+  const supportedLanguages = ["en", "uk", "ru", "es", "de", "fr", "pt", "it", "pl"];
+
+  const currentLanguage = supportedLanguages.includes(root.lang) ? root.lang : "en";
+  const pathWithoutLanguage = window.location.pathname.replace(
+    /^\/(uk|ru|es|de|fr|pt|it|pl)(?=\/)/,
+    "",
+  );
+  const isLocalizedProductPage = /^\/(?:qr-dot-lab|bar-line-lab)\/(?:privacy|support)\/$/.test(pathWithoutLanguage);
+
+  const saveLanguage = (language) => {
+    if (!supportedLanguages.includes(language)) return;
+    try {
+      window.localStorage.setItem(languageStorageKey, language);
+    } catch {
+      // Navigation still works when storage is unavailable.
+    }
+  };
+
+  if (isLocalizedProductPage) {
+    let savedLanguage = null;
+    try {
+      savedLanguage = window.localStorage.getItem(languageStorageKey);
+    } catch {
+      // Keep the language from the current URL.
+    }
+
+    if (supportedLanguages.includes(savedLanguage) && savedLanguage !== currentLanguage) {
+      const localizedPath = savedLanguage === "en"
+        ? pathWithoutLanguage
+        : `/${savedLanguage}${pathWithoutLanguage}`;
+      window.location.replace(`${localizedPath}${window.location.search}${window.location.hash}`);
+      return;
+    }
+    saveLanguage(currentLanguage);
+  }
 
   const readTheme = () => {
     try {
@@ -126,6 +162,9 @@
       if (panel) {
         panel.hidden = true;
         document.body.append(panel);
+        panel.querySelectorAll("a[lang]").forEach((link) => {
+          link.addEventListener("click", () => saveLanguage(link.lang));
+        });
       }
       languageMenu.addEventListener("toggle", () => {
         if (panel) panel.hidden = !languageMenu.open;
