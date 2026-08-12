@@ -52,11 +52,11 @@
       }
 
       .st12 {
-        fill: none;
+        fill: #f4f5f5;
       }
 
       .st13 {
-        fill: none;
+        fill: #ebebeb;
       }
 
       .st14 {
