@@ -14,6 +14,10 @@ body.color-swatch-lab {
   --glow-blue: rgba(4, 193, 179, 0.23);
   --glow-light: rgba(254, 201, 6, 0.12);
   --grid-line: rgba(4, 193, 179, 0.055);
+  display: flex;
+  min-height: 100vh;
+  min-height: 100dvh;
+  flex-direction: column;
 }
 
 :root[data-theme="dark"] body.color-swatch-lab {
@@ -44,18 +48,12 @@ body.color-swatch-lab {
   object-fit: contain;
 }
 
-.color-swatch-lab .legal-header {
-  position: relative;
+.color-swatch-lab .page {
+  flex: 1 0 auto;
 }
 
-.color-swatch-lab .legal-header::after {
-  display: block;
-  width: min(360px, 78vw);
-  height: 5px;
-  margin-top: 1.4rem;
-  border-radius: 999px;
-  content: "";
-  background: linear-gradient(90deg, #fe5a33, #fec906, #39be4f, #04c1b3, #6440da, #bd37c3);
+.color-swatch-lab .site-footer {
+  margin-top: auto;
 }
 
 .color-swatch-lab .age-treatment-notice {

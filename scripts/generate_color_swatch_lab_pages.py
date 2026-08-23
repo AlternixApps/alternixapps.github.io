@@ -252,7 +252,7 @@ def page_shell(language: str, page: str, title: str, description: str, body: str
         'document.documentElement.dataset.theme="dark"}catch(e){}</script>'
         '<link rel="icon" href="/assets/color-swatch-lab.svg">'
         '<link rel="stylesheet" href="/assets/site.css">'
-        '<link rel="stylesheet" href="/assets/color-swatch-lab.css">'
+        '<link rel="stylesheet" href="/assets/color-swatch-lab.css?v=20260823-2">'
         '<script src="/assets/site.js" defer></script></head>'
         '<body class="color-swatch-lab">'
         f'<a class="skip-link" href="#content">{escape(copy["skip"])}</a>'
