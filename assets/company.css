@@ -761,6 +761,36 @@ button:focus-visible {
   text-transform: uppercase;
 }
 
+.store-link {
+  min-height: 38px;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 7px 13px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  color: var(--text);
+  background: var(--glass-soft);
+  font-size: 0.78rem;
+  font-weight: 750;
+  letter-spacing: 0.025em;
+  text-decoration: none;
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+.store-link:hover {
+  transform: translateY(-1px);
+  border-color: var(--text);
+  background: var(--glass-strong);
+}
+
+.store-link img {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+  filter: var(--logo-filter);
+}
+
 .product-copy h3 {
   margin: 0;
   font-size: clamp(2.8rem, 5vw, 5.6rem);
