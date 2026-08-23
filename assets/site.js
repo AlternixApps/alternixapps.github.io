@@ -9,7 +9,7 @@
     /^\/(uk|ru|es|de|fr|pt|it|pl)(?=\/)/,
     "",
   );
-  const isLocalizedProductPage = /^\/(?:qr-dot-lab|bar-line-lab)\/(?:privacy|support)\/$/.test(pathWithoutLanguage);
+  const isLocalizedProductPage = /^\/(?:qr-dot-lab|bar-line-lab|color-swatch-lab)\/(?:privacy|support)\/$/.test(pathWithoutLanguage);
 
   const saveLanguage = (language) => {
     if (!supportedLanguages.includes(language)) return;
