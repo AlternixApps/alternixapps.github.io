@@ -18,7 +18,7 @@
     ],
     [
       "Advertising, age and choice",
-      "Google Mobile Ads (AdMob) displays phone banners. Before adding a custom photo or sending a design, you may explicitly opt into one rewarded video for that action. You can cancel without losing your project; when ads cannot load, continuing for free is offered. There are no ads in the watch companion or generated watch faces. Before requesting ads, we ask only the age band 13–17 or 18+, not your birth date. For teens: TEEN treatment, disabled personalization, G content rating and UMP under-age-of-consent signal. This product is not directed at children under 13."
+      "Google Mobile Ads (AdMob) displays phone banners. Adding one custom photo requires completing one rewarded video when available; cancelling preserves the project. Sending a design to the watch offers an optional video and an equally available send-without-video button; either choice sends the design, even if the optional video is skipped. If ads cannot load, either action can continue for free. There are no ads in the watch companion or generated watch faces. Before requesting ads, we ask only the age band 13–17 or 18+, not your birth date. For teens: TEEN treatment, disabled personalization, G content rating and UMP under-age-of-consent signal. This product is not directed at children under 13."
     ],
     [
       "Google SDK processing",
@@ -52,7 +52,7 @@
     ],
     [
       "Реклама и возраст",
-      "На телефоне есть баннеры Google AdMob. Перед добавлением своего фото или отправкой дизайна предлагается добровольно посмотреть одно видео за это действие. Отмена не удаляет проект; если реклама не загружается, можно продолжить бесплатно. На часах и в установленных циферблатах рекламы нет. До рекламного запроса выбирается только категория 13–17 или 18+, без даты рождения. Для подростков применяются TEEN, отключение персонализации, рейтинг G и сигнал UMP о возрасте младше возраста согласия. Продукт не предназначен детям младше 13 лет."
+      "На телефоне есть баннеры Google AdMob. Для добавления одного своего фото нужно досмотреть одно видео, когда оно доступно; отмена сохраняет проект. Перед отправкой на часы можно выбрать просмотр видео или равнодоступную кнопку отправки без видео: оба варианта отправляют дизайн, даже если необязательное видео пропущено. Если реклама не загружается, любое из этих действий доступно бесплатно. На часах и в установленных циферблатах рекламы нет. До рекламного запроса выбирается только категория 13–17 или 18+, без даты рождения. Для подростков применяются TEEN, отключение персонализации, рейтинг G и сигнал UMP о возрасте младше возраста согласия. Продукт не предназначен детям младше 13 лет."
     ],
     [
       "Обработка данных Google",
@@ -86,7 +86,7 @@
     ],
     [
       "Реклама та вік",
-      "Банери Google AdMob є лише на телефоні. Перед власним фото або надсиланням дизайну пропонується добровільний перегляд одного відео за дію. Скасування не видаляє проєкт; недоступне відео дозволяє продовжити безкоштовно. На годиннику та циферблатах реклами немає. До запиту реклами зберігається лише категорія 13–17 чи 18+, без дати народження. Для підлітків: TEEN, без персоналізації, рейтинг G та сигнал UMP про вік нижче віку згоди. Продукт не для дітей до 13 років."
+      "Банери Google AdMob є лише на телефоні. Щоб додати одне власне фото, потрібно додивитися одне відео, якщо воно доступне; скасування зберігає проєкт. Перед надсиланням на годинник можна вибрати відео або рівнодоступну кнопку надсилання без відео: обидва варіанти надсилають дизайн, навіть якщо необов’язкове відео пропущено. Якщо реклама не завантажується, обидві дії доступні безкоштовно. На годиннику та циферблатах реклами немає. До запиту реклами зберігається лише категорія 13–17 чи 18+, без дати народження. Для підлітків: TEEN, без персоналізації, рейтинг G та сигнал UMP про вік нижче віку згоди. Продукт не для дітей до 13 років."
     ],
     [
       "Рекламні дані Google",
@@ -120,7 +120,7 @@
     ],
     [
       "Werbung und Altersgruppen",
-      "AdMob-Banner erscheinen nur auf dem Telefon. Ein freiwilliges Video schaltet jeweils einen Fotoimport oder das Senden eines Designs frei. Abbrechen löscht kein Projekt; ohne verfügbares Video ist kostenloses Fortfahren möglich. Keine Werbung auf Uhr/Zifferblättern. Vor Anfragen wählen Sie 13–17 oder 18+, ohne Geburtsdatum. Jugendliche: TEEN, Personalisierung aus, Inhaltsbewertung G, UMP-Signal unter Einwilligungsalter. Nicht für Kinder unter 13 bestimmt."
+      "AdMob-Banner erscheinen nur auf dem Telefon. Für ein eigenes Foto muss ein verfügbares Belohnungsvideo vollständig angesehen werden; Abbrechen erhält das Projekt. Beim Senden zur Uhr gibt es ein freiwilliges Video und eine gleichwertige Schaltfläche zum Senden ohne Video. Beide Wege senden das Design, auch wenn das freiwillige Video übersprungen wird. Laden Anzeigen nicht, sind beide Aktionen kostenlos möglich. Keine Werbung auf Uhr/Zifferblättern. Vor Anfragen wählen Sie 13–17 oder 18+, ohne Geburtsdatum. Jugendliche: TEEN, Personalisierung aus, Inhaltsbewertung G, UMP-Signal unter Einwilligungsalter. Nicht für Kinder unter 13 bestimmt."
     ],
     [
       "Google und Einwilligung",
@@ -154,7 +154,7 @@
     ],
     [
       "Publicidad y edad",
-      "Hay banners AdMob solo en el teléfono. Se propone un vídeo voluntario por importar una foto o enviar un diseño. Cancelar conserva el proyecto; si no hay vídeo disponible, se puede continuar gratis. No hay anuncios en el reloj ni las esferas. Antes de pedir anuncios se elige 13–17 o 18+, sin fecha de nacimiento. Adolescentes: TEEN, sin personalización, clasificación G y señal UMP de edad inferior al consentimiento. No dirigido a menores de 13."
+      "Hay banners AdMob solo en el teléfono. Para añadir una foto propia hay que completar un vídeo recompensado cuando esté disponible; cancelar conserva el proyecto. Al enviar al reloj se ofrece un vídeo opcional y un botón igualmente accesible para enviar sin vídeo. Ambas opciones envían el diseño, incluso si se omite el vídeo opcional. Si los anuncios no cargan, ambas acciones pueden continuar gratis. No hay anuncios en el reloj ni las esferas. Antes de pedir anuncios se elige 13–17 o 18+, sin fecha de nacimiento. Adolescentes: TEEN, sin personalización, clasificación G y señal UMP de edad inferior al consentimiento. No dirigido a menores de 13."
     ],
     [
       "Google y consentimiento",
@@ -188,7 +188,7 @@
     ],
     [
       "Publicité et âge",
-      "Bannières AdMob sur téléphone seulement. Une vidéo volontaire est proposée pour chaque import de photo ou envoi de cadran. Annuler conserve le projet ; sans vidéo disponible, continuation gratuite. Aucune publicité sur montre/cadrans. Avant les requêtes : tranche 13–17 ou 18+, sans date de naissance. Adolescents : TEEN, personnalisation désactivée, classification G et signal UMP sous l’âge de consentement. Non destiné aux moins de 13 ans."
+      "Bannières AdMob sur téléphone seulement. Pour ajouter une photo personnelle, il faut terminer une vidéo récompensée si elle est disponible ; annuler conserve le projet. Pour envoyer à la montre, une vidéo facultative et un bouton tout aussi accessible pour envoyer sans vidéo sont proposés. Les deux choix envoient le cadran, même si la vidéo facultative est ignorée. Si les annonces ne chargent pas, les deux actions restent gratuites. Aucune publicité sur montre/cadrans. Avant les requêtes : tranche 13–17 ou 18+, sans date de naissance. Adolescents : TEEN, personnalisation désactivée, classification G et signal UMP sous l’âge de consentement. Non destiné aux moins de 13 ans."
     ],
     [
       "Google et consentement",
@@ -222,7 +222,7 @@
     ],
     [
       "Pubblicità ed età",
-      "Banner AdMob solo sul telefono. Un video volontario è proposto per ogni importazione foto o invio di design. Annullare conserva il progetto; senza video disponibile si continua gratis. Nessuna pubblicità su orologio/quadranti. Prima delle richieste si sceglie 13–17 o 18+, senza data di nascita. Adolescenti: TEEN, personalizzazione disattivata, classificazione G, segnale UMP sotto l’età del consenso. Non destinata a minori di 13 anni."
+      "Banner AdMob solo sul telefono. Per aggiungere una foto personale occorre completare un video con premio, quando disponibile; annullare conserva il progetto. Per inviare all’orologio sono offerti un video facoltativo e un pulsante ugualmente accessibile per inviare senza video. Entrambe le opzioni inviano il design, anche se il video facoltativo viene saltato. Se gli annunci non si caricano, entrambe le azioni restano gratuite. Nessuna pubblicità su orologio/quadranti. Prima delle richieste si sceglie 13–17 o 18+, senza data di nascita. Adolescenti: TEEN, personalizzazione disattivata, classificazione G, segnale UMP sotto l’età del consenso. Non destinata a minori di 13 anni."
     ],
     [
       "Google e consenso",
@@ -256,7 +256,7 @@
     ],
     [
       "Reklamy i wiek",
-      "Banery AdMob są tylko na telefonie. Dobrowolny film proponujemy przed każdym importem zdjęcia lub wysłaniem projektu. Anulowanie zachowuje projekt; bez dostępnego filmu można kontynuować bezpłatnie. Brak reklam na zegarku/tarczach. Przed żądaniem reklam wybierana jest grupa 13–17 lub 18+, bez daty urodzenia. Nastolatki: TEEN, wyłączona personalizacja, ocena G, sygnał UMP poniżej wieku zgody. Produkt nie jest dla dzieci poniżej 13 lat."
+      "Banery AdMob są tylko na telefonie. Dodanie własnego zdjęcia wymaga obejrzenia do końca filmu z nagrodą, jeśli jest dostępny; anulowanie zachowuje projekt. Przy wysyłaniu na zegarek dostępne są opcjonalny film i równorzędny przycisk wysłania bez filmu. Obie opcje wysyłają projekt, również po pominięciu opcjonalnego filmu. Gdy reklamy się nie ładują, obie czynności są dostępne bezpłatnie. Brak reklam na zegarku/tarczach. Przed żądaniem reklam wybierana jest grupa 13–17 lub 18+, bez daty urodzenia. Nastolatki: TEEN, wyłączona personalizacja, ocena G, sygnał UMP poniżej wieku zgody. Produkt nie jest dla dzieci poniżej 13 lat."
     ],
     [
       "Google i zgoda",
@@ -290,7 +290,7 @@
     ],
     [
       "Publicidade e idade",
-      "Banners AdMob apenas no telefone. Um vídeo voluntário é proposto por importação de foto ou envio de design. Cancelar preserva o projeto; sem vídeo disponível pode continuar gratuitamente. Sem anúncios no relógio/mostradores. Antes dos pedidos escolhe-se 13–17 ou 18+, sem nascimento. Adolescentes: TEEN, personalização desativada, classificação G e sinal UMP abaixo da idade de consentimento. Não dirigida a menores de 13 anos."
+      "Banners AdMob apenas no telefone. Para adicionar uma foto própria é necessário concluir um vídeo com recompensa, quando disponível; cancelar preserva o projeto. Para enviar ao relógio há um vídeo opcional e um botão igualmente acessível para enviar sem vídeo. Ambas as opções enviam o design, mesmo que o vídeo opcional seja ignorado. Se os anúncios não carregarem, ambas as ações continuam gratuitas. Sem anúncios no relógio/mostradores. Antes dos pedidos escolhe-se 13–17 ou 18+, sem nascimento. Adolescentes: TEEN, personalização desativada, classificação G e sinal UMP abaixo da idade de consentimento. Não dirigida a menores de 13 anos."
     ],
     [
       "Google e consentimento",

@@ -44,6 +44,12 @@ def main():
     sitemap = (ROOT / 'sitemap.xml').read_text(encoding='utf-8')
     for lang in template.LANGUAGE_ORDER:
         prefix = Path() if lang == 'en' else Path(lang)
+        # One policy source for the published pages and the offline app screen.
+        offline = APP / 'app/src/main/assets/legal' / f'privacy_{lang}.txt'
+        offline.parent.mkdir(parents=True, exist_ok=True)
+        sections = '\n\n'.join(title + '\n' + body for title, body in POLICY[lang])
+        providers = '\n\nGoogle Privacy: https://policies.google.com/privacy\nGoogle Mobile Ads: https://developers.google.com/admob/android/privacy/play-data-disclosure\nGitHub Privacy: https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement\n'
+        offline.write_text('Watch Face Lab · Alternix\n2026-09-03\n\n' + sections + providers, encoding='utf-8')
         for page, body in [('privacy', template.privacy_page(lang)), ('support', template.support_page(lang))]:
             path = ROOT / prefix / 'watch-face-lab' / page / 'index.html'
             path.parent.mkdir(parents=True, exist_ok=True)
