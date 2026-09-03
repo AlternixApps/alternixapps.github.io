@@ -1,0 +1,308 @@
+{
+  "en": [
+    [
+      "About Watch Face Lab",
+      "Watch Face Lab by Alternix (com.alternix.watchfacelab) is a phone editor and Wear OS companion for creating, previewing and installing watch faces. There is no Alternix account, cloud project storage, analytics backend, Firebase Analytics or Crashlytics. This policy covers both apps and this website."
+    ],
+    [
+      "Projects, photos and storage",
+      "Names, layers, selected images, preferences, age category and installation history are stored in private app storage on the phone. A system image picker gives access only to a selected file; no camera or whole-library permission is requested. Images are processed locally and are not intentionally provided to advertisers. Delete projects in the app, or clear app data/uninstall to remove local data. System cloud backup and device-to-device app-data transfer are disabled. Clearing data also loses the non-exportable key used to sign your generated faces: an installed face may need to be removed before it can be replaced."
+    ],
+    [
+      "Phone, watch and displayed information",
+      "At your request, the generated watch-face package (including selected photos and text), validation token and installation commands pass to the paired watch using Google Wearable Data Layer. Device model, OS version, app availability, installed-face identifiers and transfer status return to the phone. Google transport may use Bluetooth, Wi-Fi or its infrastructure; this is not a promise that data never leaves the two devices. Transfer cache is temporary and cleaned after processing; an interruption can leave cache until the system/app removes it. Installed faces stay on the watch until replaced or removed."
+    ],
+    [
+      "Health, complications and compass",
+      "Time, pulse, steps, battery and other chosen complications are supplied on the watch by Wear OS/system or user-selected providers. Watch Face Lab does not send health readings to the phone, Alternix or advertising SDKs, and does not build a health history. Providers can require their own permissions and policies. Foreground compass/orientation sensors are used for display and are not retained or uploaded. Readings are informational, not medical advice or a safety/navigation guarantee."
+    ],
+    [
+      "Advertising, age and choice",
+      "Google Mobile Ads (AdMob) displays phone banners. Before adding a custom photo or sending a design, you may explicitly opt into one rewarded video for that action. You can cancel without losing your project; when ads cannot load, continuing for free is offered. There are no ads in the watch companion or generated watch faces. Before requesting ads, we ask only the age band 13–17 or 18+, not your birth date. For teens: TEEN treatment, disabled personalization, G content rating and UMP under-age-of-consent signal. This product is not directed at children under 13."
+    ],
+    [
+      "Google SDK processing",
+      "Google and advertising partners may collect/share IP address (and approximate location derived from it), device/account identifiers, app/ad interactions, diagnostics and consent signals for advertising, measurement, analytics, fraud prevention and security. Google UMP manages consent where required; requests are gated by its permission. Privacy options appear in settings when required. Withdrawing personalization consent does not necessarily remove contextual/limited ads. Provider retention and international processing follow their own policies. Google reports TLS encryption for Mobile Ads transport. We do not sell project content or intentionally attach photos or health readings to ad requests."
+    ],
+    [
+      "Permissions and retention",
+      "The phone declares Internet/network-state access; advertising SDKs can add their documented advertising permissions. Wear requests Watch Face Push and activation access plus a temporary data-sync foreground service/wake lock for installation. No continuous background health/GPS collection is implemented. Local content remains until you delete it; provider-controlled advertising data follows provider retention rules. Android app isolation and signing protect local files, but no system can guarantee absolute security. This site is on GitHub Pages: GitHub may process technical connection logs. The site has no analytics/ad scripts; localStorage only remembers theme."
+    ],
+    [
+      "Your rights and contact",
+      "You can delete projects, remove installed faces, revoke applicable permissions, change the age band, adjust available advertising privacy choices and stop using the apps. Depending on your location, you may have rights of access, correction, deletion, objection or complaint to a data-protection authority. Alternix has no server copy of your projects to retrieve. For questions or requests: alternix.apps@gmail.com. This policy may change with the app or legal requirements; the date above identifies this version."
+    ]
+  ],
+  "ru": [
+    [
+      "О приложении",
+      "Watch Face Lab от Alternix (com.alternix.watchfacelab) — редактор для телефона и приложение-компаньон Wear OS для создания, просмотра и установки циферблатов. Аккаунта Alternix, облачного хранения проектов, собственного сервера аналитики, Firebase Analytics и Crashlytics нет. Политика относится к обоим приложениям и этому сайту."
+    ],
+    [
+      "Проекты, фотографии и хранение",
+      "Названия, слои, выбранные изображения, настройки, возрастная категория и история установок хранятся в закрытом хранилище приложения на телефоне. Системный выбор изображения даёт доступ к выбранному файлу, а не ко всей галерее; камера не запрашивается. Фото обрабатываются локально и намеренно не передаются рекламодателям. Удалите проект в приложении или очистите данные/удалите приложение для удаления локальных данных. Облачное резервное копирование Android и перенос данных приложения между устройствами отключены. Очистка данных также уничтожает неэкспортируемый ключ подписи созданных циферблатов: ранее установленный циферблат может потребоваться удалить перед заменой."
+    ],
+    [
+      "Передача на часы",
+      "По вашему запросу пакет циферблата, включая фото и текст, токен проверки и команды установки передаются на сопряжённые часы через Google Wearable Data Layer. Телефон получает модель часов, версию ОС, наличие приложения, идентификаторы установленных циферблатов и состояние передачи. Google может использовать Bluetooth, Wi-Fi или свою инфраструктуру; мы не обещаем, что данные никогда не покидают два устройства. Временные файлы передачи очищаются после обработки; после прерывания кэш может сохраняться до очистки приложением или системой. Циферблат остаётся на часах до замены или удаления."
+    ],
+    [
+      "Показатели и компас",
+      "Время, пульс, шаги, заряд и другие выбранные показатели предоставляются на часах Wear OS, системой или выбранными поставщиками виджетов. Watch Face Lab не передаёт медицинские показатели на телефон, Alternix или рекламным SDK и не ведёт историю здоровья. У поставщиков могут быть собственные разрешения и политики. Датчики ориентации/компаса используются при отображении, не сохраняются и не отправляются. Показатели справочные, не являются медицинской рекомендацией или гарантией безопасной навигации."
+    ],
+    [
+      "Реклама и возраст",
+      "На телефоне есть баннеры Google AdMob. Перед добавлением своего фото или отправкой дизайна предлагается добровольно посмотреть одно видео за это действие. Отмена не удаляет проект; если реклама не загружается, можно продолжить бесплатно. На часах и в установленных циферблатах рекламы нет. До рекламного запроса выбирается только категория 13–17 или 18+, без даты рождения. Для подростков применяются TEEN, отключение персонализации, рейтинг G и сигнал UMP о возрасте младше возраста согласия. Продукт не предназначен детям младше 13 лет."
+    ],
+    [
+      "Обработка данных Google",
+      "Google и рекламные партнёры могут собирать/передавать IP-адрес и приблизительное местоположение по нему, идентификаторы устройства/аккаунта, взаимодействия с приложением и рекламой, диагностику и сигналы согласия для рекламы, измерений, аналитики, защиты от мошенничества и безопасности. Google UMP управляет согласием там, где требуется; запросы зависят от его разрешения. В настройках доступны параметры конфиденциальности, когда они требуются. Отказ от персонализации не обязательно убирает контекстную/ограниченную рекламу. Сроки хранения и международная обработка определяются политиками поставщиков. По данным Google, Mobile Ads использует TLS. Мы не продаём содержимое проектов и намеренно не прикладываем фото или показатели здоровья к рекламным запросам."
+    ],
+    [
+      "Разрешения, сроки и сайт",
+      "Телефон использует Интернет и состояние сети; рекламные SDK могут добавлять документированные рекламные разрешения. Часы запрашивают Watch Face Push, активацию и временный foreground-сервис передачи данных/wake lock для установки. Постоянного фонового сбора здоровья/GPS нет. Локальное содержимое хранится до удаления; рекламные данные — по правилам поставщиков. Изоляция Android и подпись защищают файлы, но абсолютная безопасность не гарантируется. Сайт размещён на GitHub Pages: GitHub может обрабатывать технические журналы соединений. На сайте нет аналитики и рекламных скриптов; localStorage хранит только тему."
+    ],
+    [
+      "Ваш выбор и контакты",
+      "Можно удалять проекты и установленные циферблаты, отзывать доступные разрешения, менять возрастную категорию и рекламные настройки, прекращать использование. В зависимости от страны возможны права на доступ, исправление, удаление, возражение и жалобу регулятору. У Alternix нет серверной копии ваших проектов. Вопросы и запросы: alternix.apps@gmail.com. Политика может меняться вместе с приложением и требованиями закона; дата версии указана выше."
+    ]
+  ],
+  "uk": [
+    [
+      "Про застосунок",
+      "Watch Face Lab від Alternix (com.alternix.watchfacelab) — редактор на телефоні та компаньйон Wear OS для створення й встановлення циферблатів. Немає облікового запису Alternix, хмарних проєктів, власної аналітики, Firebase Analytics або Crashlytics. Політика охоплює обидва застосунки й сайт."
+    ],
+    [
+      "Проєкти та фото",
+      "Назви, шари, вибрані фото, налаштування, вікова категорія та історія встановлень зберігаються у приватному сховищі телефону. Системний вибір дає доступ лише до вибраного файла, не всієї галереї; камера не запитується. Фото обробляються локально й навмисно не передаються рекламі. Проєкти можна видалити в застосунку; очищення даних або видалення застосунку прибирає локальні дані. Хмарне резервне копіювання й перенесення даних між пристроями вимкнено. При очищенні втрачається неекспортований ключ підпису циферблатів: старий циферблат може потребувати видалення перед заміною."
+    ],
+    [
+      "Телефон і годинник",
+      "На ваш запит пакет циферблата з фото й текстом, токен перевірки та команди передаються на спарений годинник через Google Wearable Data Layer. Телефон отримує модель, ОС, наявність компаньйона, ідентифікатори циферблатів і статус. Транспорт Google може використовувати Bluetooth, Wi-Fi або свою інфраструктуру; дані не обов’язково залишаються лише на двох пристроях. Кеш очищається після обробки; після переривання може залишатися до очищення системою/застосунком. Циферблат залишається до видалення або заміни."
+    ],
+    [
+      "Здоров’я та компас",
+      "Пульс, кроки, заряд та інші показники надає Wear OS або обрані постачальники віджетів на годиннику. Watch Face Lab не надсилає показники здоров’я телефону, Alternix чи рекламним SDK і не веде історії здоров’я. Постачальники мають власні дозволи й політики. Дані компаса/орієнтації використовуються під час відображення, не зберігаються й не завантажуються. Це довідкові показники, не медична порада чи гарантія безпечної навігації."
+    ],
+    [
+      "Реклама та вік",
+      "Банери Google AdMob є лише на телефоні. Перед власним фото або надсиланням дизайну пропонується добровільний перегляд одного відео за дію. Скасування не видаляє проєкт; недоступне відео дозволяє продовжити безкоштовно. На годиннику та циферблатах реклами немає. До запиту реклами зберігається лише категорія 13–17 чи 18+, без дати народження. Для підлітків: TEEN, без персоналізації, рейтинг G та сигнал UMP про вік нижче віку згоди. Продукт не для дітей до 13 років."
+    ],
+    [
+      "Рекламні дані Google",
+      "Google і партнери можуть збирати/передавати IP, приблизне місцезнаходження за IP, ідентифікатори, взаємодії, діагностику та сигнали згоди для реклами, вимірювань, аналітики, безпеки й запобігання шахрайству. UMP керує згодою; запити залежать від його дозволу. Необхідні параметри приватності доступні в налаштуваннях. Відмова від персоналізації не обов’язково вимикає контекстну рекламу. Зберігання й міжнародна обробка — за політиками постачальників; за даними Google, Mobile Ads використовує TLS. Ми не продаємо проєкти й навмисно не додаємо фото чи здоров’я до рекламних запитів."
+    ],
+    [
+      "Дозволи, строки та сайт",
+      "Телефон оголошує Інтернет і стан мережі; SDK можуть додавати рекламні дозволи. Годинник використовує Watch Face Push, активацію та тимчасовий foreground-сервіс/wake lock для передачі. Постійного фонового збору здоров’я/GPS немає. Локальні дані залишаються до видалення; рекламні — за правилами постачальників. Android ізолює файли, однак абсолютна безпека не гарантується. GitHub Pages може вести технічні журнали. На сайті немає аналітики чи реклами, localStorage пам’ятає лише тему."
+    ],
+    [
+      "Ваші права й контакти",
+      "Можна видалити проєкти й циферблати, відкликати дозволи, змінити вікову категорію та доступні рекламні налаштування. Залежно від країни можливі права доступу, виправлення, видалення, заперечення та скарги регулятору. Серверної копії проєктів Alternix не має. Запити: alternix.apps@gmail.com. Політика може змінюватися із застосунком або законом; дату версії наведено вище."
+    ]
+  ],
+  "de": [
+    [
+      "Über die App",
+      "Watch Face Lab von Alternix (com.alternix.watchfacelab) erstellt und installiert Zifferblätter mit einem Telefon-Editor und Wear-OS-Begleiter. Kein Alternix-Konto, keine Projekt-Cloud, eigene Analyseplattform, Firebase Analytics oder Crashlytics. Diese Erklärung gilt für beide Apps und die Website."
+    ],
+    [
+      "Lokale Projekte und Fotos",
+      "Projekte, Ebenen, ausgewählte Fotos, Einstellungen, Altersgruppe und Installationsverlauf liegen im privaten Telefonspeicher. Die Systemauswahl gibt nur das gewählte Bild frei; keine Kamera- oder vollständige Galerie-Berechtigung. Bilder werden lokal verarbeitet und nicht absichtlich an Werbeanbieter übergeben. Projekte können gelöscht werden; Datenlöschen/Deinstallation entfernt lokale Daten. Cloud-Backup und Geräteübertragung der App-Daten sind deaktiviert. Dabei geht auch der nicht exportierbare Zifferblatt-Signaturschlüssel verloren; alte Zifferblätter müssen eventuell vor einem Austausch entfernt werden."
+    ],
+    [
+      "Übertragung zur Uhr",
+      "Auf Wunsch gehen Zifferblattpaket inklusive Fotos/Text, Prüftoken und Befehle über Google Wearable Data Layer zur gekoppelten Uhr. Modell, OS-Version, App-Verfügbarkeit, Zifferblatt-IDs und Status gehen zurück. Google kann Bluetooth, WLAN oder eigene Infrastruktur verwenden; Daten bleiben nicht garantiert auf beiden Geräten. Temporärer Cache wird nach Verarbeitung entfernt, bei Abbruch möglicherweise erst später. Installierte Zifferblätter bleiben bis zum Entfernen/Austausch."
+    ],
+    [
+      "Messwerte und Kompass",
+      "Wear OS oder gewählte Anbieter liefern Puls, Schritte, Akku und Komplikationen auf der Uhr. Watch Face Lab übermittelt keine Gesundheitswerte an Telefon, Alternix oder Werbe-SDKs und führt kein Gesundheitsprotokoll. Anbieter können eigene Berechtigungen/Regeln haben. Kompass-/Orientierungssensoren dienen der Anzeige; keine Speicherung oder Übertragung. Keine medizinische Beratung oder Sicherheits-/Navigationsgarantie."
+    ],
+    [
+      "Werbung und Altersgruppen",
+      "AdMob-Banner erscheinen nur auf dem Telefon. Ein freiwilliges Video schaltet jeweils einen Fotoimport oder das Senden eines Designs frei. Abbrechen löscht kein Projekt; ohne verfügbares Video ist kostenloses Fortfahren möglich. Keine Werbung auf Uhr/Zifferblättern. Vor Anfragen wählen Sie 13–17 oder 18+, ohne Geburtsdatum. Jugendliche: TEEN, Personalisierung aus, Inhaltsbewertung G, UMP-Signal unter Einwilligungsalter. Nicht für Kinder unter 13 bestimmt."
+    ],
+    [
+      "Google und Einwilligung",
+      "Google/Partner können IP und daraus abgeleitete ungefähre Position, Geräte-/Konto-IDs, App-/Werbeinteraktionen, Diagnosen und Einwilligungssignale für Werbung, Messung, Analyse, Betrugsschutz und Sicherheit erfassen/teilen. UMP steuert Einwilligung und Anfragefreigabe; erforderliche Datenschutzoptionen stehen in Einstellungen. Ohne Personalisierung können eingeschränkte/kontextuelle Anzeigen bleiben. Aufbewahrung und internationale Verarbeitung folgen Anbieterregeln; Google nennt TLS für Mobile Ads. Wir verkaufen keine Projektinhalte und fügen Fotos/Gesundheitsdaten nicht absichtlich Werbeanfragen hinzu."
+    ],
+    [
+      "Berechtigungen, Speicherung und Website",
+      "Telefon: Internet/Netzwerkstatus sowie dokumentierte SDK-Werbeberechtigungen. Uhr: Watch Face Push, Aktivierung und vorübergehender Datensync-Vordergrunddienst/Wake-Lock. Keine ständige Hintergrundsammlung von Gesundheit/GPS. Lokale Inhalte bleiben bis zur Löschung; Anbieterdaten gemäß deren Regeln. Android-Isolation und Signaturen bieten Schutz, keine absolute Garantie. GitHub Pages kann technische Verbindungsprotokolle verarbeiten. Keine Website-Analyse/Werbung; localStorage merkt nur das Design."
+    ],
+    [
+      "Ihre Rechte und Kontakt",
+      "Sie können Projekte/Zifferblätter löschen, Berechtigungen widerrufen, Altersgruppe und verfügbare Werbeeinstellungen ändern. Je nach Land bestehen Rechte auf Auskunft, Berichtigung, Löschung, Widerspruch und Beschwerde bei einer Aufsicht. Alternix besitzt keine Serverkopie Ihrer Projekte. Kontakt: alternix.apps@gmail.com. Änderungen an App/Gesetz können diese Erklärung ändern; Versionsdatum siehe oben."
+    ]
+  ],
+  "es": [
+    [
+      "Acerca de la app",
+      "Watch Face Lab de Alternix (com.alternix.watchfacelab) crea e instala esferas mediante un editor de teléfono y un complemento Wear OS. No hay cuenta Alternix, nube de proyectos, analítica propia, Firebase Analytics ni Crashlytics. Esta política cubre ambas apps y el sitio."
+    ],
+    [
+      "Proyectos y fotos locales",
+      "Proyectos, capas, fotos elegidas, preferencias, franja de edad e historial de instalación se guardan en el almacenamiento privado del teléfono. El selector del sistema da acceso solo al archivo elegido, sin cámara ni permiso de toda la galería. Las fotos se procesan localmente y no se entregan intencionadamente a anunciantes. Puede borrar proyectos; borrar datos o desinstalar elimina los datos locales. Copias en la nube y traslado de datos entre dispositivos están desactivados. Se pierde también la clave no exportable de las esferas; puede ser necesario quitar una esfera antigua antes de sustituirla."
+    ],
+    [
+      "Teléfono y reloj",
+      "A petición suya, el paquete con fotos/texto, token de validación y órdenes viajan al reloj vinculado mediante Google Wearable Data Layer. Vuelven modelo, versión del sistema, disponibilidad de app, identificadores de esferas y estado. Google puede usar Bluetooth, Wi-Fi o su infraestructura; no se garantiza que todo permanezca en ambos dispositivos. La caché temporal se elimina tras procesarse, o más tarde si hubo interrupción. Las esferas instaladas permanecen hasta su eliminación o sustitución."
+    ],
+    [
+      "Indicadores y brújula",
+      "Wear OS o proveedores elegidos suministran pulso, pasos, batería y complicaciones en el reloj. Watch Face Lab no envía lecturas de salud al teléfono, Alternix ni SDK publicitarios, ni crea historial de salud. Los proveedores tienen sus propias políticas y permisos. Orientación/brújula se usa para mostrar información, sin almacenarla ni subirla. No es consejo médico ni garantía de seguridad o navegación."
+    ],
+    [
+      "Publicidad y edad",
+      "Hay banners AdMob solo en el teléfono. Se propone un vídeo voluntario por importar una foto o enviar un diseño. Cancelar conserva el proyecto; si no hay vídeo disponible, se puede continuar gratis. No hay anuncios en el reloj ni las esferas. Antes de pedir anuncios se elige 13–17 o 18+, sin fecha de nacimiento. Adolescentes: TEEN, sin personalización, clasificación G y señal UMP de edad inferior al consentimiento. No dirigido a menores de 13."
+    ],
+    [
+      "Google y consentimiento",
+      "Google y socios pueden recopilar/compartir IP y ubicación aproximada derivada, identificadores, interacciones, diagnósticos y señales de consentimiento para anuncios, medición, analítica, seguridad y prevención de fraude. UMP gestiona el consentimiento y autoriza solicitudes; las opciones necesarias aparecen en ajustes. Rechazar personalización no elimina necesariamente anuncios contextuales/limitados. Conservación y tratamiento internacional siguen políticas de proveedores; Google indica TLS en Mobile Ads. No vendemos contenido ni añadimos intencionadamente fotos o salud a solicitudes publicitarias."
+    ],
+    [
+      "Permisos, conservación y sitio",
+      "Teléfono: Internet/estado de red y permisos publicitarios documentados de SDK. Reloj: Watch Face Push, activación y servicio temporal de sincronización en primer plano/wake lock. No hay recopilación continua de salud/GPS en segundo plano. Contenido local hasta eliminarlo; datos de proveedores según sus reglas. Aislamiento Android y firmas protegen archivos sin garantía absoluta. GitHub Pages puede tratar registros técnicos. El sitio no tiene analítica ni anuncios; localStorage solo recuerda el tema."
+    ],
+    [
+      "Derechos y contacto",
+      "Puede borrar proyectos/esferas, revocar permisos, cambiar franja de edad y opciones publicitarias disponibles. Según su país puede tener derechos de acceso, rectificación, supresión, oposición y reclamación ante una autoridad. Alternix no tiene copia de sus proyectos en un servidor. Contacto: alternix.apps@gmail.com. La política puede cambiar con la app o las leyes; fecha de versión arriba."
+    ]
+  ],
+  "fr": [
+    [
+      "À propos",
+      "Watch Face Lab par Alternix (com.alternix.watchfacelab) crée et installe des cadrans avec un éditeur téléphonique et un compagnon Wear OS. Aucun compte Alternix, stockage cloud des projets, serveur analytique propre, Firebase Analytics ou Crashlytics. Cette politique couvre les deux apps et ce site."
+    ],
+    [
+      "Projets et photos",
+      "Projets, calques, photos choisies, préférences, tranche d’âge et historique d’installation restent dans le stockage privé du téléphone. Le sélecteur système autorise uniquement le fichier choisi, sans caméra ni accès global à la galerie. Les photos sont traitées localement et non intentionnellement transmises aux annonceurs. Supprimez les projets dans l’app ou effacez les données/désinstallez. Sauvegarde cloud et transfert des données entre appareils désactivés. Effacer les données détruit la clé non exportable des cadrans : un ancien cadran peut devoir être retiré avant remplacement."
+    ],
+    [
+      "Téléphone et montre",
+      "À votre demande, paquet du cadran avec photos/texte, jeton de validation et commandes passent à la montre associée via Google Wearable Data Layer. Modèle, OS, présence de l’app, identifiants de cadrans et état reviennent au téléphone. Google peut utiliser Bluetooth, Wi-Fi ou son infrastructure ; les données ne restent pas nécessairement sur les deux appareils. Cache temporaire supprimé après traitement, parfois plus tard après interruption. Cadrans conservés jusqu’à suppression/remplacement."
+    ],
+    [
+      "Indicateurs et boussole",
+      "Wear OS ou les fournisseurs choisis affichent pouls, pas, batterie et complications. Watch Face Lab ne transmet pas les mesures de santé au téléphone, à Alternix ou aux SDK publicitaires et ne crée pas d’historique santé. Les fournisseurs ont leurs propres règles/autorisations. Orientation/boussole servent à l’affichage sans conservation ni envoi. Ni conseil médical ni garantie de sécurité/navigation."
+    ],
+    [
+      "Publicité et âge",
+      "Bannières AdMob sur téléphone seulement. Une vidéo volontaire est proposée pour chaque import de photo ou envoi de cadran. Annuler conserve le projet ; sans vidéo disponible, continuation gratuite. Aucune publicité sur montre/cadrans. Avant les requêtes : tranche 13–17 ou 18+, sans date de naissance. Adolescents : TEEN, personnalisation désactivée, classification G et signal UMP sous l’âge de consentement. Non destiné aux moins de 13 ans."
+    ],
+    [
+      "Google et consentement",
+      "Google/partenaires peuvent collecter/partager IP, localisation approximative dérivée, identifiants, interactions, diagnostics et signaux de consentement pour publicité, mesure, analyse, sécurité et lutte antifraude. UMP gère consentement et autorisation des requêtes ; les options requises figurent dans les réglages. Refuser la personnalisation peut laisser des annonces contextuelles/limitées. Conservation et traitement international selon les fournisseurs ; Google indique TLS pour Mobile Ads. Nous ne vendons pas les projets et n’ajoutons pas intentionnellement photos/santé aux requêtes publicitaires."
+    ],
+    [
+      "Autorisations et site",
+      "Téléphone : Internet/état réseau et autorisations publicitaires documentées des SDK. Montre : Watch Face Push, activation et service temporaire de synchronisation au premier plan/wake lock. Pas de collecte permanente de santé/GPS en arrière-plan. Données locales jusqu’à suppression ; fournisseurs selon leurs règles. Isolation Android et signatures protègent les fichiers sans garantie absolue. GitHub Pages peut traiter des journaux techniques. Ce site n’a ni publicité ni analyse ; localStorage ne retient que le thème."
+    ],
+    [
+      "Droits et contact",
+      "Vous pouvez supprimer projets/cadrans, révoquer les autorisations, modifier âge et choix publicitaires disponibles. Selon votre pays : accès, rectification, effacement, opposition et réclamation auprès d’une autorité. Alternix n’a pas de copie serveur des projets. Contact : alternix.apps@gmail.com. Cette politique peut évoluer avec l’app ou la loi ; date de version ci-dessus."
+    ]
+  ],
+  "it": [
+    [
+      "Informazioni",
+      "Watch Face Lab di Alternix (com.alternix.watchfacelab) crea e installa quadranti con un editor per telefono e un complemento Wear OS. Nessun account Alternix, cloud per progetti, analisi proprietaria, Firebase Analytics o Crashlytics. Informativa valida per entrambe le app e il sito."
+    ],
+    [
+      "Progetti e foto",
+      "Progetti, livelli, foto selezionate, preferenze, fascia d’età e cronologia installazioni sono nello spazio privato del telefono. Il selettore di sistema concede solo il file scelto, senza fotocamera o intera galleria. Foto elaborate localmente, non inviate intenzionalmente alla pubblicità. Puoi eliminare progetti; cancellare dati/disinstallare rimuove i dati locali. Backup cloud e trasferimento dati tra dispositivi disattivati. Si perde anche la chiave non esportabile dei quadranti: potrebbe servire rimuovere un vecchio quadrante prima di sostituirlo."
+    ],
+    [
+      "Trasferimento all’orologio",
+      "Su richiesta, pacchetto con foto/testo, token di convalida e comandi passano all’orologio associato tramite Google Wearable Data Layer. Tornano modello, OS, disponibilità dell’app, identificatori dei quadranti e stato. Google può usare Bluetooth, Wi-Fi o propria infrastruttura; i dati non restano necessariamente sui due dispositivi. Cache temporanea eliminata dopo il processo o successivamente in caso di interruzione. Quadranti conservati fino a rimozione/sostituzione."
+    ],
+    [
+      "Indicatori e bussola",
+      "Wear OS o fornitori scelti mostrano battito, passi, batteria e complicazioni. Watch Face Lab non invia letture sanitarie al telefono, Alternix o SDK pubblicitari e non crea cronologie sanitarie. I fornitori hanno propri permessi/politiche. Bussola/orientamento servono alla visualizzazione, senza conservazione o caricamento. Non sono consulenza medica né garanzia di sicurezza/navigazione."
+    ],
+    [
+      "Pubblicità ed età",
+      "Banner AdMob solo sul telefono. Un video volontario è proposto per ogni importazione foto o invio di design. Annullare conserva il progetto; senza video disponibile si continua gratis. Nessuna pubblicità su orologio/quadranti. Prima delle richieste si sceglie 13–17 o 18+, senza data di nascita. Adolescenti: TEEN, personalizzazione disattivata, classificazione G, segnale UMP sotto l’età del consenso. Non destinata a minori di 13 anni."
+    ],
+    [
+      "Google e consenso",
+      "Google/partner possono raccogliere/condividere IP e posizione approssimativa derivata, identificatori, interazioni, diagnostica e segnali di consenso per pubblicità, misurazione, analisi, sicurezza e antifrode. UMP gestisce consenso e autorizzazione delle richieste; opzioni richieste nelle impostazioni. Rifiutare la personalizzazione può lasciare annunci contestuali/limitati. Conservazione e trattamento internazionale secondo i fornitori; Google indica TLS per Mobile Ads. Non vendiamo progetti né aggiungiamo intenzionalmente foto/salute alle richieste."
+    ],
+    [
+      "Permessi e sito",
+      "Telefono: Internet/stato rete e permessi pubblicitari documentati degli SDK. Orologio: Watch Face Push, attivazione e servizio temporaneo di sincronizzazione in primo piano/wake lock. Nessuna raccolta sanitaria/GPS continua in background. Dati locali fino all’eliminazione; fornitori secondo le proprie regole. Isolamento Android e firme proteggono file senza garanzia assoluta. GitHub Pages può trattare log tecnici. Il sito non ha analisi/pubblicità; localStorage ricorda solo il tema."
+    ],
+    [
+      "Diritti e contatti",
+      "Puoi eliminare progetti/quadranti, revocare permessi, cambiare fascia d’età e opzioni pubblicitarie disponibili. Secondo il paese possono spettare accesso, rettifica, cancellazione, opposizione e reclamo a un’autorità. Alternix non ha copie server dei progetti. Contatto: alternix.apps@gmail.com. Possibili modifiche con app o leggi; data della versione sopra."
+    ]
+  ],
+  "pl": [
+    [
+      "O aplikacji",
+      "Watch Face Lab firmy Alternix (com.alternix.watchfacelab) tworzy i instaluje tarcze za pomocą edytora na telefonie i aplikacji Wear OS. Brak konta Alternix, chmury projektów, własnej analityki, Firebase Analytics i Crashlytics. Polityka dotyczy obu aplikacji i witryny."
+    ],
+    [
+      "Projekty i zdjęcia",
+      "Projekty, warstwy, wybrane zdjęcia, ustawienia, grupa wiekowa i historia instalacji są w prywatnej pamięci telefonu. Selektor systemowy daje dostęp tylko do wybranego pliku, bez aparatu i całej galerii. Zdjęcia przetwarzamy lokalnie, bez celowego przekazywania reklamodawcom. Można usuwać projekty; wyczyszczenie danych/odinstalowanie usuwa dane lokalne. Kopie chmurowe i transfer danych aplikacji między urządzeniami są wyłączone. Ginie też nieeksportowalny klucz podpisu tarcz; starą tarczę może być trzeba usunąć przed zastąpieniem."
+    ],
+    [
+      "Telefon i zegarek",
+      "Na żądanie pakiet tarczy ze zdjęciami/tekstem, token walidacji i polecenia trafiają do sparowanego zegarka przez Google Wearable Data Layer. Wracają model, wersja OS, dostępność aplikacji, identyfikatory tarcz i status. Google może używać Bluetooth, Wi-Fi lub swojej infrastruktury; dane nie muszą pozostawać na dwóch urządzeniach. Tymczasowy cache jest usuwany po przetworzeniu, a po przerwaniu czasem później. Tarcze pozostają do usunięcia/zastąpienia."
+    ],
+    [
+      "Wskaźniki i kompas",
+      "Wear OS lub wybrani dostawcy pokazują puls, kroki, baterię i komplikacje. Watch Face Lab nie wysyła pomiarów zdrowia do telefonu, Alternix ani SDK reklamowych i nie tworzy historii zdrowia. Dostawcy mają własne zgody/polityki. Orientacja/kompas służy wyświetlaniu bez zapisu i przesyłania. Nie jest to porada medyczna ani gwarancja bezpieczeństwa/nawigacji."
+    ],
+    [
+      "Reklamy i wiek",
+      "Banery AdMob są tylko na telefonie. Dobrowolny film proponujemy przed każdym importem zdjęcia lub wysłaniem projektu. Anulowanie zachowuje projekt; bez dostępnego filmu można kontynuować bezpłatnie. Brak reklam na zegarku/tarczach. Przed żądaniem reklam wybierana jest grupa 13–17 lub 18+, bez daty urodzenia. Nastolatki: TEEN, wyłączona personalizacja, ocena G, sygnał UMP poniżej wieku zgody. Produkt nie jest dla dzieci poniżej 13 lat."
+    ],
+    [
+      "Google i zgoda",
+      "Google/partnerzy mogą zbierać/udostępniać IP i przybliżoną lokalizację z IP, identyfikatory, interakcje, diagnostykę oraz sygnały zgody do reklam, pomiarów, analityki, bezpieczeństwa i przeciwdziałania oszustwom. UMP zarządza zgodą i dopuszczeniem żądań; wymagane opcje są w ustawieniach. Brak personalizacji nie musi usuwać reklam kontekstowych/ograniczonych. Retencja i przetwarzanie międzynarodowe według dostawców; Google podaje TLS w Mobile Ads. Nie sprzedajemy projektów i nie dodajemy celowo zdjęć/zdrowia do żądań reklam."
+    ],
+    [
+      "Uprawnienia i witryna",
+      "Telefon: Internet/stan sieci i udokumentowane uprawnienia reklamowe SDK. Zegarek: Watch Face Push, aktywacja oraz tymczasowa usługa synchronizacji na pierwszym planie/wake lock. Brak stałego zbierania zdrowia/GPS w tle. Dane lokalne do usunięcia, dane dostawców według ich zasad. Izolacja Android i podpisy chronią pliki bez absolutnej gwarancji. GitHub Pages może przetwarzać logi techniczne. Witryna bez analityki/reklam; localStorage pamięta tylko motyw."
+    ],
+    [
+      "Prawa i kontakt",
+      "Można usuwać projekty/tarcze, cofać uprawnienia, zmieniać grupę wieku i dostępne opcje reklam. Zależnie od kraju: dostęp, sprostowanie, usunięcie, sprzeciw i skarga do organu nadzorczego. Alternix nie ma serwerowej kopii projektów. Kontakt: alternix.apps@gmail.com. Polityka może zmieniać się z aplikacją/prawem; data wersji powyżej."
+    ]
+  ],
+  "pt": [
+    [
+      "Sobre a aplicação",
+      "Watch Face Lab da Alternix (com.alternix.watchfacelab) cria e instala mostradores através de um editor no telefone e complemento Wear OS. Sem conta Alternix, nuvem de projetos, analítica própria, Firebase Analytics ou Crashlytics. A política cobre ambas as aplicações e o site."
+    ],
+    [
+      "Projetos e fotos",
+      "Projetos, camadas, fotos escolhidas, preferências, faixa etária e histórico de instalações ficam no armazenamento privado do telefone. O seletor do sistema permite só o ficheiro escolhido, sem câmara ou acesso à galeria inteira. Fotos tratadas localmente, não fornecidas intencionalmente à publicidade. Pode eliminar projetos; limpar dados/desinstalar remove dados locais. Cópias na nuvem e transferência de dados entre dispositivos desativadas. Perde-se também a chave não exportável dos mostradores; um mostrador antigo pode precisar de remoção antes de substituição."
+    ],
+    [
+      "Telefone e relógio",
+      "A pedido, o pacote com fotos/texto, token de validação e comandos seguem para o relógio emparelhado via Google Wearable Data Layer. Regressam modelo, versão do sistema, disponibilidade da app, identificadores dos mostradores e estado. Google pode usar Bluetooth, Wi-Fi ou infraestrutura própria; não se garante que os dados fiquem nos dois dispositivos. Cache temporária removida após processamento, por vezes mais tarde após interrupção. Mostradores ficam até remoção/substituição."
+    ],
+    [
+      "Indicadores e bússola",
+      "Wear OS ou fornecedores escolhidos apresentam pulso, passos, bateria e complicações. Watch Face Lab não envia leituras de saúde ao telefone, Alternix ou SDK publicitários e não cria histórico de saúde. Fornecedores têm permissões/políticas próprias. Orientação/bússola serve à apresentação, sem guardar ou enviar. Não é aconselhamento médico nem garantia de segurança/navegação."
+    ],
+    [
+      "Publicidade e idade",
+      "Banners AdMob apenas no telefone. Um vídeo voluntário é proposto por importação de foto ou envio de design. Cancelar preserva o projeto; sem vídeo disponível pode continuar gratuitamente. Sem anúncios no relógio/mostradores. Antes dos pedidos escolhe-se 13–17 ou 18+, sem nascimento. Adolescentes: TEEN, personalização desativada, classificação G e sinal UMP abaixo da idade de consentimento. Não dirigida a menores de 13 anos."
+    ],
+    [
+      "Google e consentimento",
+      "Google/parceiros podem recolher/partilhar IP e localização aproximada derivada, identificadores, interações, diagnósticos e sinais de consentimento para publicidade, medição, análise, segurança e prevenção de fraude. UMP gere consentimento e autorização de pedidos; opções necessárias nas definições. Recusar personalização pode manter anúncios contextuais/limitados. Retenção e processamento internacional segundo fornecedores; Google indica TLS para Mobile Ads. Não vendemos projetos nem adicionamos intencionalmente fotos/saúde a pedidos publicitários."
+    ],
+    [
+      "Permissões e site",
+      "Telefone: Internet/estado de rede e permissões publicitárias documentadas dos SDK. Relógio: Watch Face Push, ativação e serviço temporário de sincronização em primeiro plano/wake lock. Sem recolha contínua de saúde/GPS em segundo plano. Dados locais até eliminação; fornecedores conforme suas regras. Isolamento Android e assinaturas protegem ficheiros sem garantia absoluta. GitHub Pages pode tratar registos técnicos. Site sem análise/publicidade; localStorage guarda só o tema."
+    ],
+    [
+      "Direitos e contacto",
+      "Pode eliminar projetos/mostradores, revogar permissões, mudar faixa etária e opções publicitárias disponíveis. Conforme o país: acesso, retificação, apagamento, oposição e reclamação à autoridade. Alternix não tem cópias dos projetos no servidor. Contacto: alternix.apps@gmail.com. Política sujeita a alterações com app/leis; data de versão acima."
+    ]
+  ]
+}
