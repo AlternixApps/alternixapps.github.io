@@ -11,13 +11,14 @@ import add_color_swatch_lab_home_card as home
 ROOT = Path(__file__).resolve().parents[1]
 APP = Path(r'D:\18. Watch Face Lab')
 POLICY = json.loads((ROOT / 'scripts/watch_face_lab_policy.json').read_text(encoding='utf-8'))
+POLICY_DATE = '2026-09-04'
 original_copy = template.translated_copy
 def translated(language):
     result = copy.deepcopy(original_copy(language))
     result['sections'] = POLICY[language]
-    result['updated'] = result['updated'].split(':')[0] + ': 2026-09-03'
+    result['updated'] = result['updated'].split(':')[0] + ': ' + POLICY_DATE
     result['description'] = result['description'].replace('Color Swatch Lab', 'Watch Face Lab')
-    result['support_intro'] = POLICY[language][0][1]
+    result['support_intro'] = POLICY[language][0][1].split('. ')[0] + '.'
     result['support_cards'] = [
         ('Android 9+ · Wear OS 6+', 'Watch Face Push · Android 16+ (watch).'),
         POLICY[language][2], POLICY[language][4], POLICY[language][-1],
@@ -49,14 +50,18 @@ def main():
         offline.parent.mkdir(parents=True, exist_ok=True)
         sections = '\n\n'.join(title + '\n' + body for title, body in POLICY[lang])
         providers = '\n\nGoogle Privacy: https://policies.google.com/privacy\nGoogle Mobile Ads: https://developers.google.com/admob/android/privacy/play-data-disclosure\nGitHub Privacy: https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement\n'
-        offline.write_text('Watch Face Lab · Alternix\n2026-09-03\n\n' + sections + providers, encoding='utf-8')
+        title = original_copy(lang)['privacy']
+        offline.write_text(f'{title}\nWatch Face Lab · Alternix\n{POLICY_DATE}\n\n' + sections + providers, encoding='utf-8')
         for page, body in [('privacy', template.privacy_page(lang)), ('support', template.support_page(lang))]:
             path = ROOT / prefix / 'watch-face-lab' / page / 'index.html'
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_text(branded(body)+'\n', encoding='utf-8')
             url = f'https://alternixapps.github.io/{(prefix / "watch-face-lab" / page).as_posix()}/'
             if f'<loc>{url}</loc>' not in sitemap:
-                sitemap = sitemap.replace('</urlset>', f'<url><loc>{url}</loc><lastmod>2026-09-03</lastmod></url></urlset>')
+                sitemap = sitemap.replace('</urlset>', f'<url><loc>{url}</loc><lastmod>{POLICY_DATE}</lastmod></url></urlset>')
+            else:
+                sitemap = re.sub(r'(<url><loc>' + re.escape(url) + r'</loc><lastmod>)[^<]+(</lastmod>)',
+                    lambda match: match.group(1) + POLICY_DATE + match.group(2), sitemap)
         page = ROOT / prefix / 'index.html'
         html = page.read_text(encoding='utf-8')
         if '<h3>Watch Face Lab</h3>' not in html:
