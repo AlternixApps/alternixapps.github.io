@@ -1,308 +1,308 @@
 {
-  "en": [
-    [
-      "About this policy",
-      "Watch Face Lab is an app by Alternix for creating and installing Wear OS watch faces. This policy covers the phone app, watch companion and website. You do not need an account, and we do not store your projects on our servers."
-    ],
-    [
-      "Your designs and photos",
-      "Projects, selected photos, settings, age category, installation history and unused rewards are stored on your phone to provide the editor and restore your work. The app accesses only images you choose, not your whole gallery. Photos are processed locally and are not sent to advertisers."
-    ],
-    [
-      "Connecting your watch",
-      "When you install a design, its images and text are sent to your watch through Google services. The phone receives device details, installed watch-face identifiers and installation status to manage the transfer. Google may use its infrastructure for this connection. Steps, pulse and other readings come from providers on the watch; we do not send them to the phone or advertisers or keep a health history. Compass sensor readings are used only for the display and are not stored or sent."
-    ],
-    [
-      "Advertising",
-      "The phone app uses Google AdMob for banners and rewarded ads. There are no ads on the watch. Google and advertising partners may collect and share IP addresses, approximate location, device/account identifiers, app and ad interactions, diagnostics and consent choices for advertising, measurement and fraud prevention. These identifiers include the advertising ID and App Set ID; App Set ID is used for analytics and fraud prevention, not ad personalization. We do not provide your photos or health readings to AdMob."
-    ],
-    [
-      "Your advertising choices",
-      "We ask for an age category, 13–17 or 18+, rather than your date of birth. For users aged 13–17, personalized ads are disabled. The app is not intended for children under 13. Where required, Google asks for your advertising consent; you can change available choices in the app settings. Declining personalization does not necessarily remove ads. Premium backgrounds and styles require one rewarded ad for one installation. A personal photo requires one video before import; the photo itself does not require another video at installation. Standard designs install for free. You may decline and keep editing. If an ad is unavailable, we offer free continuation."
-    ],
-    [
-      "Storage, deletion and security",
-      "You can delete projects in the app. Clearing its data or uninstalling removes local app data; installed faces must be removed separately on the watch. We do not keep a cloud backup of your projects. App storage is protected by Android, and Google encrypts advertising data in transit. Google and its partners retain data under their own policies and may process it in other countries. If you contact support, we use your email and message to respond and keep the correspondence only as needed for support and legal obligations."
-    ],
-    [
-      "This website",
-      "The site is hosted on GitHub Pages. GitHub may process your IP address and technical access logs. We do not use advertising or analytics scripts on the site. Your browser remembers only your theme preference."
-    ],
-    [
-      "Questions and updates",
-      "Contact Alternix at alternix.apps@gmail.com about privacy or your data. Depending on your country, you may have rights to access, correct or delete data, object to processing, or complain to a data protection authority. We update this policy when our practices change; the date above shows the latest revision."
-    ]
-  ],
   "ru": [
     [
       "Об этой политике",
-      "Watch Face Lab — приложение Alternix для создания и установки циферблатов Wear OS. Эта политика относится к приложению на телефоне, компаньону на часах и сайту. Регистрация не нужна. Мы не храним ваши проекты на своих серверах."
+      "Watch Face Lab от Alternix позволяет создавать и устанавливать циферблаты Wear OS. Политика относится к приложению на телефоне, компаньону на часах и сайту. Регистрация не нужна."
     ],
     [
-      "Ваши дизайны и фотографии",
-      "Проекты, выбранные фото, настройки, возрастная категория, история установок и неиспользованные награды сохраняются на телефоне, чтобы редактор работал и вы могли вернуться к своим дизайнам. Приложение получает доступ только к выбранным изображениям, а не ко всей галерее. Фотографии обрабатываются на устройстве и не передаются рекламодателям."
+      "Проекты и фотографии",
+      "Проекты, выбранные фото, настройки, возрастная категория, история установок и полученные награды хранятся на телефоне для работы приложения. Мы не создаём облачных копий проектов. Приложение обрабатывает только выбранные вами изображения, без доступа ко всей галерее. Проекты и фото не передаются рекламодателям."
     ],
     [
-      "Подключение часов",
-      "При установке дизайн вместе с изображениями и текстом передаётся на часы через сервисы Google. Для управления передачей телефон получает сведения об устройстве, установленных циферблатах и результате установки. Google может использовать для соединения свою инфраструктуру. Шаги, пульс и другие показатели поступают от поставщиков данных на часах: мы не отправляем их на телефон или рекламодателям и не ведём историю здоровья. Данные датчиков компаса используются только для отображения, не сохраняются и не отправляются."
+      "Часы и показатели",
+      "По вашей команде дизайн с изображениями и текстом передаётся на часы через сервисы Google, которые могут использовать свою инфраструктуру. Для подключения и установки устройства обмениваются сведениями о часах, установленных циферблатах и результате передачи. Шаги, пульс и другие показатели предоставляют система и поставщики данных на часах с учётом разрешений. Мы не передаём показатели здоровья на телефон или рекламодателям и не ведём их историю. Показания компаса не сохраняются и не отправляются."
     ],
     [
       "Реклама",
-      "В приложении на телефоне есть баннеры и реклама с вознаграждением Google AdMob. На часах рекламы нет. Google и рекламные партнёры могут собирать и передавать IP-адрес, приблизительное местоположение, идентификаторы устройства и аккаунта, взаимодействия с приложением и рекламой, диагностику и выбор согласия для показа и оценки рекламы, а также защиты от мошенничества. Среди идентификаторов — рекламный ID и App Set ID; последний используется для аналитики и защиты от мошенничества, а не для персонализации рекламы. Мы не передаём AdMob ваши фото или показатели здоровья."
+      "Google AdMob показывает рекламу только на телефоне. Google и рекламные партнёры могут собирать и передавать IP-адрес, примерное местоположение по IP, идентификаторы устройства и аккаунта, взаимодействия с приложением и рекламой, диагностику и выбор согласия. Цели — реклама, аналитика и защита от мошенничества. Рекламные данные передаются в зашифрованном виде. App Set ID — идентификатор для аналитики и защиты от мошенничества, не для персонализации, измерения рекламы или связи с другими идентификаторами в рекламных целях."
     ],
     [
       "Ваш выбор",
-      "Мы спрашиваем возрастную категорию — 13–17 или 18+, а не дату рождения. Для пользователей 13–17 лет персонализированная реклама отключена. Приложение не предназначено для детей младше 13 лет. Там, где это требуется, Google запрашивает согласие на рекламу; доступные варианты можно изменить в настройках приложения. Отказ от персонализации не обязательно отключает рекламу. Премиум-фоны и стили доступны для одной установки после просмотра одной рекламы. Для своего фото видео нужно посмотреть перед добавлением; само фото не требует повторного видео при установке. Стандартные дизайны устанавливаются бесплатно. Можно отказаться и продолжить редактирование. Если реклама недоступна, мы предлагаем продолжить бесплатно."
+      "Перед рекламой вы выбираете возрастную категорию: 13–17 или 18+, без даты рождения. Для 13–17 лет персонализация отключена; приложение не предназначено для детей младше 13 лет. Возрастную категорию и доступные варианты рекламного согласия можно изменить в настройках. Там, где требуется, Google запрашивает согласие. Отказ от персонализации не отключает всю рекламу. Просмотр рекламы с вознаграждением доброволен: отказ не блокирует редактор и бесплатные функции."
     ],
     [
-      "Хранение, удаление и защита",
-      "Проекты можно удалить в приложении. Очистка его данных или удаление приложения удаляет локальные данные; установленные циферблаты нужно удалять отдельно на часах. Облачных копий ваших проектов у нас нет. Хранилище приложения защищено средствами Android, а Google шифрует рекламные данные при передаче. Google и партнёры хранят данные по своим правилам и могут обрабатывать их в других странах. Если вы пишете в поддержку, мы используем ваш адрес и сообщение для ответа и храним переписку лишь столько, сколько нужно для поддержки и выполнения требований закона."
+      "Хранение и удаление",
+      "Локальные данные защищены средствами Android. Проекты можно удалить в приложении; очистка данных или удаление приложения удаляет его локальные данные. Циферблаты удаляются отдельно на часах. Google и партнёры хранят данные по своим политикам и могут обрабатывать их в других странах. Если вы пишете в поддержку, мы используем ваш адрес и сообщение для ответа и храним переписку только столько, сколько нужно для поддержки и выполнения требований закона."
     ],
     [
-      "Этот сайт",
-      "Сайт размещён на GitHub Pages. GitHub может обрабатывать ваш IP-адрес и технические журналы посещений. Мы не используем на сайте рекламные или аналитические скрипты. В браузере сохраняется только выбранная тема оформления."
+      "Сайт",
+      "Сайт работает на GitHub Pages: GitHub может получать IP-адрес и журналы запросов для работы сайта. Собственных рекламных и аналитических скриптов здесь нет. В браузере сохраняется выбранная тема оформления."
     ],
     [
-      "Вопросы и изменения",
-      "По вопросам конфиденциальности и ваших данных пишите Alternix: alternix.apps@gmail.com. В зависимости от страны у вас могут быть права на доступ, исправление или удаление данных, возражение против обработки и обращение в надзорный орган. Мы обновляем политику при изменении работы с данными; дата последней редакции указана выше."
+      "Контакты и изменения",
+      "Вопросы и запросы о данных: Alternix, alternix.apps@gmail.com. В зависимости от страны у вас могут быть права на доступ, исправление, удаление данных, возражение против обработки и жалобу в надзорный орган. При изменениях мы обновляем политику и дату редакции."
+    ]
+  ],
+  "en": [
+    [
+      "About this policy",
+      "Watch Face Lab by Alternix lets you create and install Wear OS watch faces. This policy covers the phone app, watch companion and website. No account is required."
+    ],
+    [
+      "Projects and photos",
+      "Projects, selected photos, settings, age category, installation history and earned rewards are stored on your phone to operate the app. We do not create cloud copies of projects. The app processes only images you select, without accessing your whole gallery. Projects and photos are not shared with advertisers."
+    ],
+    [
+      "Watches and readings",
+      "At your request, designs containing images and text are sent to your watch through Google services, which may use Google's infrastructure. To connect and install, devices exchange watch information, installed watch faces and transfer results. Steps, heart rate and other readings come from the watch system and data providers, subject to permissions. We do not send health readings to the phone or advertisers or keep a health history. Compass readings are not stored or transmitted."
+    ],
+    [
+      "Advertising",
+      "Google AdMob displays ads only on the phone. Google and advertising partners may collect and share IP addresses, approximate location from IP, device and account identifiers, app and ad interactions, diagnostics and consent choices. Purposes include advertising, analytics and fraud prevention. Advertising data is encrypted in transit. App Set ID is used for analytics and fraud prevention, not ad personalization, ad measurement or linking with other identifiers for advertising."
+    ],
+    [
+      "Your choices",
+      "Before ads, you select an age category: 13–17 or 18+, not a birth date. Personalization is disabled for ages 13–17; the app is not intended for children under 13. You can change your age category and available advertising consent choices in settings. Google requests consent where required. Declining personalization does not turn off all ads. Rewarded ads are optional: declining does not block the editor or free features."
+    ],
+    [
+      "Storage and deletion",
+      "Android safeguards local app data. You can delete projects in the app; clearing app data or uninstalling removes its local data. Watch faces must be deleted separately on the watch. Google and partners retain data under their policies and may process it in other countries. If you contact support, we use your email address and message to respond and keep correspondence only as long as needed for support and legal requirements."
+    ],
+    [
+      "Website",
+      "The site runs on GitHub Pages: GitHub may receive IP addresses and request logs to operate the site. We use no advertising or analytics scripts here. Your selected theme is stored in your browser."
+    ],
+    [
+      "Contact and changes",
+      "Questions and data requests: Alternix, alternix.apps@gmail.com. Depending on your country, you may have rights to access, correct or delete data, object to processing and complain to a supervisory authority. When practices change, we update this policy and its revision date."
     ]
   ],
   "uk": [
     [
       "Про цю політику",
-      "Watch Face Lab — застосунок Alternix для створення та встановлення циферблатів Wear OS. Ця політика стосується застосунку на телефоні, компаньйона на годиннику та сайту. Реєстрація не потрібна. Ми не зберігаємо ваші проєкти на своїх серверах."
+      "Watch Face Lab від Alternix дає змогу створювати й установлювати циферблати Wear OS. Політика стосується застосунку на телефоні, компаньйона на годиннику та сайту. Реєстрація не потрібна."
     ],
     [
-      "Ваші дизайни та фотографії",
-      "Проєкти, вибрані фото, налаштування, вікова категорія, історія встановлень і невикористані винагороди зберігаються на телефоні для роботи редактора й повернення до ваших дизайнів. Застосунок має доступ лише до вибраних зображень, а не до всієї галереї. Фотографії обробляються на пристрої й не передаються рекламодавцям."
+      "Проєкти та фотографії",
+      "Проєкти, вибрані фото, налаштування, вікова категорія, історія встановлень і отримані винагороди зберігаються на телефоні для роботи застосунку. Ми не створюємо хмарних копій проєктів. Застосунок обробляє лише вибрані вами зображення, без доступу до всієї галереї. Проєкти й фото не передаються рекламодавцям."
     ],
     [
-      "Підключення годинника",
-      "Під час встановлення дизайн разом із зображеннями й текстом передається на годинник через сервіси Google. Для керування передаванням телефон отримує відомості про пристрій, установлені циферблати та результат встановлення. Google може використовувати власну інфраструктуру для з’єднання. Кроки, пульс та інші показники надходять від постачальників даних на годиннику: ми не надсилаємо їх на телефон чи рекламодавцям і не ведемо історію здоров’я. Дані датчиків компаса використовуються лише для відображення, не зберігаються й не надсилаються."
+      "Годинник і показники",
+      "За вашою командою дизайн із зображеннями й текстом передається на годинник через сервіси Google, які можуть використовувати власну інфраструктуру. Для підключення та встановлення пристрої обмінюються відомостями про годинник, установлені циферблати й результат передачі. Кроки, пульс та інші показники надають система й постачальники даних на годиннику з урахуванням дозволів. Ми не передаємо показники здоров’я на телефон або рекламодавцям і не ведемо їхню історію. Показання компаса не зберігаються й не передаються."
     ],
     [
       "Реклама",
-      "У застосунку на телефоні є банери й реклама з винагородою Google AdMob. На годиннику реклами немає. Google і рекламні партнери можуть збирати й передавати IP-адресу, приблизне місцезнаходження, ідентифікатори пристрою й облікового запису, взаємодії із застосунком та рекламою, діагностику й вибір згоди для показу та оцінювання реклами й захисту від шахрайства. Серед ідентифікаторів — рекламний ID та App Set ID; останній використовується для аналітики й захисту від шахрайства, а не персоналізації реклами. Ми не передаємо AdMob ваші фото чи показники здоров’я."
+      "Google AdMob показує рекламу лише на телефоні. Google і рекламні партнери можуть збирати й передавати IP-адресу, приблизне місцезнаходження за IP, ідентифікатори пристрою та облікового запису, взаємодії із застосунком і рекламою, діагностику та вибір згоди. Цілі — реклама, аналітика й захист від шахрайства. Рекламні дані передаються в зашифрованому вигляді. App Set ID — ідентифікатор для аналітики й захисту від шахрайства, не для персоналізації, вимірювання реклами чи зв’язування з іншими ідентифікаторами в рекламних цілях."
     ],
     [
       "Ваш вибір",
-      "Ми запитуємо вікову категорію — 13–17 або 18+, а не дату народження. Для користувачів 13–17 років персоналізовану рекламу вимкнено. Застосунок не призначений для дітей до 13 років. Де це потрібно, Google запитує згоду на рекламу; доступні варіанти можна змінити в налаштуваннях застосунку. Відмова від персоналізації не обов’язково вимикає рекламу. Преміум-фони та стилі доступні для одного встановлення після перегляду однієї реклами. Для власного фото відео потрібно переглянути перед додаванням; саме фото не потребує повторного відео під час встановлення. Стандартні дизайни встановлюються безкоштовно. Можна відмовитися й продовжити редагування. Якщо реклама недоступна, ми пропонуємо продовжити безкоштовно."
+      "Перед рекламою ви вибираєте вікову категорію: 13–17 або 18+, без дати народження. Для 13–17 років персоналізацію вимкнено; застосунок не призначений для дітей до 13 років. Вікову категорію та доступні варіанти рекламної згоди можна змінити в налаштуваннях. Де це потрібно, Google запитує згоду. Відмова від персоналізації не вимикає всю рекламу. Перегляд реклами з винагородою добровільний: відмова не блокує редактор і безкоштовні функції."
     ],
     [
-      "Зберігання, видалення та захист",
-      "Проєкти можна видалити в застосунку. Очищення його даних або видалення застосунку видаляє локальні дані; встановлені циферблати потрібно видаляти окремо на годиннику. Хмарних копій ваших проєктів у нас немає. Сховище застосунку захищене засобами Android, а Google шифрує рекламні дані під час передавання. Google і партнери зберігають дані за власними правилами й можуть обробляти їх в інших країнах. Якщо ви пишете в підтримку, ми використовуємо вашу адресу та повідомлення для відповіді й зберігаємо листування лише стільки, скільки потрібно для підтримки та виконання вимог закону."
+      "Зберігання та видалення",
+      "Локальні дані захищені засобами Android. Проєкти можна видаляти в застосунку; очищення даних або видалення застосунку видаляє його локальні дані. Циферблати видаляються окремо на годиннику. Google і партнери зберігають дані за своїми політиками й можуть обробляти їх в інших країнах. Якщо ви пишете в підтримку, ми використовуємо вашу адресу й повідомлення для відповіді та зберігаємо листування лише стільки, скільки потрібно для підтримки й виконання вимог закону."
     ],
     [
-      "Цей сайт",
-      "Сайт розміщено на GitHub Pages. GitHub може обробляти вашу IP-адресу й технічні журнали відвідувань. Ми не використовуємо на сайті рекламні чи аналітичні скрипти. У браузері зберігається лише вибрана тема оформлення."
+      "Сайт",
+      "Сайт працює на GitHub Pages: GitHub може отримувати IP-адресу й журнали запитів для роботи сайту. Власних рекламних та аналітичних скриптів тут немає. У браузері зберігається вибрана тема оформлення."
     ],
     [
-      "Запитання та зміни",
-      "Щодо конфіденційності й ваших даних пишіть Alternix: alternix.apps@gmail.com. Залежно від країни ви можете мати право на доступ, виправлення чи видалення даних, заперечення проти обробки та звернення до наглядового органу. Ми оновлюємо політику, коли змінюється робота з даними; дату останньої редакції наведено вище."
+      "Контакти та зміни",
+      "Питання й запити щодо даних: Alternix, alternix.apps@gmail.com. Залежно від країни ви можете мати права на доступ, виправлення, видалення даних, заперечення проти обробки та скаргу до наглядового органу. У разі змін ми оновлюємо політику й дату редакції."
     ]
   ],
   "de": [
     [
       "Über diese Richtlinie",
-      "Watch Face Lab ist eine App von Alternix zum Gestalten und Installieren von Wear OS-Zifferblättern. Diese Richtlinie gilt für die Smartphone-App, die Begleit-App auf der Uhr und diese Website. Ein Konto ist nicht erforderlich. Wir speichern Ihre Projekte nicht auf unseren Servern."
+      "Mit Watch Face Lab von Alternix können Sie Wear-OS-Zifferblätter erstellen und installieren. Diese Richtlinie gilt für die Telefon-App, die Begleit-App auf der Uhr und die Website. Ein Konto ist nicht erforderlich."
     ],
     [
-      "Ihre Designs und Fotos",
-      "Projekte, ausgewählte Fotos, Einstellungen, Altersgruppe, Installationsverlauf und ungenutzte Belohnungen werden auf Ihrem Smartphone gespeichert, damit Sie den Editor nutzen und Ihre Arbeit fortsetzen können. Die App greift nur auf ausgewählte Bilder zu, nicht auf die gesamte Galerie. Fotos werden auf dem Gerät verarbeitet und nicht an Werbetreibende gesendet."
+      "Projekte und Fotos",
+      "Projekte, ausgewählte Fotos, Einstellungen, Alterskategorie, Installationsverlauf und erhaltene Belohnungen werden für den App-Betrieb auf Ihrem Telefon gespeichert. Wir erstellen keine Cloud-Kopien der Projekte. Die App verarbeitet nur ausgewählte Bilder, ohne auf die gesamte Galerie zuzugreifen. Projekte und Fotos werden nicht an Werbetreibende weitergegeben."
     ],
     [
-      "Verbindung mit Ihrer Uhr",
-      "Bei der Installation werden das Design samt Bildern und Text über Google-Dienste an Ihre Uhr übertragen. Das Smartphone erhält Geräteinformationen, Kennungen installierter Zifferblätter und den Installationsstatus, um die Übertragung zu verwalten. Google kann dafür seine Infrastruktur nutzen. Schritte, Puls und andere Werte stammen von Datenanbietern auf der Uhr. Wir senden sie weder an das Smartphone noch an Werbetreibende und führen keine Gesundheitschronik. Kompass-Sensordaten dienen nur der Anzeige und werden weder gespeichert noch gesendet."
+      "Uhren und Messwerte",
+      "Auf Ihren Wunsch werden Designs mit Bildern und Text über Google-Dienste an Ihre Uhr übertragen. Dabei kann Google seine Infrastruktur nutzen. Zur Verbindung und Installation tauschen die Geräte Angaben zur Uhr, zu installierten Zifferblättern und zum Übertragungsergebnis aus. Schritte, Puls und andere Werte stammen vom Uhrensystem und seinen Datenanbietern, abhängig von Berechtigungen. Wir senden Gesundheitswerte weder an das Telefon noch an Werbetreibende und führen keinen Gesundheitsverlauf. Kompasswerte werden nicht gespeichert oder übertragen."
     ],
     [
       "Werbung",
-      "Die Smartphone-App verwendet Google AdMob für Banner und Anzeigen mit Belohnung. Auf der Uhr gibt es keine Werbung. Google und Werbepartner können folgende Daten erheben und weitergeben: IP-Adressen, ungefähre Standorte, Geräte- und Kontokennungen, App- und Werbeinteraktionen, Diagnosedaten und Einwilligungsentscheidungen für Werbung, Erfolgsmessung und Betrugsprävention. Dazu gehören die Werbe-ID und die App Set ID; Letztere dient der Analyse und Betrugsprävention, nicht der Werbepersonalisierung. Wir übermitteln AdMob weder Ihre Fotos noch Gesundheitswerte."
+      "Google AdMob zeigt Werbung nur auf dem Telefon. Google und Werbepartner können IP-Adressen, daraus abgeleitete ungefähre Standorte, Geräte- und Kontokennungen, App- und Werbeinteraktionen, Diagnosedaten und Einwilligungsentscheidungen erheben und weitergeben. Dies dient Werbung, Analyse und Betrugsprävention. Werbedaten werden verschlüsselt übertragen. Die App Set ID dient Analyse und Betrugsprävention, nicht der Werbepersonalisierung, Werbemessung oder Verknüpfung mit anderen Kennungen zu Werbezwecken."
     ],
     [
       "Ihre Wahl",
-      "Wir fragen nach der Altersgruppe 13–17 oder 18+, nicht nach dem Geburtsdatum. Für 13- bis 17-Jährige ist personalisierte Werbung deaktiviert. Die App richtet sich nicht an Kinder unter 13 Jahren. Wo erforderlich, holt Google Ihre Werbeeinwilligung ein; verfügbare Optionen können Sie in den App-Einstellungen ändern. Eine Ablehnung der Personalisierung entfernt nicht zwingend die Werbung. Premium-Hintergründe und -Stile lassen sich nach einem Werbevideo einmal installieren. Für ein eigenes Foto ist vor dem Import ein Video nötig; das Foto allein erfordert bei der Installation kein weiteres Video. Standarddesigns können kostenlos installiert werden. Sie können ablehnen und weiter bearbeiten. Ist keine Anzeige verfügbar, bieten wir eine kostenlose Fortsetzung an."
+      "Vor der Werbung wählen Sie eine Alterskategorie: 13–17 oder 18+, kein Geburtsdatum. Für 13–17-Jährige ist die Personalisierung deaktiviert; die App richtet sich nicht an Kinder unter 13. Alterskategorie und verfügbare Werbeeinwilligungen lassen sich in den Einstellungen ändern. Google fragt erforderliche Einwilligungen ab. Die Ablehnung der Personalisierung schaltet nicht jede Werbung aus. Werbung mit Belohnung ist freiwillig: Eine Ablehnung sperrt weder den Editor noch kostenlose Funktionen."
     ],
     [
-      "Speicherung, Löschung und Schutz",
-      "Projekte können Sie in der App löschen. Das Löschen der App-Daten oder die Deinstallation entfernt lokale App-Daten; installierte Zifferblätter müssen Sie separat auf der Uhr entfernen. Wir halten keine Cloud-Sicherung Ihrer Projekte vor. Android schützt den App-Speicher, Google verschlüsselt Werbedaten bei der Übertragung. Google und Partner speichern Daten nach ihren eigenen Richtlinien und können sie in anderen Ländern verarbeiten. Bei Supportanfragen nutzen wir Ihre E-Mail-Adresse und Nachricht zur Antwort und bewahren den Schriftwechsel nur so lange auf, wie es für Support und gesetzliche Pflichten nötig ist."
+      "Speicherung und Löschung",
+      "Android schützt lokale App-Daten. Projekte lassen sich in der App löschen; das Löschen der App-Daten oder die Deinstallation entfernt die lokalen Daten. Zifferblätter müssen separat auf der Uhr gelöscht werden. Google und Partner speichern Daten nach ihren Richtlinien und können sie in anderen Ländern verarbeiten. Bei Support-Anfragen nutzen wir Ihre E-Mail-Adresse und Nachricht zur Antwort und bewahren den Schriftwechsel nur so lange auf, wie es für Support und gesetzliche Anforderungen nötig ist."
     ],
     [
-      "Diese Website",
-      "Die Website wird auf GitHub Pages gehostet. GitHub kann Ihre IP-Adresse und technische Zugriffsprotokolle verarbeiten. Wir verwenden hier keine Werbe- oder Analyseskripte. Ihr Browser speichert nur Ihre gewählte Darstellung."
+      "Website",
+      "Die Website nutzt GitHub Pages. GitHub kann für ihren Betrieb IP-Adressen und Anfrageprotokolle erhalten. Wir verwenden hier keine Werbe- oder Analyseskripte. Das gewählte Design wird im Browser gespeichert."
     ],
     [
-      "Fragen und Änderungen",
-      "Bei Fragen zum Datenschutz oder Ihren Daten erreichen Sie Alternix unter alternix.apps@gmail.com. Je nach Land können Rechte auf Auskunft, Berichtigung, Löschung, Widerspruch und Beschwerde bei einer Datenschutzbehörde bestehen. Ändert sich unser Umgang mit Daten, aktualisieren wir diese Richtlinie; das Datum oben zeigt die aktuelle Fassung."
+      "Kontakt und Änderungen",
+      "Fragen und Datenanfragen: Alternix, alternix.apps@gmail.com. Je nach Land können Sie Rechte auf Auskunft, Berichtigung, Löschung, Widerspruch gegen die Verarbeitung und Beschwerde bei einer Aufsichtsbehörde haben. Bei Änderungen aktualisieren wir diese Richtlinie und ihr Datum."
     ]
   ],
   "es": [
     [
-      "Sobre esta política",
-      "Watch Face Lab es una aplicación de Alternix para crear e instalar esferas de Wear OS. Esta política se aplica a la app del teléfono, la app complementaria del reloj y este sitio web. No necesitas una cuenta y no guardamos tus proyectos en nuestros servidores."
+      "Acerca de esta política",
+      "Watch Face Lab de Alternix permite crear e instalar esferas Wear OS. Esta política cubre la aplicación del teléfono, la aplicación complementaria del reloj y el sitio web. No se requiere una cuenta."
     ],
     [
-      "Tus diseños y fotos",
-      "Los proyectos, fotos elegidas, ajustes, grupo de edad, historial de instalaciones y recompensas no utilizadas se guardan en tu teléfono para que puedas usar el editor y retomar tu trabajo. La app accede solo a las imágenes que seleccionas, no a toda tu galería. Las fotos se procesan en el dispositivo y no se envían a anunciantes."
+      "Proyectos y fotos",
+      "Los proyectos, fotos seleccionadas, ajustes, categoría de edad, historial de instalaciones y recompensas obtenidas se guardan en el teléfono para el funcionamiento de la aplicación. No creamos copias de proyectos en la nube. Solo se procesan las imágenes que eliges, sin acceder a toda la galería. Los proyectos y fotos no se comparten con anunciantes."
     ],
     [
-      "Conexión con el reloj",
-      "Al instalar un diseño, sus imágenes y texto se envían al reloj a través de los servicios de Google. El teléfono recibe información del dispositivo, identificadores de las esferas instaladas y el estado de instalación para gestionar la transferencia. Google puede utilizar su infraestructura para esta conexión. Los pasos, el pulso y otros valores proceden de proveedores del reloj; no los enviamos al teléfono ni a anunciantes, ni guardamos un historial de salud. Los datos del sensor de brújula solo se usan para la visualización y no se guardan ni se envían."
+      "Relojes y datos",
+      "Cuando lo solicitas, el diseño con imágenes y texto se envía al reloj mediante servicios de Google, que pueden usar su infraestructura. Para conectar e instalar, los dispositivos intercambian información del reloj, esferas instaladas y resultados de transferencia. Los pasos, pulso y otros valores proceden del sistema y proveedores de datos del reloj, según los permisos. No enviamos datos de salud al teléfono ni a anunciantes, ni guardamos su historial. Las lecturas de la brújula no se guardan ni transmiten."
     ],
     [
       "Publicidad",
-      "La app del teléfono utiliza Google AdMob para banners y anuncios con recompensa. No hay anuncios en el reloj. Google y sus socios publicitarios pueden recopilar y compartir direcciones IP, ubicación aproximada, identificadores de dispositivo y cuenta, interacciones con la app y los anuncios, diagnósticos y decisiones de consentimiento para publicidad, medición y prevención del fraude. Entre estos identificadores están el ID publicitario y App Set ID; este último se usa para análisis y prevención del fraude, no para personalizar anuncios. No proporcionamos tus fotos ni datos de salud a AdMob."
+      "Google AdMob muestra anuncios solo en el teléfono. Google y sus socios publicitarios pueden recopilar y compartir direcciones IP, ubicación aproximada derivada de IP, identificadores de dispositivo y cuenta, interacciones con la aplicación y anuncios, diagnósticos y elecciones de consentimiento. Se usan para publicidad, análisis y prevención del fraude. Los datos publicitarios se cifran durante la transmisión. App Set ID se usa para análisis y prevención del fraude, no para personalizar o medir anuncios ni vincularlo con otros identificadores con fines publicitarios."
     ],
     [
       "Tus opciones",
-      "Pedimos un grupo de edad, 13–17 o 18+, no tu fecha de nacimiento. Los anuncios personalizados están desactivados para usuarios de 13–17 años. La app no está dirigida a menores de 13 años. Cuando es necesario, Google solicita tu consentimiento publicitario; puedes cambiar las opciones disponibles en los ajustes de la app. Rechazar la personalización no elimina necesariamente los anuncios. Los fondos y estilos prémium se pueden instalar una vez tras ver un anuncio. Para añadir una foto propia hay que ver un vídeo antes de importarla; la foto por sí sola no requiere otro vídeo al instalar el diseño. Los diseños estándar se instalan gratis. Puedes rechazarlo y seguir editando. Si no hay anuncios disponibles, ofrecemos continuar gratis."
+      "Antes de los anuncios eliges una categoría de edad: 13–17 o 18+, no la fecha de nacimiento. La personalización está desactivada para 13–17 años; la aplicación no está dirigida a menores de 13. Puedes cambiar la categoría de edad y las opciones de consentimiento disponibles en ajustes. Google solicita consentimiento cuando corresponde. Rechazar la personalización no elimina todos los anuncios. Los anuncios con recompensa son voluntarios: rechazarlos no bloquea el editor ni las funciones gratuitas."
     ],
     [
-      "Conservación, eliminación y seguridad",
-      "Puedes borrar proyectos en la app. Borrar sus datos o desinstalarla elimina los datos locales; las esferas instaladas se eliminan por separado en el reloj. No conservamos copias de tus proyectos en la nube. Android protege el almacenamiento de la app y Google cifra los datos publicitarios durante la transmisión. Google y sus socios conservan datos según sus propias políticas y pueden procesarlos en otros países. Si contactas con soporte, usamos tu correo y mensaje para responder y conservamos la correspondencia solo el tiempo necesario para atenderte y cumplir obligaciones legales."
+      "Conservación y eliminación",
+      "Android protege los datos locales. Puedes borrar proyectos en la aplicación; borrar sus datos o desinstalarla elimina los datos locales. Las esferas se eliminan por separado en el reloj. Google y sus socios conservan los datos según sus políticas y pueden procesarlos en otros países. Si contactas con soporte, usamos tu dirección de correo y mensaje para responder y conservamos la correspondencia solo durante el tiempo necesario para soporte y obligaciones legales."
     ],
     [
-      "Este sitio web",
-      "El sitio está alojado en GitHub Pages. GitHub puede procesar tu dirección IP y registros técnicos de acceso. No usamos scripts publicitarios ni de análisis en el sitio. El navegador solo recuerda el tema que has elegido."
+      "Sitio web",
+      "El sitio utiliza GitHub Pages. GitHub puede recibir direcciones IP y registros de solicitudes para su funcionamiento. No usamos aquí scripts publicitarios ni analíticos. El tema elegido se guarda en el navegador."
     ],
     [
-      "Consultas y cambios",
-      "Para consultas sobre privacidad o tus datos, escribe a Alternix: alternix.apps@gmail.com. Según tu país, puedes tener derechos de acceso, rectificación, eliminación, oposición y reclamación ante una autoridad de protección de datos. Actualizamos esta política cuando cambia nuestro tratamiento de datos; la fecha de arriba indica la última revisión."
+      "Contacto y cambios",
+      "Preguntas y solicitudes sobre datos: Alternix, alternix.apps@gmail.com. Según tu país, puedes tener derechos de acceso, rectificación, eliminación, oposición al tratamiento y reclamación ante una autoridad supervisora. Cuando hay cambios, actualizamos esta política y su fecha."
     ]
   ],
   "fr": [
     [
       "À propos de cette politique",
-      "Watch Face Lab est une application d’Alternix permettant de créer et d’installer des cadrans Wear OS. Cette politique concerne l’application mobile, l’application compagnon sur la montre et ce site. Aucun compte n’est nécessaire et nous ne stockons pas vos projets sur nos serveurs."
+      "Watch Face Lab, par Alternix, permet de créer et d’installer des cadrans Wear OS. Cette politique couvre l’application du téléphone, l’application compagnon de la montre et le site web. Aucun compte n’est nécessaire."
     ],
     [
-      "Vos créations et photos",
-      "Les projets, photos sélectionnées, réglages, tranche d’âge, historique d’installation et récompenses non utilisées sont enregistrés sur votre téléphone pour faire fonctionner l’éditeur et retrouver votre travail. L’application accède uniquement aux images choisies, pas à toute votre galerie. Les photos sont traitées sur l’appareil et ne sont pas envoyées aux annonceurs."
+      "Projets et photos",
+      "Les projets, photos choisies, réglages, catégorie d’âge, historique des installations et récompenses obtenues sont conservés sur le téléphone pour faire fonctionner l’application. Nous ne créons pas de copies des projets dans le cloud. Seules les images choisies sont traitées, sans accès à toute la galerie. Projets et photos ne sont pas transmis aux annonceurs."
     ],
     [
-      "Connexion à votre montre",
-      "Lors de l’installation, le cadran, ses images et ses textes sont envoyés à votre montre via les services Google. Le téléphone reçoit des informations sur l’appareil, les identifiants des cadrans installés et l’état de l’installation pour gérer le transfert. Google peut utiliser son infrastructure pour cette connexion. Les pas, le pouls et les autres valeurs proviennent de fournisseurs sur la montre : nous ne les transmettons ni au téléphone ni aux annonceurs et ne conservons pas d’historique de santé. Les données du capteur de boussole servent uniquement à l’affichage et ne sont ni enregistrées ni envoyées."
+      "Montres et indicateurs",
+      "À votre demande, le design avec ses images et textes est envoyé à la montre via les services Google, qui peuvent utiliser leur infrastructure. Pour la connexion et l’installation, les appareils échangent des informations sur la montre, les cadrans installés et le résultat du transfert. Pas, fréquence cardiaque et autres valeurs proviennent du système et des fournisseurs de données de la montre, selon les autorisations. Nous ne transmettons pas les données de santé au téléphone ou aux annonceurs et n’en conservons pas d’historique. Les relevés de boussole ne sont ni conservés ni transmis."
     ],
     [
       "Publicité",
-      "L’application mobile utilise Google AdMob pour les bannières et les annonces avec récompense. Il n’y a pas de publicité sur la montre. Google et ses partenaires publicitaires peuvent collecter et partager les adresses IP, la localisation approximative, les identifiants d’appareil et de compte, les interactions avec l’application et les annonces, les diagnostics et les choix de consentement pour la publicité, la mesure et la lutte contre la fraude. Ces identifiants comprennent l’identifiant publicitaire et App Set ID ; ce dernier sert à l’analyse et à la lutte contre la fraude, pas à personnaliser les annonces. Nous ne transmettons pas vos photos ni vos données de santé à AdMob."
+      "Google AdMob affiche des publicités uniquement sur le téléphone. Google et ses partenaires publicitaires peuvent collecter et partager adresse IP, localisation approximative déduite de l’IP, identifiants d’appareil et de compte, interactions avec l’application et les annonces, diagnostics et choix de consentement. Ces données servent à la publicité, à l’analyse et à la prévention des fraudes. Elles sont chiffrées pendant leur transmission. L’App Set ID sert à l’analyse et à la prévention des fraudes, pas à la personnalisation ou mesure publicitaire ni au rapprochement avec d’autres identifiants à des fins publicitaires."
     ],
     [
       "Vos choix",
-      "Nous demandons une tranche d’âge, 13–17 ou 18+, et non votre date de naissance. La publicité personnalisée est désactivée pour les 13–17 ans. L’application ne s’adresse pas aux enfants de moins de 13 ans. Lorsque c’est nécessaire, Google demande votre consentement publicitaire ; vous pouvez modifier les choix disponibles dans les réglages de l’application. Refuser la personnalisation ne supprime pas forcément les annonces. Les fonds et styles premium peuvent être installés une fois après une vidéo publicitaire. Pour ajouter votre propre photo, regardez une vidéo avant l’importation ; cette photo seule ne nécessite pas une autre vidéo à l’installation. Les créations standard s’installent gratuitement. Vous pouvez refuser et continuer à créer. Si aucune annonce n’est disponible, nous proposons de continuer gratuitement."
+      "Avant les publicités, vous choisissez une catégorie d’âge : 13–17 ou 18+, sans date de naissance. La personnalisation est désactivée pour les 13–17 ans ; l’application ne s’adresse pas aux moins de 13 ans. Vous pouvez modifier la catégorie d’âge et les choix de consentement disponibles dans les réglages. Google demande le consentement lorsque nécessaire. Refuser la personnalisation ne supprime pas toutes les publicités. Les publicités récompensées sont facultatives : les refuser ne bloque ni l’éditeur ni les fonctions gratuites."
     ],
     [
-      "Conservation, suppression et protection",
-      "Vous pouvez supprimer vos projets dans l’application. Effacer ses données ou la désinstaller supprime les données locales ; les cadrans installés doivent être supprimés séparément sur la montre. Nous ne conservons pas de sauvegarde de vos projets dans le cloud. Android protège le stockage de l’application et Google chiffre les données publicitaires pendant leur transmission. Google et ses partenaires conservent les données selon leurs politiques et peuvent les traiter dans d’autres pays. Si vous contactez l’assistance, nous utilisons votre adresse e-mail et votre message pour répondre et conservons les échanges uniquement le temps nécessaire à l’assistance et aux obligations légales."
+      "Conservation et suppression",
+      "Android protège les données locales. Vous pouvez supprimer les projets dans l’application ; effacer ses données ou la désinstaller supprime les données locales. Les cadrans doivent être supprimés séparément sur la montre. Google et ses partenaires conservent les données selon leurs politiques et peuvent les traiter dans d’autres pays. Si vous contactez l’assistance, nous utilisons votre adresse e-mail et votre message pour répondre et conservons les échanges uniquement le temps nécessaire à l’assistance et aux obligations légales."
     ],
     [
-      "Ce site",
-      "Le site est hébergé sur GitHub Pages. GitHub peut traiter votre adresse IP et des journaux techniques d’accès. Nous n’utilisons pas de scripts publicitaires ou d’analyse sur le site. Votre navigateur mémorise uniquement le thème choisi."
+      "Site web",
+      "Le site utilise GitHub Pages. GitHub peut recevoir des adresses IP et des journaux de requêtes pour son fonctionnement. Nous n’utilisons ici aucun script publicitaire ou analytique. Le thème choisi est enregistré dans votre navigateur."
     ],
     [
-      "Questions et mises à jour",
-      "Pour toute question sur la confidentialité ou vos données, contactez Alternix : alternix.apps@gmail.com. Selon votre pays, vous pouvez disposer de droits d’accès, de rectification, de suppression, d’opposition et de réclamation auprès d’une autorité de protection des données. Nous actualisons cette politique lorsque nos pratiques changent ; la date ci-dessus indique la dernière version."
+      "Contact et modifications",
+      "Questions et demandes concernant les données : Alternix, alternix.apps@gmail.com. Selon votre pays, vous pouvez disposer de droits d’accès, de rectification, d’effacement, d’opposition et de réclamation auprès d’une autorité de contrôle. En cas de changement, nous mettons à jour cette politique et sa date."
     ]
   ],
   "it": [
     [
-      "Informazioni su questa informativa",
-      "Watch Face Lab è un’app di Alternix per creare e installare quadranti Wear OS. Questa informativa riguarda l’app per telefono, l’app companion sull’orologio e questo sito. Non serve un account e non conserviamo i tuoi progetti sui nostri server."
+      "Informazioni su questa politica",
+      "Watch Face Lab di Alternix consente di creare e installare quadranti Wear OS. Questa politica riguarda l’app sul telefono, l’app companion sull’orologio e il sito web. Non serve un account."
     ],
     [
-      "I tuoi design e le tue foto",
-      "Progetti, foto selezionate, impostazioni, fascia d’età, cronologia delle installazioni e ricompense non utilizzate vengono salvati sul telefono per usare l’editor e riprendere il lavoro. L’app accede solo alle immagini scelte, non all’intera galleria. Le foto vengono elaborate sul dispositivo e non sono inviate agli inserzionisti."
+      "Progetti e foto",
+      "Progetti, foto selezionate, impostazioni, fascia d’età, cronologia delle installazioni e premi ottenuti sono conservati sul telefono per il funzionamento dell’app. Non creiamo copie dei progetti nel cloud. L’app elabora solo le immagini scelte, senza accedere all’intera galleria. Progetti e foto non vengono condivisi con gli inserzionisti."
     ],
     [
-      "Collegamento all’orologio",
-      "Quando installi un design, le immagini e il testo vengono inviati all’orologio tramite i servizi Google. Il telefono riceve informazioni sul dispositivo, identificativi dei quadranti installati e stato dell’installazione per gestire il trasferimento. Google può usare la propria infrastruttura per il collegamento. Passi, battito e altri valori provengono da fornitori sull’orologio: non li inviamo al telefono o agli inserzionisti e non conserviamo una cronologia sanitaria. I dati del sensore della bussola servono solo alla visualizzazione e non vengono salvati o inviati."
+      "Orologi e indicatori",
+      "Su tua richiesta, il design con immagini e testo viene inviato all’orologio tramite i servizi Google, che possono utilizzare la propria infrastruttura. Per collegarsi e installare, i dispositivi scambiano informazioni sull’orologio, sui quadranti installati e sull’esito del trasferimento. Passi, frequenza cardiaca e altri valori provengono dal sistema e dai fornitori di dati dell’orologio, secondo le autorizzazioni. Non inviamo dati sanitari al telefono o agli inserzionisti, né ne conserviamo una cronologia. Le letture della bussola non vengono conservate o trasmesse."
     ],
     [
       "Pubblicità",
-      "L’app per telefono usa Google AdMob per banner e annunci con premio. Sull’orologio non ci sono annunci. Google e i partner pubblicitari possono raccogliere e condividere indirizzi IP, posizione approssimativa, identificativi di dispositivo e account, interazioni con l’app e gli annunci, dati diagnostici e scelte di consenso per pubblicità, misurazione e prevenzione delle frodi. Gli identificativi comprendono l’ID pubblicitario e App Set ID; quest’ultimo serve per analisi e prevenzione delle frodi, non per personalizzare gli annunci. Non forniamo ad AdMob le tue foto o i tuoi dati sanitari."
+      "Google AdMob mostra annunci solo sul telefono. Google e i partner pubblicitari possono raccogliere e condividere indirizzi IP, posizione approssimativa ricavata dall’IP, identificatori del dispositivo e dell’account, interazioni con app e annunci, diagnostica e scelte di consenso. Le finalità sono pubblicità, analisi e prevenzione delle frodi. I dati pubblicitari sono cifrati durante il trasferimento. App Set ID serve per analisi e prevenzione delle frodi, non per personalizzare o misurare annunci o collegarlo ad altri identificatori a fini pubblicitari."
     ],
     [
       "Le tue scelte",
-      "Chiediamo la fascia d’età, 13–17 o 18+, non la data di nascita. Gli annunci personalizzati sono disattivati per gli utenti di 13–17 anni. L’app non è destinata ai minori di 13 anni. Dove richiesto, Google chiede il consenso pubblicitario; puoi modificare le opzioni disponibili nelle impostazioni dell’app. Rifiutare la personalizzazione non elimina necessariamente gli annunci. Gli sfondi e gli stili premium si possono installare una volta dopo un annuncio. Per aggiungere una tua foto, guarda un video prima di importarla; la sola foto non richiede un altro video all’installazione. I design standard si installano gratuitamente. Puoi rifiutare e continuare a creare. Se non ci sono annunci disponibili, offriamo la possibilità di proseguire gratis."
+      "Prima degli annunci scegli una fascia d’età: 13–17 o 18+, non la data di nascita. La personalizzazione è disattivata per 13–17 anni; l’app non è destinata ai minori di 13 anni. Puoi modificare la fascia d’età e le opzioni di consenso disponibili nelle impostazioni. Google richiede il consenso ove necessario. Rifiutare la personalizzazione non elimina tutti gli annunci. Gli annunci con premio sono facoltativi: rifiutarli non blocca l’editor né le funzioni gratuite."
     ],
     [
-      "Conservazione, eliminazione e sicurezza",
-      "Puoi eliminare i progetti nell’app. Cancellarne i dati o disinstallarla rimuove i dati locali; i quadranti installati vanno rimossi separatamente sull’orologio. Non conserviamo copie dei progetti nel cloud. Android protegge lo spazio dell’app e Google cifra i dati pubblicitari durante la trasmissione. Google e i partner conservano i dati secondo le proprie informative e possono elaborarli in altri paesi. Se contatti l’assistenza, usiamo il tuo indirizzo e-mail e il messaggio per rispondere e conserviamo la corrispondenza solo per il tempo necessario all’assistenza e agli obblighi di legge."
+      "Conservazione ed eliminazione",
+      "Android protegge i dati locali. Puoi eliminare progetti nell’app; cancellare i dati dell’app o disinstallarla rimuove i dati locali. I quadranti vanno eliminati separatamente sull’orologio. Google e i partner conservano i dati secondo le proprie politiche e possono elaborarli in altri Paesi. Se contatti l’assistenza, usiamo il tuo indirizzo e-mail e messaggio per rispondere e conserviamo la corrispondenza solo per il tempo necessario all’assistenza e agli obblighi legali."
     ],
     [
-      "Questo sito",
-      "Il sito è ospitato su GitHub Pages. GitHub può elaborare il tuo indirizzo IP e registri tecnici di accesso. Non usiamo script pubblicitari o di analisi sul sito. Il browser ricorda solo il tema scelto."
+      "Sito web",
+      "Il sito utilizza GitHub Pages. GitHub può ricevere indirizzi IP e registri delle richieste per il suo funzionamento. Non usiamo script pubblicitari o analitici sul sito. Il tema scelto viene salvato nel browser."
     ],
     [
-      "Domande e aggiornamenti",
-      "Per domande sulla privacy o sui tuoi dati, scrivi ad Alternix: alternix.apps@gmail.com. A seconda del paese, puoi avere diritti di accesso, rettifica, cancellazione, opposizione e reclamo a un’autorità di protezione dei dati. Aggiorniamo questa informativa quando cambiano le nostre pratiche; la data in alto indica l’ultima revisione."
+      "Contatti e modifiche",
+      "Domande e richieste sui dati: Alternix, alternix.apps@gmail.com. In base al Paese, puoi avere diritti di accesso, rettifica, cancellazione, opposizione al trattamento e reclamo a un’autorità di controllo. In caso di cambiamenti aggiorniamo questa politica e la sua data."
     ]
   ],
   "pt": [
     [
       "Sobre esta política",
-      "Watch Face Lab é uma aplicação da Alternix para criar e instalar mostradores Wear OS. Esta política abrange a aplicação do telefone, a aplicação complementar do relógio e este site. Não precisa de uma conta e não guardamos os seus projetos nos nossos servidores."
+      "O Watch Face Lab da Alternix permite criar e instalar mostradores Wear OS. Esta política abrange a aplicação no telefone, a aplicação complementar no relógio e o site. Não é necessária uma conta."
     ],
     [
-      "Os seus designs e fotografias",
-      "Os projetos, fotografias escolhidas, definições, faixa etária, histórico de instalações e recompensas não utilizadas são guardados no telefone para utilizar o editor e retomar o trabalho. A aplicação acede apenas às imagens selecionadas, não a toda a galeria. As fotografias são processadas no dispositivo e não são enviadas a anunciantes."
+      "Projetos e fotografias",
+      "Projetos, fotografias selecionadas, definições, categoria etária, histórico de instalações e recompensas obtidas ficam no telefone para o funcionamento da aplicação. Não criamos cópias dos projetos na nuvem. A aplicação processa apenas as imagens escolhidas, sem aceder a toda a galeria. Projetos e fotografias não são partilhados com anunciantes."
     ],
     [
-      "Ligação ao relógio",
-      "Ao instalar um design, as suas imagens e texto são enviados para o relógio através dos serviços Google. O telefone recebe informações do dispositivo, identificadores dos mostradores instalados e o estado da instalação para gerir a transferência. A Google pode usar a sua infraestrutura nesta ligação. Os passos, a pulsação e outros valores vêm de fornecedores no relógio: não os enviamos para o telefone ou anunciantes, nem guardamos um histórico de saúde. Os dados do sensor da bússola são usados apenas na apresentação e não são guardados nem enviados."
+      "Relógios e indicadores",
+      "A seu pedido, o design com imagens e texto é enviado ao relógio através dos serviços Google, que podem usar a sua infraestrutura. Para ligar e instalar, os dispositivos trocam informações do relógio, mostradores instalados e resultados da transferência. Passos, frequência cardíaca e outros valores vêm do sistema e dos fornecedores de dados do relógio, conforme as permissões. Não enviamos dados de saúde ao telefone ou a anunciantes, nem guardamos o seu histórico. As leituras da bússola não são guardadas nem transmitidas."
     ],
     [
       "Publicidade",
-      "A aplicação do telefone utiliza Google AdMob para banners e anúncios com recompensa. Não há anúncios no relógio. A Google e os parceiros publicitários podem recolher e partilhar endereços IP, localização aproximada, identificadores de dispositivo e conta, interações com a aplicação e anúncios, diagnósticos e escolhas de consentimento para publicidade, medição e prevenção de fraude. Estes identificadores incluem o ID de publicidade e App Set ID; este último serve para análise e prevenção de fraude, não para personalizar anúncios. Não fornecemos as suas fotografias ou dados de saúde ao AdMob."
+      "O Google AdMob apresenta anúncios apenas no telefone. A Google e os parceiros publicitários podem recolher e partilhar endereços IP, localização aproximada derivada do IP, identificadores de dispositivo e conta, interações com a aplicação e anúncios, diagnósticos e escolhas de consentimento. As finalidades são publicidade, análise e prevenção de fraude. Os dados publicitários são cifrados durante a transmissão. O App Set ID serve para análise e prevenção de fraude, não para personalização ou medição de anúncios nem associação a outros identificadores para publicidade."
     ],
     [
       "As suas escolhas",
-      "Pedimos uma faixa etária, 13–17 ou 18+, e não a data de nascimento. A publicidade personalizada está desativada para utilizadores de 13–17 anos. A aplicação não se destina a crianças com menos de 13 anos. Quando necessário, a Google pede consentimento para publicidade; pode alterar as opções disponíveis nas definições da aplicação. Recusar a personalização não elimina necessariamente os anúncios. Os fundos e estilos premium podem ser instalados uma vez após um anúncio. Para adicionar uma fotografia própria, é necessário ver um vídeo antes da importação; a fotografia por si só não exige outro vídeo na instalação. Os designs padrão são instalados gratuitamente. Pode recusar e continuar a editar. Se não houver anúncios disponíveis, oferecemos a opção de continuar gratuitamente."
+      "Antes dos anúncios, escolhe uma categoria etária: 13–17 ou 18+, não a data de nascimento. A personalização está desativada para os 13–17 anos; a aplicação não se destina a menores de 13 anos. Pode alterar a categoria etária e as opções de consentimento disponíveis nas definições. A Google pede consentimento quando necessário. Recusar a personalização não elimina todos os anúncios. Os anúncios com recompensa são opcionais: recusá-los não bloqueia o editor nem as funções gratuitas."
     ],
     [
-      "Conservação, eliminação e segurança",
-      "Pode eliminar projetos na aplicação. Limpar os seus dados ou desinstalá-la remove os dados locais; os mostradores instalados devem ser removidos separadamente no relógio. Não guardamos cópias dos seus projetos na nuvem. O Android protege o armazenamento da aplicação e a Google cifra os dados publicitários durante a transmissão. A Google e os parceiros conservam dados segundo as suas políticas e podem tratá-los noutros países. Se contactar o suporte, usamos o seu e-mail e a mensagem para responder e guardamos a correspondência apenas enquanto for necessário para o apoio e as obrigações legais."
+      "Conservação e eliminação",
+      "O Android protege os dados locais. Pode apagar projetos na aplicação; limpar os dados da aplicação ou desinstalá-la elimina os dados locais. Os mostradores devem ser apagados separadamente no relógio. A Google e os parceiros conservam os dados segundo as suas políticas e podem processá-los noutros países. Se contactar o suporte, usamos o seu endereço de e-mail e mensagem para responder e guardamos a correspondência apenas pelo tempo necessário ao suporte e às obrigações legais."
     ],
     [
-      "Este site",
-      "O site está alojado no GitHub Pages. O GitHub pode tratar o seu endereço IP e registos técnicos de acesso. Não utilizamos scripts publicitários ou de análise no site. O navegador guarda apenas o tema escolhido."
+      "Site",
+      "O site utiliza GitHub Pages. O GitHub pode receber endereços IP e registos de pedidos para o seu funcionamento. Não usamos scripts publicitários ou analíticos no site. O tema escolhido é guardado no navegador."
     ],
     [
-      "Questões e alterações",
-      "Para questões de privacidade ou sobre os seus dados, contacte a Alternix: alternix.apps@gmail.com. Dependendo do país, pode ter direitos de acesso, retificação, eliminação, oposição e reclamação junto de uma autoridade de proteção de dados. Atualizamos esta política quando as nossas práticas mudam; a data acima indica a última revisão."
+      "Contacto e alterações",
+      "Perguntas e pedidos sobre dados: Alternix, alternix.apps@gmail.com. Conforme o país, pode ter direitos de acesso, retificação, eliminação, oposição ao tratamento e reclamação a uma autoridade de controlo. Quando há alterações, atualizamos esta política e a sua data."
     ]
   ],
   "pl": [
     [
       "O tej polityce",
-      "Watch Face Lab to aplikacja Alternix do tworzenia i instalowania tarcz Wear OS. Ta polityka dotyczy aplikacji na telefon, aplikacji towarzyszącej na zegarek i tej witryny. Nie potrzebujesz konta. Nie przechowujemy Twoich projektów na naszych serwerach."
+      "Watch Face Lab firmy Alternix umożliwia tworzenie i instalowanie tarcz Wear OS. Ta polityka obejmuje aplikację na telefonie, aplikację towarzyszącą na zegarku i witrynę. Konto nie jest wymagane."
     ],
     [
-      "Twoje projekty i zdjęcia",
-      "Projekty, wybrane zdjęcia, ustawienia, grupa wiekowa, historia instalacji i niewykorzystane nagrody są zapisywane na telefonie, aby edytor działał i można było wrócić do swojej pracy. Aplikacja ma dostęp tylko do wybranych obrazów, nie do całej galerii. Zdjęcia są przetwarzane na urządzeniu i nie są wysyłane reklamodawcom."
+      "Projekty i zdjęcia",
+      "Projekty, wybrane zdjęcia, ustawienia, kategoria wieku, historia instalacji i zdobyte nagrody są przechowywane na telefonie na potrzeby działania aplikacji. Nie tworzymy kopii projektów w chmurze. Aplikacja przetwarza tylko wybrane obrazy, bez dostępu do całej galerii. Projekty i zdjęcia nie są udostępniane reklamodawcom."
     ],
     [
-      "Połączenie z zegarkiem",
-      "Podczas instalacji projekt wraz z obrazami i tekstem jest przesyłany na zegarek przez usługi Google. Telefon otrzymuje informacje o urządzeniu, identyfikatory zainstalowanych tarcz i stan instalacji, aby zarządzać przesyłaniem. Google może korzystać przy tym ze swojej infrastruktury. Kroki, puls i inne wskazania pochodzą od dostawców danych na zegarku: nie wysyłamy ich na telefon ani reklamodawcom i nie prowadzimy historii zdrowia. Dane czujnika kompasu służą tylko do wyświetlania i nie są zapisywane ani wysyłane."
+      "Zegarki i wskaźniki",
+      "Na Twoje polecenie projekt z obrazami i tekstem jest wysyłany na zegarek przez usługi Google, które mogą korzystać ze swojej infrastruktury. Aby połączyć urządzenia i zainstalować tarczę, wymieniają one informacje o zegarku, zainstalowanych tarczach i wyniku przesyłania. Kroki, tętno i inne wartości pochodzą z systemu i dostawców danych na zegarku, zgodnie z uprawnieniami. Nie wysyłamy danych zdrowotnych na telefon ani do reklamodawców i nie prowadzimy ich historii. Odczyty kompasu nie są zapisywane ani przesyłane."
     ],
     [
       "Reklamy",
-      "Aplikacja na telefon korzysta z Google AdMob do wyświetlania banerów i reklam z nagrodą. Na zegarku nie ma reklam. Google i partnerzy reklamowi mogą zbierać i udostępniać adresy IP, przybliżoną lokalizację, identyfikatory urządzeń i kont, interakcje z aplikacją i reklamami, dane diagnostyczne oraz wybory dotyczące zgody na potrzeby reklam, pomiarów i zapobiegania oszustwom. Identyfikatory obejmują identyfikator reklamowy i App Set ID; ten ostatni służy do analizy i zapobiegania oszustwom, a nie do personalizacji reklam. Nie przekazujemy AdMob Twoich zdjęć ani danych o zdrowiu."
+      "Google AdMob wyświetla reklamy tylko na telefonie. Google i partnerzy reklamowi mogą zbierać i udostępniać adresy IP, przybliżoną lokalizację na podstawie IP, identyfikatory urządzenia i konta, interakcje z aplikacją i reklamami, diagnostykę oraz wybory dotyczące zgody. Cele to reklamy, analityka i zapobieganie oszustwom. Dane reklamowe są szyfrowane podczas przesyłania. App Set ID służy analityce i zapobieganiu oszustwom, nie personalizacji ani pomiarom reklam czy łączeniu z innymi identyfikatorami do celów reklamowych."
     ],
     [
       "Twój wybór",
-      "Pytamy o grupę wiekową, 13–17 lub 18+, a nie datę urodzenia. Dla osób w wieku 13–17 lat reklamy spersonalizowane są wyłączone. Aplikacja nie jest przeznaczona dla dzieci poniżej 13 lat. Tam, gdzie jest to wymagane, Google prosi o zgodę na reklamy; dostępne opcje można zmienić w ustawieniach aplikacji. Odmowa personalizacji nie musi oznaczać braku reklam. Tła i style premium można zainstalować raz po obejrzeniu jednej reklamy. Aby dodać własne zdjęcie, obejrzyj film przed importem; samo zdjęcie nie wymaga kolejnego filmu przy instalacji. Standardowe projekty instaluje się bezpłatnie. Możesz odmówić i dalej edytować. Jeśli reklama jest niedostępna, oferujemy bezpłatną kontynuację."
+      "Przed reklamami wybierasz kategorię wieku: 13–17 lub 18+, bez daty urodzenia. Dla osób w wieku 13–17 lat personalizacja jest wyłączona; aplikacja nie jest przeznaczona dla dzieci poniżej 13 lat. Kategorię wieku i dostępne opcje zgody reklamowej można zmienić w ustawieniach. Google prosi o zgodę tam, gdzie jest wymagana. Odmowa personalizacji nie wyłącza wszystkich reklam. Reklamy z nagrodą są dobrowolne: odmowa nie blokuje edytora ani bezpłatnych funkcji."
     ],
     [
-      "Przechowywanie, usuwanie i ochrona",
-      "Projekty możesz usuwać w aplikacji. Wyczyszczenie jej danych lub odinstalowanie usuwa dane lokalne; zainstalowane tarcze trzeba usunąć osobno na zegarku. Nie przechowujemy kopii projektów w chmurze. Android chroni pamięć aplikacji, a Google szyfruje dane reklamowe podczas przesyłania. Google i partnerzy przechowują dane zgodnie ze swoimi politykami i mogą je przetwarzać w innych krajach. Jeśli napiszesz do pomocy, używamy Twojego adresu e-mail i wiadomości, aby odpowiedzieć, i zachowujemy korespondencję tylko tak długo, jak wymaga obsługa zgłoszenia i prawo."
+      "Przechowywanie i usuwanie",
+      "Android chroni lokalne dane aplikacji. Projekty można usunąć w aplikacji; wyczyszczenie jej danych lub odinstalowanie usuwa dane lokalne. Tarcze należy usunąć osobno na zegarku. Google i partnerzy przechowują dane zgodnie ze swoimi politykami i mogą przetwarzać je w innych krajach. Jeśli piszesz do pomocy, używamy Twojego adresu e-mail i wiadomości do odpowiedzi, a korespondencję przechowujemy tylko tak długo, jak wymaga tego pomoc i prawo."
     ],
     [
-      "Ta witryna",
-      "Witryna działa na GitHub Pages. GitHub może przetwarzać Twój adres IP i techniczne rejestry dostępu. Nie używamy tu skryptów reklamowych ani analitycznych. Przeglądarka zapamiętuje jedynie wybrany motyw."
+      "Witryna",
+      "Witryna działa na GitHub Pages. GitHub może otrzymywać adresy IP i dzienniki żądań na potrzeby jej działania. Nie używamy tutaj skryptów reklamowych ani analitycznych. Wybrany motyw jest zapisywany w przeglądarce."
     ],
     [
-      "Pytania i zmiany",
-      "W sprawach prywatności i swoich danych skontaktuj się z Alternix: alternix.apps@gmail.com. Zależnie od kraju możesz mieć prawo dostępu, sprostowania, usunięcia danych, sprzeciwu wobec przetwarzania i skargi do organu ochrony danych. Aktualizujemy politykę, gdy zmieniają się nasze praktyki; data powyżej wskazuje ostatnią wersję."
+      "Kontakt i zmiany",
+      "Pytania i wnioski dotyczące danych: Alternix, alternix.apps@gmail.com. Zależnie od kraju możesz mieć prawo dostępu, poprawienia i usunięcia danych, sprzeciwu wobec przetwarzania oraz skargi do organu nadzorczego. W razie zmian aktualizujemy politykę i datę jej wersji."
     ]
   ]
 }

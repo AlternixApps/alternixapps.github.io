@@ -23,7 +23,7 @@ for lang, sections in policy.items():
     for title, paragraph in sections:
         assert title + '\n' + paragraph in offline, (lang, title, 'offline mismatch')
     assert 'alternix.apps@gmail.com' in offline
-    assert all(provider in offline for provider in ('Google', 'AdMob', 'GitHub', '13–17', '18+'))
+    assert all(provider in offline for provider in ('Google', 'AdMob', 'App Set ID', 'GitHub', '13–17', '18+'))
     prefix = Path() if lang=='en' else Path(lang)
     home=(ROOT/prefix/'index.html').read_text(encoding='utf-8')
     assert home.count('data-product-slide>')==4,lang
