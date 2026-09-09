@@ -42,7 +42,7 @@ for language in LANGUAGE_ORDER:
     )
     assert after == privacy_page(language) + "\n", (language, "page differs from generator")
     assert len(translated_copy(language)["sections"]) == 9, language
-    for required in ("Color Swatch Lab", "Alternix", "AdMob", "UMP", "GitHub", "13–17", "18+", "alternix.apps@gmail.com"):
+    for required in ("Color Swatch Lab", "Alternix", "AdMob", "App Set ID", "GitHub", "13–17", "18+", "alternix.apps@gmail.com"):
         assert required in after, (language, required)
 
 changed = subprocess.check_output(["git", "diff", "--name-only", "HEAD"], cwd=ROOT).decode().splitlines()
