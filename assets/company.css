@@ -1313,3 +1313,7 @@ button:focus-visible {
   }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* AlniSIP opaque icon sizing */
+.app-icon.alnisip-icon{width:min(48%,196px);aspect-ratio:1;border-radius:24%;object-fit:cover}
+@media(max-width:700px){.app-icon.alnisip-icon{width:min(44%,140px)}}
