@@ -10,109 +10,100 @@ LOCALIZED_COPY = {
     "en": {
         "path": "index.html",
         "prefix": "",
-        "tags": ("Android", "Color tools", "In development"),
+        "store_label": "Color Swatch Lab on Google Play",
         "description": (
-            "Capture colors with the camera or from photos, convert color models, "
-            "check contrast, build harmonies and keep palettes on your device."
+            "Find colours around you and in photos, explore combinations and shades, "
+            "and check contrast. Save and export palettes for your projects."
         ),
         "more": "Learn more",
-        "support": "Support",
         "dot": "Show Color Swatch Lab",
     },
     "uk": {
         "path": "uk/index.html",
         "prefix": "/uk",
-        "tags": ("Android", "Колір", "У розробці"),
+        "store_label": "Color Swatch Lab у Google Play",
         "description": (
-            "Визначайте кольори камерою та з фотографій, перетворюйте колірні моделі, "
-            "перевіряйте контраст, створюйте гармонії й зберігайте палітри на пристрої."
+            "Знаходьте кольори навколо себе й на фотографіях, добирайте поєднання та "
+            "відтінки, перевіряйте контраст. Зберігайте й експортуйте палітри для своїх проєктів."
         ),
-        "more": "Докладніше",
-        "support": "Підтримка",
+        "more": "Дізнатися більше",
         "dot": "Показати Color Swatch Lab",
     },
     "ru": {
         "path": "ru/index.html",
         "prefix": "/ru",
-        "tags": ("Android", "Цвет", "В разработке"),
+        "store_label": "Color Swatch Lab в Google Play",
         "description": (
-            "Определяйте цвета камерой и по фотографии, переводите их между цветовыми "
-            "моделями, проверяйте контраст, создавайте гармонии и сохраняйте палитры на устройстве."
+            "Находите цвета вокруг себя и на фотографиях, подбирайте сочетания и оттенки, "
+            "проверяйте контраст. Сохраняйте и экспортируйте палитры для своих проектов."
         ),
-        "more": "Подробнее",
-        "support": "Поддержка",
+        "more": "Узнать больше",
         "dot": "Показать Color Swatch Lab",
     },
     "es": {
         "path": "es/index.html",
         "prefix": "/es",
-        "tags": ("Android", "Color", "En desarrollo"),
+        "store_label": "Color Swatch Lab en Google Play",
         "description": (
-            "Captura colores con la cámara o desde fotos, convierte modelos de color, "
-            "comprueba el contraste, crea armonías y guarda paletas en el dispositivo."
+            "Encuentra colores a tu alrededor y en tus fotos, explora combinaciones y tonos "
+            "y comprueba el contraste. Guarda y exporta paletas para tus proyectos."
         ),
         "more": "Más información",
-        "support": "Soporte",
         "dot": "Mostrar Color Swatch Lab",
     },
     "de": {
         "path": "de/index.html",
         "prefix": "/de",
-        "tags": ("Android", "Farbe", "In Entwicklung"),
+        "store_label": "Color Swatch Lab bei Google Play",
         "description": (
-            "Farben mit Kamera oder Fotos erfassen, Farbmodelle umrechnen, Kontraste prüfen, "
-            "Harmonien erstellen und Paletten lokal speichern."
+            "Entdecke Farben in deiner Umgebung und auf Fotos, finde Kombinationen und "
+            "Farbtöne und prüfe den Kontrast. Speichere und exportiere Paletten für deine Projekte."
         ),
         "more": "Mehr erfahren",
-        "support": "Support",
         "dot": "Color Swatch Lab anzeigen",
     },
     "fr": {
         "path": "fr/index.html",
         "prefix": "/fr",
-        "tags": ("Android", "Couleur", "En développement"),
+        "store_label": "Color Swatch Lab sur Google Play",
         "description": (
-            "Capturez des couleurs avec l’appareil photo ou depuis vos images, convertissez "
-            "les modèles, vérifiez le contraste et créez des palettes locales."
+            "Repérez les couleurs autour de vous et dans vos photos, explorez les associations "
+            "et les nuances, puis vérifiez le contraste. Enregistrez et exportez des palettes pour vos projets."
         ),
         "more": "En savoir plus",
-        "support": "Assistance",
         "dot": "Afficher Color Swatch Lab",
     },
     "pt": {
         "path": "pt/index.html",
         "prefix": "/pt",
-        "tags": ("Android", "Cor", "Em desenvolvimento"),
+        "store_label": "Color Swatch Lab no Google Play",
         "description": (
-            "Capture cores com a câmara ou fotografias, converta modelos de cor, verifique "
-            "o contraste, crie harmonias e guarde paletas no dispositivo."
+            "Descubra cores à sua volta e nas fotografias, explore combinações e tons "
+            "e verifique o contraste. Guarde e exporte paletas para os seus projetos."
         ),
         "more": "Saiba mais",
-        "support": "Suporte",
         "dot": "Mostrar Color Swatch Lab",
     },
     "it": {
         "path": "it/index.html",
         "prefix": "/it",
-        "tags": ("Android", "Colore", "In sviluppo"),
+        "store_label": "Color Swatch Lab su Google Play",
         "description": (
-            "Acquisisci colori dalla fotocamera o dalle foto, converti i modelli colore, "
-            "verifica il contrasto, crea armonie e salva palette sul dispositivo."
+            "Trova i colori intorno a te e nelle foto, esplora combinazioni e sfumature "
+            "e verifica il contrasto. Salva ed esporta palette per i tuoi progetti."
         ),
         "more": "Scopri di più",
-        "support": "Supporto",
         "dot": "Mostra Color Swatch Lab",
     },
     "pl": {
         "path": "pl/index.html",
         "prefix": "/pl",
-        "tags": ("Android", "Kolor", "W przygotowaniu"),
+        "store_label": "Color Swatch Lab w Google Play",
         "description": (
-            "Przechwytuj kolory z aparatu lub zdjęć, przeliczaj modele kolorów, sprawdzaj "
-            "kontrast, twórz harmonie i zapisuj palety na urządzeniu."
+            "Odkrywaj kolory wokół siebie i na zdjęciach, dobieraj zestawienia i odcienie "
+            "oraz sprawdzaj kontrast. Zapisuj i eksportuj palety do swoich projektów."
         ),
         "more": "Dowiedz się więcej",
-        "support": "Wsparcie",
         "dot": "Pokaż Color Swatch Lab",
     },
 }
@@ -129,19 +120,24 @@ SLIDER_DOT = re.compile(
     r'aria-label="[^"]+"(?: aria-current="true")?></button>'
 )
 
+PRODUCT_CARD = re.compile(
+    r'<article class="product-card product-slide" data-product-slide>.*?</article>'
+)
+PLAY_URL = "https://play.google.com/store/apps/details?id=com.alternix.colorswatchlab"
+
 
 def card_html(copy: dict[str, object]) -> str:
     prefix = str(copy["prefix"])
-    tags = "".join(f'<span class="chip">{tag}</span>' for tag in copy["tags"])
     privacy = f"{prefix}/color-swatch-lab/privacy/"
-    support = f"{prefix}/color-swatch-lab/support/"
     return (
         '<article class="product-card product-slide" data-product-slide>'
         '<div class="product-copy"><div class="product-meta">'
-        f'{tags}</div><h3>Color Swatch Lab</h3><p>{copy["description"]}</p>'
+        f'<a class="store-link" href="{PLAY_URL}" target="_blank" '
+        f'rel="noopener noreferrer" aria-label="{copy["store_label"]}">'
+        '<img src="/assets/google-play.svg" alt="">Google Play</a>'
+        f'</div><h3>Color Swatch Lab</h3><p>{copy["description"]}</p>'
         '<div class="product-actions">'
         f'<a class="button button-primary" href="{privacy}">{copy["more"]}</a>'
-        f'<a class="button" href="{support}">{copy["support"]}</a>'
         '</div></div>'
         f'<a class="product-visual" href="{privacy}" aria-label="Color Swatch Lab">'
         '<img class="app-icon" src="/assets/color-swatch-lab.png" alt="Color Swatch Lab"></a>'
@@ -152,15 +148,25 @@ def card_html(copy: dict[str, object]) -> str:
 def update_page(copy: dict[str, object]) -> None:
     page = ROOT / str(copy["path"])
     html = page.read_text(encoding="utf-8")
-    if "Color Swatch Lab</h3>" not in html:
+    cards = list(PRODUCT_CARD.finditer(html))
+    colour_cards = [card for card in cards if '<h3>Color Swatch Lab</h3>' in card.group()]
+    if len(colour_cards) == 1:
+        card = colour_cards[0]
+        html = html[:card.start()] + card_html(copy) + html[card.end():]
+        colour_index = cards.index(card)
+    elif not colour_cards:
         html, count = PLACEHOLDER_CARD.subn(card_html(copy), html, count=1)
         if count != 1:
             raise RuntimeError(f"Expected one upcoming-product card in {page}, found {count}")
+        cards = list(PRODUCT_CARD.finditer(html))
+        colour_index = next(i for i, card in enumerate(cards) if '<h3>Color Swatch Lab</h3>' in card.group())
+    else:
+        raise RuntimeError(f"Expected one Color Swatch Lab card in {page}")
 
     dots = list(SLIDER_DOT.finditer(html))
-    if len(dots) != 3:
-        raise RuntimeError(f"Expected three product dots in {page}, found {len(dots)}")
-    third = dots[2]
+    if len(dots) != len(cards):
+        raise RuntimeError(f"Expected one dot per product in {page}, found {len(dots)} for {len(cards)} cards")
+    third = dots[colour_index]
     replacement = (
         '<button class="slider-dot" data-slider-dot '
         f'aria-label="{copy["dot"]}"></button>'
