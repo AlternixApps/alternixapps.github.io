@@ -1361,8 +1361,8 @@ button:focus-visible {
   display: grid;
   align-content: center;
   grid-template-columns: minmax(0, 1fr);
-  min-height: 100svh;
-  padding-block: clamp(92px, 13vh, 140px) clamp(24px, 5vh, 60px);
+  padding-block: clamp(32px, calc(16.67svh - 87px), 144px) clamp(22px, calc(16.67svh - 97px), 112px);
+  scroll-margin-block-start: max(64px, calc(33svh - 136px));
 }
 .studio-story h2 { margin: 0 0 1.4rem; }
 .studio-story .studio-copy { max-width: 62ch; }
