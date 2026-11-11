@@ -26,34 +26,56 @@
   setTheme(readTheme());
 
   const initSlider = () => {
-    document.querySelectorAll("[data-product-slider]").forEach((slider) => {
-      const track = slider.querySelector("[data-slider-track]");
-      const slides = [...slider.querySelectorAll("[data-product-slide]")];
-      const dots = [...slider.querySelectorAll("[data-slider-dot]")];
-      const previous = slider.querySelector("[data-slider-prev]");
-      const next = slider.querySelector("[data-slider-next]");
-      if (!track || slides.length < 2) return;
-
-      let current = 0;
-      const setCurrent = (index, scroll = true) => {
-        current = (index + slides.length) % slides.length;
-        dots.forEach((dot, dotIndex) => {
-          dot.classList.toggle("is-active", dotIndex === current);
-          dot.setAttribute("aria-current", dotIndex === current ? "true" : "false");
-        });
-        if (scroll) slides[current].scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
-      };
-
-      previous?.addEventListener("click", () => setCurrent(current - 1));
-      next?.addEventListener("click", () => setCurrent(current + 1));
-      dots.forEach((dot, index) => dot.addEventListener("click", () => setCurrent(index)));
-      track.addEventListener("scroll", () => {
-        const width = track.clientWidth || 1;
-        const index = Math.max(0, Math.min(slides.length - 1, Math.round(track.scrollLeft / width)));
-        if (index !== current) setCurrent(index, false);
-      }, { passive: true });
-      setCurrent(0, false);
+    const track = document.querySelector(".app-gallery");
+    const controls = document.querySelector("[data-gallery-controls]");
+    if (!track || !controls) return;
+    const cards = [...track.children];
+    const dots = controls.querySelector(".slider-dots");
+    let starts = [];
+    const offset = card => card.offsetLeft - cards[0].offsetLeft;
+    const index = () => starts.reduce((best, card, i) =>
+      Math.abs(track.scrollLeft - offset(card)) < Math.abs(track.scrollLeft - offset(starts[best])) ? i : best, 0);
+    const go = i => track.scrollTo({
+      left: offset(starts[(i + starts.length) % starts.length]),
+      behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth"
     });
+    function sync() {
+      const active = index();
+      [...dots.children].forEach((dot, i) => {
+        dot.classList.toggle("is-active", i === active);
+        dot.setAttribute("aria-current", String(i === active));
+      });
+    }
+    let pageSize;
+    function layout() {
+      const count = Number(getComputedStyle(track).getPropertyValue("--per-page"));
+      if (count !== pageSize) {
+        pageSize = count;
+        starts = cards.filter((_, i) => i % count === 0);
+        track.classList.toggle("odd-tail", cards.length % count !== 0);
+        dots.replaceChildren(...starts.map((card, i) => {
+          const button = document.createElement("button");
+          button.type = "button";
+          button.className = "slider-dot";
+          button.setAttribute("aria-label", cards.slice(i * count, (i + 1) * count).map(c => c.querySelector("h3").textContent).join(", "));
+          button.addEventListener("click", () => go(i));
+          return button;
+        }));
+      }
+      sync();
+    }
+    controls.querySelector("[data-prev]").addEventListener("click", () => go(index() - 1));
+    controls.querySelector("[data-next]").addEventListener("click", () => go(index() + 1));
+    track.addEventListener("scroll", sync, { passive: true });
+    track.addEventListener("keydown", event => {
+      if (event.target !== track || !["ArrowLeft", "ArrowRight"].includes(event.key)) return;
+      event.preventDefault();
+      go(index() + (event.key === "ArrowRight" ? 1 : -1));
+    });
+    layout();
+    track.classList.add("enhanced");
+    controls.hidden = false;
+    new ResizeObserver(layout).observe(track);
   };
 
   const initSectionNavigation = () => {
