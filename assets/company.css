@@ -473,7 +473,6 @@ button:focus-visible {
 .hero h1 {
   max-width: 880px;
   margin: 0;
-  font-size: clamp(3.15rem, 6.66vw, 6.84rem);
   font-weight: 650;
   letter-spacing: -.025em;
   line-height: 1;
@@ -1045,7 +1044,6 @@ button:focus-visible {
 
   .hero h1 {
     max-width: 12ch;
-    font-size: clamp(2.88rem, 9.9vw, 5.04rem);
     overflow-wrap: normal;
     text-wrap: pretty;
     word-break: normal;
@@ -1091,7 +1089,6 @@ button:focus-visible {
   }
   .hero h1 {
     max-width: 11ch;
-    font-size: clamp(2.385rem, 10.98vw, 3.6rem);
     letter-spacing: -.06em;
     line-height: .98;
   }
@@ -1147,7 +1144,7 @@ button:focus-visible {
   .header-inner { padding-inline: 10px; }
   .brand { width: 102px; }
   .hero { padding-top: 138px; }
-  .hero h1 { font-size: 2.232rem; }
+
   .hero-object { width: min(80vw, 280px); }
   .product-card { padding: 18px; }
   .contact-panel { padding: 26px 20px; }
@@ -1257,7 +1254,6 @@ button:focus-visible {
 
   .hero h1 {
     max-width: 12ch;
-    font-size: clamp(2.385rem, 10.8vw, 3.375rem);
     line-height: 1.01;
   }
 
@@ -1298,7 +1294,7 @@ button:focus-visible {
   .footer-inner,
   .subpage-main { width: calc(100% - 24px); }
   .hero { padding-top: 100px; }
-  .hero h1 { font-size: clamp(2.115rem, 10.62vw, 2.745rem); }
+
   .hero-object { width: min(70vw, 246px); }
   .product-card { padding: 17px; }
 }
@@ -1333,7 +1329,7 @@ button:focus-visible {
 }
 .gallery-card { display: flex; flex-direction: column; align-items: flex-start; padding: clamp(22px, 3vw, 38px); min-width: 0; border: 1px solid var(--line); border-radius: 26px; background: var(--glass); }
 .gallery-card > img { object-fit: contain; border-radius: 19px; }
-.gallery-card h3 { font-size: clamp(1.65rem, 3vw, 2.4rem); line-height: 1.08; letter-spacing: -.045em; margin: 22px 0 0; }
+.gallery-card h3 { font-size: clamp(1.75rem, 2.5vw, 2.125rem); line-height: 1.08; letter-spacing: -.045em; margin: 22px 0 0; }
 .gallery-card p { color: var(--muted); margin: .75rem 0 1.5rem; }
 .gallery-actions, .support-apps { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; }
 .gallery-actions { margin-top: auto; }
@@ -1342,7 +1338,9 @@ button:focus-visible {
 .support-apps a { padding: .65rem 1rem; border: 1px solid var(--line); border-radius: 1.5rem; }
 .subpage-hero h1 { font-size: clamp(2rem, 6vw, 4.25rem); overflow-wrap: anywhere; }
 
-.hero h1 { letter-spacing: -.025em; line-height: 1.04; max-width: 15ch; }
+.hero h1 { font-size: clamp(2.25rem, 5.5vw, 5rem); letter-spacing: -.025em; line-height: 1.06; max-width: 19ch; }
+#products .gallery-title, #about h2, #contact h2 { font-size: clamp(2rem, 3.7vw, 3.25rem); letter-spacing: -.035em; line-height: 1.1; }
+.hero-lead, .studio-copy p, .contact-panel p { max-width: 52ch; line-height: 1.55; }
 .gallery-card { position: relative; overflow: hidden; isolation: isolate; }
 .gallery-card::before { content: ""; position: absolute; inset: 0; z-index: -1; background: radial-gradient(ellipse at 8% 0%, var(--card-tint), transparent 66%); pointer-events: none; }
 .gallery-card { --card-tint: #56bfa426; }
@@ -1352,9 +1350,9 @@ button:focus-visible {
 .gallery-card:nth-child(5) { --card-tint: #e4b26e25; }
 .gallery-card > img { width: clamp(72px, 7vw, 102px); height: auto; aspect-ratio: 1; }
 .gallery-card h3 { margin-top: 30px; letter-spacing: -.03em; }
-.gallery-card p { max-width: 38ch; }
+.gallery-card p { max-width: 40ch; font-size: clamp(1.0625rem, 1.4vw, 1.125rem); line-height: 1.5; }
 .slider-controls[hidden] { display: none; }
 .slider-controls .slider-dot { position: relative; }
 .slider-controls .slider-dot::after { content: ""; position: absolute; inset: -9px -3px; }
 .contact-email { display: inline-block; margin-top: 1rem; font-weight: 600; overflow-wrap: anywhere; }
-.studio-copy { align-self: center; max-width: 49ch; font-size: clamp(1.1rem, 1.7vw, 1.45rem); }
+.studio-copy { align-self: center; max-width: 49ch; font-size: clamp(1.1rem, 1.5vw, 1.25rem); }
