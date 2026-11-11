@@ -26,8 +26,8 @@ for lang, sections in policy.items():
     assert all(provider in offline for provider in ('Google', 'AdMob', 'App Set ID', 'GitHub', '13–17', '18+'))
     prefix = Path() if lang=='en' else Path(lang)
     home=(ROOT/prefix/'index.html').read_text(encoding='utf-8')
-    assert home.count('data-product-slide>')==4,lang
-    assert home.count('data-slider-dot ')==4,lang
+    assert '<h3>Watch Face Lab</h3>' in home, lang
+    assert 'href="https://play.google.com/store/apps/details?id=com.alternix.watchfacelab"' in home, lang
     for page in ['privacy','support']:
         path=ROOT/prefix/'watch-face-lab'/page/'index.html'
         html=path.read_text(encoding='utf-8')
@@ -54,4 +54,4 @@ for lang, sections in policy.items():
             assert dest.is_file(),(path,link)
         count+=1
 ET.parse(ROOT/'sitemap.xml')
-print(f'PASS: {count} pages, 9 languages, 4 cards/dots each; internal links/assets and sitemap valid.')
+print(f'PASS: {count} pages, 9 languages; store links, internal links/assets and sitemap valid.')
